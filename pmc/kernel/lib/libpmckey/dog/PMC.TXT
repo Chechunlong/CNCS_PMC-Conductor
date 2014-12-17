@@ -1,0 +1,1740 @@
+-----------------------------------------------------------------------
+CAUTION!!!   CAUTION!!!   CAUTION!!!   CAUTION!!!   CAUTION!!!
+
+This file contains confidential information about the
+software protection method of your application.
+
+                         KEEP IT SECURE!
+
+CAUTION!!!   CAUTION!!!   CAUTION!!!   CAUTION!!!   CAUTION!!!
+-----------------------------------------------------------------------
+
+Protection Plan                         : PMC           
+
+Profile generated on                    : Tuesday December 9, 2003
+
+Your Applications are protected by      : SentinelSuperPro
+     Developer ID                       : 16F6    
+     Write     Password                 : 6473       
+     OverWrite Password 1               : ECF5       
+     OverWrite Password 2               : 33CA       
+
+
+The SuperPro Key content file           : PMC.DAT      
+
+The following pseudo-code represents the basic SentinelSuperPro
+protection strategy.  See the SuperPro Reference Guide for
+information on advanced ways to use the API to provide even more
+security.
+
+Two basic things to include in your protection strategy are
+
+  1) Using many random queries.
+
+  2) Separating the query, compare, and reaction sequence with
+     other code in your application.
+
+Hackers often try to defeat a protected application by first
+using a device that listens to the communication between an
+application and hardware lock.  If the amount of data communicated
+is small, such as with a memory key, then the listening device can
+defeat the protection by recording the communication and re-playing
+it.  With the SuperPro, randomly generated query strings can be
+communicated causing literally millions of query and response pairs
+to overflow the capacity of the recorder.  The responses to randomly
+generated queries are ignored while responses to known queries are
+validated.
+
+The protection offered by queries is actually a three step process:
+query the SuperPro, compare the response with the expected value,
+and react accordingly.  Hackers can find the locations of queries
+by trapping on the query function address. If the compare and
+reaction occur immediately after the query, the hacker can trace
+the process relatively quickly.  To increase the time and expertise
+required to trace the process, include function calls and other
+code between the three steps.  Any type of I/O function called
+between the query/compare/react sequence is especially difficult
+and lengthy to trace.
+Significantly increasing this time and effort makes tracing the
+process virtually unfeasible.
+
+To protect your software, convert the pseudo-code between lines
+<Beginning of Pseudo-code> and <End of Pseudo-code> into your
+programming language and insert it into your program.
+
+The pseudo-code contains a double-quote, comma delimited collection of
+randomly generated queries and their responses from the
+SentinelSuperPro encryption algorithm.  This data can be copied and
+pasted into your application as a reference table for query and
+response data.
+
+Refer to the SPROEVAL.ext for sample API calls in your programming
+language where .ext is the language extension.
+For example, sample code for the C language is in SPROEVAL.C and
+sample code for the PASCAL programming language is in SPROEVAL.PAS.
+
+The following code is only "pseudocode".  Note that the API names and
+parameters may be different for your particular programming language.
+Please refer to your specific language interface and example program
+(provided with the SuperPro software) for specific syntax regarding the
+API's and their parameters.
+
+Note: If your target application type is Win32, you must call the
+RNBOFormatPacket API prior to calling RNBOInitialize. Also note that
+the SuperPro Win32 API's all start with "RNBO" (for example,
+RNBOsproInitialize.)
+
+****************************************************************************************************
+
+Name of Application                  : r64            
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 8      
+     Descriptor in Cell 8            : D1FD Hex       
+     Descriptor in Cell 9            : F7DA Hex        (Active)
+                                     : 77DA Hex        (InActive)
+     Password1  in Cell 10           : 8A32 Hex   
+     Password2  in Cell 11           : EC6B Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"2C51208E",  "9CBF95CA"          "0D0C23C5",  "2EFBEF94"
+"A78510BB",  "3D5CAA54"          "F3707B8E",  "FC4BE69F"
+"D70A8898",  "470A3CC2"          "2F549336",  "EF4C9481"
+"073EF6BC",  "0EDBBA80"          "67CDD81C",  "4FDE3E7E"
+"6CD2E7B5",  "CF3A36A4"          "105DF524",  "5B4F2CC8"
+"BD35BD60",  "C7DFEAEB"          "6D0FD48A",  "85EAA780"
+"8BFA6DFC",  "DF77FDDC"          "D2F5EDE9",  "DB186A68"
+"379D04EB",  "CF4A1516"          "00361431",  "D84A69A1"
+"A3EB77EB",  "AE68B758"          "1434FC6D",  "2EF9CAD8"
+"DF5F2549",  "B55F6D89"          "6D517450",  "1BF21494"
+"50A4E0F6",  "CFBB4386"          "367B6EDD",  "77359FCD"
+"3F180C4B",  "B76F67AE"          "E0AED1DC",  "1E8E0BE8"
+"E36D3F13",  "EBCE13B8"          "1784CFCA",  "1C58AEF4"
+"F50FD2EE",  "4E88A4D8"          "E6EFCD4C",  "04D3BE00"
+"9026A81D",  "35F8BCC0"          "39CB413C",  "CF9A0B8A"
+"55C7B9EF",  "5663971F"          "594D2BD8",  "4B894ED1"
+"A817B30C",  "069D8E27"          "7A0A50BE",  "BBD95CC8"
+"FC89DA4E",  "E4479F31"          "C7688CF7",  "B7D8CAE4"
+"54CF1D17",  "ED37BE2A"          "9D51C030",  "04C87566"
+"5C42C24F",  "2FEBC7C0"          "3AC5E885",  "6B0A53FC"
+"E8987B33",  "77AAFBE8"          "7E5A231D",  "A6EE6792"
+"143989F2",  "2E6DB7B4"          "4007E4F3",  "6EE93BE7"
+"9451E43E",  "6EAFC72C"          "A0A2938D",  "4FDAA6D1"
+"73F170F4",  "5E4E94EA"          "B3644281",  "0F6C9EE2"
+"AC42EF2D",  "1B39F2C8"          "E1E0A211",  "4B50A9D6"
+"1BB39152",  "CF4FDCEC"          "217FA39F",  "653EF9E5"
+"59FA5937",  "C3CBE7EC"          "04281481",  "4F4C4F82"
+"7A6C7954",  "1B07EFB4"          "94DC002D",  "8B5A4C46"
+"ECC3B754",  "0E8689D0"          "E431756F",  "9B58EEC0"
+"32633FF6",  "1F10C36A"          "9A1EFB9B",  "C4DEF043"
+"05B4C242",  "062F82F0"          "266F84F1",  "5556C7E8"
+"D9256055",  "2F4DD631"          "08395DB9",  "CF398178"
+"25DC488A",  "AF9BFFD0"          "E8087DB7",  "1FEEA075"
+"538DA6DF",  "03AE1E98"          "9A609C61",  "844CCCB6"
+"D095B194",  "2C4F06A3"          "0B4FED29",  "5F6B9DC6"
+"B2468EE1",  "1E98A2C4"          "0EBDF8ED",  "8D298630"
+"655E10B1",  "0F6BA590"          "EB585016",  "9BB0C7C8"
+"693D5485",  "1F6C9AEE"          "14FEF45D",  "036FED00"
+"111779BB",  "0E4FDFA0"          "0E9FC086",  "CF095B00"
+"C8F53C86",  "0658114B"          "875C52EA",  "0DDF9E8D"
+"290884AA",  "8E6F8B99"          "4FDDCF0A",  "4D68A44C"
+"71B75DE4",  "CE624709"          "F477B309",  "6E8C986D"
+"D5C0EDB5",  "4BACF910"          "7225417A",  "5F5CEFEC"
+"D07045E5",  "9FC7A7AC"          "68D41196",  "37CCAC5C"
+"69894CD1",  "ED3F2F81"          "532FA268",  "1C6FD13D"
+"87670B89",  "8EEBFD76"          "6E160C05",  "A6BDAEF3"
+"1642B5DC",  "DDCECE58"          "757614D8",  "4B7FAE32"
+"E620F28B",  "3863B262"          "E1736992",  "1E186120"
+"2E33C0CB",  "EF7B90C1"          "B6B4235C",  "5CABDD70"
+"8FE114E8",  "45BEB2B2"          "4F8ECAB0",  "4ECBD64D"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 8      
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to 8A32 Hex   
+         4. Fourth parameter "password2" to EC6B Hex   
+         5. Fifth  parameter "address" to 8      
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : r128           
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 12     
+     Descriptor in Cell 12           : F654 Hex       
+     Descriptor in Cell 13           : E5CA Hex        (Active)
+                                     : 65CA Hex        (InActive)
+     Password1  in Cell 14           : 843B Hex   
+     Password2  in Cell 15           : B8EB Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"8DDC0E3A",  "2070E4C0"          "7C9DED7F",  "58A6038E"
+"1EF90819",  "F01E0542"          "5A546254",  "F339D6DE"
+"3A967745",  "586CCB7D"          "9EE45FF0",  "C16999F8"
+"7DB2EE1A",  "585F5894"          "CDB0BFE0",  "5D3FF588"
+"E54FE050",  "59BF0F8C"          "C02CCF61",  "EC90454D"
+"DC6BD61C",  "62B6D374"          "410E1D6E",  "C46632D6"
+"7A183F6C",  "790800DD"          "A136324E",  "82A5169E"
+"93629DBF",  "7859F187"          "474F18DC",  "6A8CB5DA"
+"3EC1B365",  "E58AB7CC"          "06BBB142",  "56086A5E"
+"9BDCA51F",  "943E62C6"          "28C7D688",  "60FC307A"
+"EA7A1D70",  "702DDAAE"          "280322B3",  "70DA02A0"
+"FA958D20",  "2C49D68D"          "9B253416",  "4EF53D9F"
+"9633867B",  "40B8E55C"          "4A4A9324",  "2077C3DE"
+"5A4E7422",  "EDB8861D"          "0F8290A3",  "617EDAF2"
+"43ECEF86",  "70C842E2"          "6C910494",  "71F117B8"
+"B9075C23",  "4ADD970E"          "82DEED31",  "434C628E"
+"D6B44EA2",  "A07D7C2A"          "4D9A6682",  "98FDE53E"
+"70FC22C6",  "5FC5619D"          "8821E99F",  "005927A6"
+"836EB7AD",  "B07CEE38"          "6FE1D6F2",  "4445AE55"
+"CFB50AC8",  "0AD650E5"          "FB7D462D",  "0C4707D2"
+"A2963DF4",  "6026C3DE"          "327ACFB8",  "C4A1EF8E"
+"491E5053",  "306B770F"          "8DA485D3",  "7CA0A623"
+"BA8648E3",  "E0CEC997"          "73B8DE3C",  "50E004CD"
+"F0E071B0",  "586EE65D"          "FABFE6F1",  "D14CE7ED"
+"6740B1ED",  "2481F8A8"          "95014FAC",  "1B243A75"
+"509959B2",  "D28AAF46"          "6E1D447F",  "14081976"
+"FA09100B",  "708C0653"          "760AB199",  "507CC0BE"
+"078F1F56",  "84C6933D"          "745E40EE",  "48FCC2C9"
+"A7C17915",  "A0FCBF28"          "9951220A",  "5850270E"
+"66480757",  "483ADA09"          "E7BB9C7B",  "6042475D"
+"537AE220",  "513DF19E"          "BB98937B",  "4FCE550A"
+"C501ED59",  "40AF85AA"          "5B19F909",  "C26E94AD"
+"6B6BEC0F",  "75DAADD2"          "FCD6A2FD",  "44F5654C"
+"6EC20FB6",  "C0F8EFDF"          "C8345B27",  "28F6A6E8"
+"1824561A",  "38AA2349"          "1F1E136F",  "5A526E6D"
+"CD7BF6B8",  "4690E77C"          "3C91B8B4",  "719E491C"
+"C3DDBF25",  "7F55456C"          "416584DF",  "587D2C22"
+"2D34DEB9",  "68F1C4FD"          "AFED1542",  "6EA5AEF8"
+"58A51E41",  "D100C59D"          "226EE5CC",  "605A8273"
+"E32BA45D",  "60BC3CAF"          "B53011B0",  "540E9268"
+"045F874B",  "50BAE60C"          "44B5573E",  "22F28DBE"
+"43E38C5F",  "422DCF1A"          "298C6E3E",  "F261C27C"
+"24870D93",  "49F50A0A"          "074F4F04",  "E964939C"
+"BC4CD2E9",  "606995D0"          "BAB3ADE4",  "706C77B8"
+"3C771882",  "F83A2208"          "488D5E86",  "2D39AD33"
+"640EF348",  "AA6173E0"          "29CE0E04",  "52CE84F8"
+"E731818C",  "6AE8E8EC"          "6AD4CFF7",  "F309A316"
+"C3C6DA49",  "68DA242A"          "9B2C6B90",  "4A7A9776"
+"94E9EA97",  "6CF8B707"          "8C1C4068",  "48BE2D48"
+"237FC24A",  "FC2DB6F9"          "0F89C81E",  "68D54349"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 12     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to 843B Hex   
+         4. Fourth parameter "password2" to B8EB Hex   
+         5. Fifth  parameter "address" to 12     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : r256           
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 16     
+     Descriptor in Cell 16           : D30B Hex       
+     Descriptor in Cell 17           : DFBB Hex        (Active)
+                                     : 5FBB Hex        (InActive)
+     Password1  in Cell 18           : 4D7C Hex   
+     Password2  in Cell 19           : B0D6 Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"80251CC9",  "33ABC536"          "B2B38437",  "FABF03FF"
+"99E758F0",  "BA7E7677"          "FB847EA7",  "E13A4ADF"
+"2DDD85D4",  "F7E7373F"          "D4FAF4A7",  "C36F759F"
+"F8A03FF2",  "56FE661F"          "6FE1DB35",  "596FDAF2"
+"45CE90C2",  "6CC7CDFF"          "1639042B",  "FC8BA02D"
+"A0626050",  "0196A35E"          "DCFC3D53",  "B5FFA1B8"
+"F087F9CD",  "0267AEDA"          "3880759B",  "4236AEDE"
+"001B4852",  "3339E3FD"          "505A99E0",  "73197BFF"
+"9D4063D8",  "57F573BF"          "5AC7E50C",  "A789E3AC"
+"5FD32F53",  "C2DB5FFE"          "C3B7F66E",  "A3F8F0FF"
+"BC68E821",  "0F163A1E"          "1D61DDD1",  "A3FB57BD"
+"D83C75DE",  "B06593BE"          "56DD3615",  "6B93AD9F"
+"6922522B",  "90FA406B"          "3FA84F42",  "D4BC78FD"
+"38F45DDF",  "721F21DF"          "C93B92A2",  "715623DC"
+"15DABB36",  "AAE3849F"          "61EFBFB3",  "A3B652FE"
+"97AD44E1",  "E75D55B5"          "3D98EF2F",  "43FFE5DB"
+"A9A31A52",  "C5FB807F"          "42F822A0",  "A691FF7F"
+"4EA40B85",  "F9C7CFFD"          "43D9EB9E",  "039DDD1F"
+"555C835D",  "0386CC5D"          "65409211",  "624A0D3D"
+"AD5DF286",  "461AEB5F"          "B637492B",  "2ADEC25E"
+"0215EC68",  "08DF29FF"          "87870482",  "7ADA4BFB"
+"0D16D987",  "5564C5DD"          "2993A5B8",  "9DD4ED7E"
+"ADCE5673",  "133A8365"          "A9CE74F2",  "245F053B"
+"6CCEC189",  "C79ADBFD"          "9CF00346",  "479A4275"
+"5A87BF7E",  "A0CDDD77"          "CB17E563",  "43F3C176"
+"CB87A88A",  "6A92CDFD"          "104E60D3",  "4F5BDBBB"
+"06412988",  "DB6D4B93"          "ED5E56D3",  "5F9297FF"
+"2B40908C",  "563DFDDF"          "83AABC60",  "4DDB46BE"
+"2569AED0",  "7AFADDFF"          "B0F64F99",  "57F6A74B"
+"A3A8D617",  "D32BC0CF"          "16D1FB08",  "9306D03F"
+"B9310DEC",  "BAF6D54D"          "9100B087",  "8A9AFB3F"
+"5A9F9CBA",  "6D16BFFF"          "1C13F776",  "B788625E"
+"66EA76F7",  "1FBA66FD"          "B34722F7",  "BBFE7D0A"
+"B95884BC",  "408E92FF"          "8F705504",  "E19D4DFF"
+"12A3DF02",  "3159EB90"          "D58E9268",  "742E5E9F"
+"19116CBD",  "741FD1BB"          "03CDB190",  "2393D0B6"
+"BE5C490D",  "F3D786BE"          "F8D504D8",  "827BB6CD"
+"78C953BF",  "ABF7FDF5"          "762A0F1E",  "F3662CBB"
+"6A16B218",  "D705DA39"          "1B1D744A",  "BD7E77F9"
+"D7823BC0",  "633FE35C"          "E9876CAB",  "539DFD5F"
+"8206BD07",  "525F061E"          "5C5B83CC",  "7BD5DA9F"
+"80445C1F",  "138B677F"          "57A2CDC9",  "518DBCFB"
+"2FBF2712",  "04F3C19E"          "7EA3F43E",  "FF1D63FF"
+"DFFC4320",  "DADA5156"          "CA002A57",  "5F549D5F"
+"DA78901C",  "E38FFEFC"          "A0EA65AE",  "B64E8C79"
+"3FB52B22",  "32B244FE"          "3E5D87E4",  "C3C7DB5D"
+"8732F827",  "82D360BD"          "C232D61F",  "023640BA"
+"9E6E1323",  "67B5B1FE"          "B1B9E471",  "5198FD35"
+"A65A7F6F",  "1353F93E"          "85CACEE4",  "4B74B7A7"
+"17D658AD",  "376287EC"          "43E02319",  "C39F8FC1"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 16     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to 4D7C Hex   
+         4. Fourth parameter "password2" to B0D6 Hex   
+         5. Fifth  parameter "address" to 16     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : r512           
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 20     
+     Descriptor in Cell 20           : C232 Hex       
+     Descriptor in Cell 21           : CBB3 Hex        (Active)
+                                     : 4BB3 Hex        (InActive)
+     Password1  in Cell 22           : 67AF Hex   
+     Password2  in Cell 23           : CC00 Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"9394AFA0",  "8BB08525"          "AA6213B3",  "279B790C"
+"8C3FED54",  "9F7E330B"          "30DCD9A2",  "47DC4D00"
+"EB0782B6",  "57F7EF0B"          "EFF1F494",  "2FDB4420"
+"4BB0BC57",  "93956A0C"          "179693BC",  "55C0090C"
+"97BFEBC1",  "A28BC51E"          "12396506",  "D328C34B"
+"AA69A459",  "2FF5D54E"          "8AF3F04A",  "13F8970B"
+"447855CC",  "B3E7A67B"          "3480D676",  "9385335F"
+"0A228C5A",  "65EE0303"          "FD504DD7",  "134CCB4B"
+"EF32BED6",  "C781A61D"          "56C747E6",  "939C562A"
+"69DA735C",  "8BD89102"          "71ADAA64",  "E7A6E799"
+"9CEA28E1",  "46F2FA07"          "780FB857",  "9F8DCB12"
+"C8935B5D",  "BBFBDF8A"          "E40B08F1",  "9FF83D14"
+"BB13AD2A",  "BDF88612"          "3BA7B01D",  "1BD1CF19"
+"42FBA1E7",  "677C9902"          "76314698",  "8FEE4D13"
+"67CC1735",  "57BC431E"          "5DEE218E",  "8BCF9B1B"
+"A1B488E9",  "9FDFB301"          "E98EA326",  "AF5A4513"
+"1485803F",  "AB7BE70D"          "7F3792FE",  "B7A5CB09"
+"016D70EA",  "B9DC7355"          "5DEB01B3",  "0944D80D"
+"C03EE94A",  "CD7E5483"          "A27E036F",  "1FC2D303"
+"5F2657EC",  "5FD74F00"          "D0485E40",  "8698D75A"
+"6CF75355",  "8BBCEF10"          "C4C574DF",  "87E34F18"
+"BEDE3FED",  "9FDC870B"          "44A5BACD",  "1E928304"
+"19B0BC60",  "87DE3713"          "E60DE451",  "93EAD29A"
+"1E9627EF",  "FB867E97"          "B703185B",  "AFDE5313"
+"C469266B",  "B36CD117"          "095456C1",  "B7F56307"
+"7D4F0EF0",  "8DD59F26"          "2B5F75E8",  "F796432E"
+"71238F75",  "37E4AB02"          "2B9BC632",  "8750A900"
+"DC08F5F2",  "1F2D0E01"          "9EBCD175",  "12F1D402"
+"1DDBF880",  "8BFA5296"          "4DE238A2",  "E6FC0B0A"
+"3CC0DCF3",  "13B6886B"          "121A2F03",  "9BEAD712"
+"3C047EC8",  "13ECE811"          "107B3068",  "97CDCB01"
+"B529237E",  "CFEB4F17"          "A4416EA9",  "9374CBC3"
+"E8BDE7D2",  "82DA0399"          "32C3A1D8",  "938A8723"
+"15E10B80",  "B3067F4B"          "189DCA37",  "B3EEE713"
+"957651DD",  "15A8C689"          "540B124A",  "8FD75B10"
+"749AF181",  "9FC3EC13"          "8AFA28C4",  "B1EBDE02"
+"412FBAE8",  "B3CCD401"          "765283BA",  "1EB5D703"
+"D353D983",  "9F9F8B17"          "FD578552",  "5FCDC34B"
+"EDE824F3",  "7F8CEFB2"          "9999F32B",  "BF698E86"
+"330CC184",  "AB4DCB15"          "71B4E2DE",  "83FC5202"
+"99A18DFE",  "6F78991A"          "BBE0659B",  "87BDCB9A"
+"92C4A886",  "22D0471B"          "E4123F6C",  "D3B4DE1D"
+"465AF60A",  "2F890693"          "DD28D50D",  "37CCC6A5"
+"F17D9087",  "FB4E9B54"          "586E9CF9",  "AB3DB312"
+"F1146014",  "13E5F193"          "006F477D",  "F79C6B06"
+"51367789",  "BB1FA380"          "CBCBF987",  "5BEB870B"
+"9ECCC91F",  "1E458210"          "22B6B7ED",  "9678CB09"
+"AFEE5F8A",  "8BCD9C22"          "3F295614",  "B76E8724"
+"BDF44F67",  "973F2713"          "E450B0B3",  "97F86195"
+"2957A516",  "B78D842C"          "D15095BB",  "BFEB5E1A"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 20     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to 67AF Hex   
+         4. Fourth parameter "password2" to CC00 Hex   
+         5. Fifth  parameter "address" to 20     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : r1024          
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 24     
+     Descriptor in Cell 24           : F48D Hex       
+     Descriptor in Cell 25           : F471 Hex        (Active)
+                                     : 7471 Hex        (InActive)
+     Password1  in Cell 26           : 3467 Hex   
+     Password2  in Cell 27           : 667B Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"C2208B87",  "EC8A3E53"          "4B260306",  "0BBDDBF0"
+"47815C1A",  "A942C89A"          "2C67AC63",  "2D0D3E68"
+"03A153AE",  "A90D7098"          "4F76D563",  "65F23D79"
+"5D310ABE",  "59217E2E"          "A405065F",  "A97684EA"
+"AE5BBCB9",  "7DE7B0D2"          "71BD47D4",  "03078898"
+"BCE9F0C0",  "6577B6D8"          "186262EC",  "D1267A3E"
+"C64BC6A7",  "B5664B8B"          "B2FB5657",  "A78FE0CA"
+"65AB121E",  "AB74BF08"          "857DC30B",  "25EE1611"
+"730530B2",  "9A96A0F1"          "D443C6C8",  "C53330AE"
+"C464F920",  "29F8A0DB"          "F8DA2198",  "A9A1FC7F"
+"B386F7D9",  "E02E5C7E"          "D7949926",  "670789CF"
+"DA14A7C4",  "2C429D82"          "72797994",  "B7D39196"
+"D2AE7D22",  "200E6056"          "9A2D91EB",  "0B37EE99"
+"537CED50",  "800CA8A7"          "05A0B83B",  "39B72C98"
+"7E67E62C",  "1DBE90F4"          "BC74035D",  "B934BAB4"
+"B235D551",  "243F3416"          "78FD16C8",  "84B88457"
+"2B215037",  "A7B3B5D4"          "DEBB73CD",  "D95E2C22"
+"12EDBC53",  "0210B9CA"          "EB5A7356",  "07BFA5BA"
+"EFCAC431",  "888727A8"          "4341F3C1",  "31B0B121"
+"1A68C5B2",  "2F50ECD8"          "CCD23102",  "98A5B2BD"
+"9B832E3C",  "8164FC7C"          "65886432",  "040FE586"
+"7921ADB3",  "0166ACEA"          "40308E8F",  "6655689B"
+"483C9746",  "6D2734D8"          "87CFD5A2",  "02116634"
+"D8D994B4",  "8FB4ADDB"          "B38CEB1C",  "48E63C7A"
+"F3F50151",  "2B289DDD"          "A9174613",  "43F1ECAE"
+"38927CB6",  "7DEDB811"          "27E948A9",  "E4F5982A"
+"A0AE6A5C",  "89861C3F"          "CB5FB784",  "EBD58C0F"
+"974B63B7",  "8713B653"          "9A47A537",  "052C4DFB"
+"BFD6EFA3",  "11602C1A"          "8EF7AF4A",  "B56FFCA2"
+"10B3A943",  "2277380C"          "2C6EE4DD",  "ADF5881A"
+"6B9059AE",  "1B7786A3"          "B03F21BA",  "213C68DB"
+"6F6C9144",  "FD06A057"          "9FCA416B",  "8B52F808"
+"1849C2B9",  "CDDFA1E7"          "D286912B",  "60D2F5B9"
+"CE257846",  "3DA68518"          "13289EF7",  "1A3BE09C"
+"58CA8AE0",  "28FD28BC"          "D6D66489",  "8FE5BB3C"
+"E4D426EA",  "286277A8"          "8CC6F7F4",  "08BE8696"
+"0583F3EB",  "A4DF30EA"          "F81ED5F9",  "09C7E81D"
+"448D0EEC",  "317BC49A"          "00245481",  "CD9CE4CE"
+"C82D68E4",  "8770B037"          "5CA455ED",  "0CC7D430"
+"4C08174C",  "19B78710"          "E09C132D",  "59B8AD92"
+"09AE300C",  "8DE70D84"          "5FF4284C",  "F8721A51"
+"62B7C4F0",  "7DFFFE59"          "5A3A6B2A",  "35C57693"
+"B5689917",  "43356C33"          "813C99BC",  "70CEF449"
+"C170ABF1",  "FD2B2292"          "CD97C8B6",  "026C9890"
+"EC802A4D",  "9741B60A"          "8513A006",  "9AB60AEA"
+"E29A13DA",  "6DDAEAF6"          "CCD9697C",  "4D360413"
+"80498869",  "10CFFD3E"          "661C03F2",  "2906BF02"
+"9A91D97E",  "8B900ED2"          "D21C64EA",  "45B72834"
+"C0CA5090",  "958AED5E"          "696CD551",  "F30F6D8A"
+"B0418724",  "6D35D9DE"          "4CBABDE6",  "E3A00E9E"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 24     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to 3467 Hex   
+         4. Fourth parameter "password2" to 667B Hex   
+         5. Fifth  parameter "address" to 24     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : rnl            
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 28     
+     Descriptor in Cell 28           : DE70 Hex       
+     Descriptor in Cell 29           : D5BE Hex        (Active)
+                                     : 55BE Hex        (InActive)
+     Password1  in Cell 30           : 5A9E Hex   
+     Password2  in Cell 31           : 6C52 Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"C5F58CB1",  "040C0DD8"          "D04328A3",  "12688D52"
+"CE6B3E28",  "359E1A9F"          "A6D0D48F",  "16FB0A58"
+"8A9F01AA",  "58340782"          "34C8A897",  "1D3386B5"
+"D5E54687",  "26CE0A93"          "8749933B",  "17AB46F2"
+"1E685FC6",  "0A4A2A14"          "15D10A84",  "1C3E3A17"
+"8DDB0D2B",  "5BA90E2E"          "8D8B8EA9",  "3E8C0166"
+"5581EFFC",  "9F39CED8"          "19A811CD",  "000B0CE6"
+"AE077414",  "1E841ACE"          "8DCD2F6F",  "AB042471"
+"023A5808",  "9E5643E9"          "3BEF823E",  "DA3A0D7A"
+"0EBF5C15",  "1CB4A3DA"          "012B8CFB",  "9F1C1ADB"
+"ADF3C113",  "1BA34A55"          "5D37F2AE",  "6608C410"
+"6D784317",  "7CB52EAA"          "7487E889",  "D0DA8DF0"
+"ED75893A",  "5E1C83A4"          "6188C50D",  "09730C18"
+"8327F0BB",  "0F9F8631"          "EC264285",  "1D638759"
+"9A2EF245",  "EC632AD9"          "83CF377D",  "5D804973"
+"E2DFD8BD",  "1C97977C"          "60839F13",  "1E03897A"
+"47E65C50",  "7C174F9A"          "A517A7ED",  "19250E50"
+"4298BFBE",  "12110C5C"          "D3E0FBA0",  "1FBB935B"
+"0B90D049",  "59C086F1"          "099C28E1",  "B79EAD08"
+"4A13C81E",  "AD9F0F80"          "B459BA4C",  "FE9F0FFA"
+"B74A3A54",  "9F100FD8"          "2BE39853",  "97C88690"
+"A9CBB020",  "115F0AA0"          "28B518D9",  "3DCF069E"
+"6A3A1EB8",  "982C8CB5"          "CE86F206",  "9B1E8C57"
+"D82BBC4E",  "1D1C2CEF"          "C01E52EE",  "908D0E56"
+"17F387C2",  "6A660768"          "F0CD6476",  "9292BDD8"
+"38E3A44F",  "1AE80310"          "347BAF7C",  "3ECF0FE6"
+"C2ACF0CD",  "29FA06CB"          "1315D4E7",  "A49942FD"
+"979C8B51",  "15992F18"          "A7D80C0A",  "3F628E10"
+"6F665AD8",  "BDA38298"          "365C4658",  "19984921"
+"F6557352",  "52174F1C"          "1B356996",  "033507C9"
+"1B1FC3E3",  "1C1F4257"          "58A3B6C8",  "94DB0A96"
+"560E5B54",  "190D0CB2"          "8E92C624",  "13D71BA5"
+"DFC838DC",  "1F30083A"          "BB2937BC",  "8A8EC73A"
+"5E8863B3",  "1D0E0E47"          "6F0B84CF",  "05F109D3"
+"8C81A1E7",  "8CEB26A5"          "DD70A72D",  "5F8F57F0"
+"BD414BB4",  "4EACCCE1"          "E268E15D",  "8E024E3E"
+"383B0BF2",  "8DA80EF0"          "00B7199D",  "1B540C31"
+"1DF932B6",  "1AB002B2"          "55C43FEA",  "9CDB032C"
+"EB2BEE56",  "17387D78"          "A35A7351",  "16110E28"
+"4C593FE4",  "6862098E"          "ED2D7900",  "481F2794"
+"97E45861",  "878DCE00"          "C5A1E3C1",  "02F58452"
+"AB1226E5",  "545059B8"          "618AD68D",  "163289BE"
+"5C8ECC5B",  "945A8FC1"          "292764B5",  "1C918812"
+"B38C2F45",  "408E54C0"          "42039539",  "1C4BCFE2"
+"08473666",  "DECA4F38"          "4B6ED426",  "1670500E"
+"13451747",  "74584EEF"          "B560F1C6",  "19088CF4"
+"49C8FD8D",  "500A8900"          "4FBEA784",  "900D0F82"
+"29F4C4EB",  "9E428A7A"          "2FFE4BC2",  "50828B4E"
+"F4826797",  "1CCF6BAF"          "710619F4",  "4AC01CF0"
+"88ADABED",  "651F9D71"          "A25BA850",  "7E9A4D53"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 28     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to 5A9E Hex   
+         4. Fourth parameter "password2" to 6C52 Hex   
+         5. Fifth  parameter "address" to 28     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : d64            
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 32     
+     Descriptor in Cell 32           : EA65 Hex       
+     Descriptor in Cell 33           : C5BD Hex        (Active)
+                                     : 45BD Hex        (InActive)
+     Password1  in Cell 34           : 717D Hex   
+     Password2  in Cell 35           : DF88 Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"01E41E11",  "807CCA5C"          "59375489",  "CBF94A3B"
+"777E871F",  "13380D6D"          "217E9C80",  "FDF74FF3"
+"AC9D871C",  "6F98E48E"          "7B7EC5F9",  "ED5004D2"
+"D6376F20",  "5330BBAC"          "94DAF90E",  "9FB6BA97"
+"5957F027",  "8F102C15"          "9DC5366B",  "0F9242D9"
+"36EF5622",  "63DFB089"          "0838579A",  "1709431F"
+"1D016521",  "8B526FAE"          "024BB65F",  "367E03D9"
+"3D6A5F81",  "8E7F8EF7"          "E8B01547",  "FE305F00"
+"C9B9CD2B",  "27706D4B"          "249227CF",  "D5F2AFA9"
+"9C234682",  "2124547E"          "5C0E72D3",  "B3DF0F5A"
+"B6F4FE5D",  "FC10C762"          "492B6B9E",  "7508CCDA"
+"138BDB29",  "DFA3CB5F"          "4909285D",  "629C901C"
+"62AD6868",  "14D5EB1B"          "6B72DB0F",  "92121F13"
+"7144C32B",  "07100ABC"          "BC6685EA",  "12560F4B"
+"99C6F89E",  "7D940811"          "6F49E358",  "17B41DD9"
+"936E2B14",  "B51D46A2"          "BBA826AF",  "9E723E19"
+"467F62A9",  "7C5118AA"          "919054C8",  "9E9422E3"
+"F2271215",  "857CAE26"          "2F06823D",  "31512C96"
+"86012AD0",  "50D52578"          "95E02727",  "BCF30D95"
+"09D6BFBA",  "BA910CB6"          "A8A4DB39",  "0074B73E"
+"32B993DB",  "49D28E9B"          "B7299897",  "28532451"
+"688FA7BB",  "4FFA1B1F"          "1C0139C6",  "1F9157DD"
+"F66308D4",  "62B00C18"          "1BAE188B",  "8691BF2D"
+"6F0AB01B",  "62D5AA97"          "FC79F672",  "6E551FCB"
+"A31D71DF",  "6A33E578"          "3DF589FB",  "66104F15"
+"CEC2971C",  "5278867B"          "70D65400",  "B35E0E59"
+"E39E3907",  "8E549C19"          "40465C5A",  "33A8456E"
+"E57245C1",  "DFFF458F"          "E975ACFB",  "43B3E6EF"
+"03C6BE4E",  "F6BD1495"          "03DE5420",  "02D49D01"
+"5EDA8B4C",  "15228AB4"          "7C9CEBA2",  "4691115D"
+"C6703348",  "899DAF6C"          "6664D414",  "D53D20CF"
+"665594AB",  "DBD52E4B"          "5D15AA4E",  "80100B9C"
+"73299C53",  "BDD82DBA"          "88AB4584",  "5254867C"
+"C50E7BAD",  "37D71F7B"          "D07107DB",  "19D3890F"
+"B3AA647A",  "A915A64E"          "8CFC18E2",  "53198CEF"
+"DBBD2A52",  "05918EEE"          "491060D7",  "A3241F36"
+"5F64CD84",  "83D5EE9E"          "AE448853",  "9A50CF18"
+"3B761154",  "33192B9A"          "BC6DBD65",  "D0F82853"
+"0C1D378F",  "1898A38F"          "D08BF9C3",  "1BD53A49"
+"9A2EF855",  "0CBEA7FA"          "30CA1AF2",  "D290DF2C"
+"D0C6AB89",  "DDE39FED"          "341179B7",  "0F40470A"
+"A2A901B4",  "0252AFEA"          "1143D89E",  "80D4C47C"
+"EFEE31D0",  "DC38BCD9"          "F6A9727D",  "5FFC8C5C"
+"1B12473F",  "55C85D44"          "A3691845",  "4F3BCAF2"
+"3070F8F7",  "D1D349AA"          "F9F945DB",  "1293843B"
+"31C0F4E4",  "CCB1CBE8"          "1D087041",  "B593CF8F"
+"DB2A6203",  "45F117AB"          "1C42B54C",  "6C1345E1"
+"9079DCE5",  "081079D7"          "9065CDCE",  "75370248"
+"A0D3D6FB",  "19950DAA"          "80C73640",  "8A901E36"
+"98F3E545",  "949635BA"          "71DD8B7A",  "7290DF26"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 32     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to 717D Hex   
+         4. Fourth parameter "password2" to DF88 Hex   
+         5. Fifth  parameter "address" to 32     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : d128           
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 36     
+     Descriptor in Cell 36           : DCAA Hex       
+     Descriptor in Cell 37           : D252 Hex        (Active)
+                                     : 5252 Hex        (InActive)
+     Password1  in Cell 38           : BC6B Hex   
+     Password2  in Cell 39           : B451 Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"39C67139",  "5272401D"          "C7A6EA7F",  "F48D9508"
+"6D1562ED",  "7F7F62D2"          "D1369E91",  "318E762A"
+"ECB7559D",  "FFAA8052"          "6B494533",  "6E6FA51B"
+"9D746E1C",  "FF7E713C"          "699ED9A6",  "DB294337"
+"9871BEA7",  "B1879247"          "8D90B5A3",  "7E2DDF5E"
+"FC2D561D",  "E7EFA285"          "DCFB3634",  "E38F760F"
+"5D1B32A1",  "5F83C345"          "F0163697",  "9B9C1015"
+"04A75F7C",  "1BCAD459"          "BD74F4DF",  "B18A8225"
+"9D9CFAC8",  "31AA3759"          "F46609F5",  "CFEA549B"
+"1B570D22",  "B7AC9504"          "37134DDB",  "970C47D1"
+"495563D3",  "E746ED0F"          "17AD7966",  "73B5840B"
+"7910F323",  "E3BAFB2A"          "AA70AA69",  "7B9C7677"
+"0EFED7CC",  "A030861F"          "7A33F95A",  "B74C4A16"
+"818AFC82",  "738D5A41"          "8BE86915",  "5B932C05"
+"B9B741D7",  "FF5E5635"          "9C7A6ACA",  "F7C7C74B"
+"E043E484",  "FD67C940"          "FE45C5A2",  "97A1A780"
+"6DA8253B",  "62A43203"          "401DC47E",  "B045D988"
+"11A2F0B2",  "9BFC5263"          "96AD01B7",  "5647F44D"
+"32529935",  "C377A330"          "A3A24472",  "7929050A"
+"181DF912",  "D3A97807"          "7726BF64",  "9F8AD949"
+"72D3615C",  "F34C8FCE"          "A6F217CF",  "AEEFF088"
+"2FCCA7B6",  "F387EE06"          "F0C41860",  "7BC22B14"
+"1E8DCA67",  "EB139A50"          "C93A8841",  "FB2DE83C"
+"8E858EB8",  "F32D22C8"          "642275EC",  "7B5D00B7"
+"E2373F60",  "77A1507D"          "2DBF0835",  "B7A3D88A"
+"95009718",  "F7C59481"          "459A3398",  "727D8E03"
+"8EEFA86B",  "FB87C33E"          "4F0779A5",  "F3C7569E"
+"F4B87F19",  "1F2FEABC"          "B8F79026",  "53A04B39"
+"E7627B81",  "DF838F47"          "93965B86",  "5F676419"
+"B32A4E1C",  "91258194"          "9FB14A41",  "95334A8D"
+"9A535FE4",  "FB8F8B53"          "3738B53A",  "C58A5A18"
+"E3895A4B",  "A7991C5C"          "371A8556",  "586FFE7D"
+"5FFCD3DE",  "56A22F0D"          "9ABD352E",  "472EE615"
+"EB0463AA",  "BDBED23D"          "18924402",  "FE4EC171"
+"0BB53DE9",  "936BD81D"          "BC05A69E",  "260EDE96"
+"4BBC4AAB",  "727D3D1D"          "8BEFA08F",  "B7D9136D"
+"4B370510",  "EB5F71DB"          "C05579FC",  "B74C4107"
+"616CF850",  "7356D15C"          "058EF98B",  "C7AE831F"
+"10E0790A",  "FDC4349F"          "24DAF8F0",  "FB958711"
+"68E601AF",  "172472D0"          "E507B737",  "BB1B0C0B"
+"BB99E215",  "5FAFCF48"          "46236A61",  "730FC21F"
+"C79FE8B1",  "E7CD9705"          "596315C4",  "5796DA1B"
+"FC1BAA3C",  "F724C71E"          "49733DBF",  "F3A1CA23"
+"DE4F9656",  "7B86D83C"          "D2026EC0",  "7EDF9405"
+"34343B72",  "F3BA7C39"          "4D4A4408",  "BFA8CAB5"
+"0079FD3F",  "47AD249D"          "D2450E86",  "EB4FF81E"
+"DFEDA47D",  "D57F764F"          "6F91B578",  "7FA04853"
+"5F32E541",  "779755CD"          "46A16B14",  "57E2C614"
+"206F6CA4",  "79EDC015"          "73E188D6",  "F78EC308"
+"75E193E5",  "960F4FAC"          "BF40C310",  "FC2B1A11"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 36     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to BC6B Hex   
+         4. Fourth parameter "password2" to B451 Hex   
+         5. Fifth  parameter "address" to 36     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : d256           
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 40     
+     Descriptor in Cell 40           : E27E Hex       
+     Descriptor in Cell 41           : F99D Hex        (Active)
+                                     : 799D Hex        (InActive)
+     Password1  in Cell 42           : 045B Hex   
+     Password2  in Cell 43           : 3F91 Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"D05311CF",  "245CD8BB"          "FB004C99",  "9BE428AF"
+"F2C431EB",  "BD91F26D"          "8CB43845",  "AB950A3B"
+"603C01C9",  "2AF1ECD7"          "992BF1C6",  "B1FF60EF"
+"846FD5B6",  "9ECD844E"          "FDB8A2BE",  "53FFF885"
+"25E575C2",  "FB6638BD"          "FCB072BA",  "F124E8BA"
+"8BE9DE16",  "A5F6B4E5"          "DE31616A",  "007E5A9B"
+"65673DE9",  "ACDD33F2"          "01024419",  "A8FB6CB6"
+"A2998CBB",  "D7C14866"          "58CFB966",  "D75020BE"
+"2911B1E3",  "68DBCCA1"          "6487C40D",  "2D383469"
+"A914951B",  "2CEE5D56"          "39487812",  "61CA51B2"
+"D5CA1BEE",  "02F1B133"          "86CE357D",  "23781E30"
+"09CC7C1C",  "B6FCECA8"          "ACA5D59F",  "BC81E9A7"
+"164CE215",  "18503CBF"          "891F08DB",  "D781FFBC"
+"207C2BC0",  "96B4D878"          "26442E9B",  "743DA6F4"
+"DAF5560F",  "C6FD1D30"          "ECA488CF",  "60C9BBB2"
+"27F63320",  "33E89A20"          "07BCEC47",  "89F1B09F"
+"8DE63B73",  "D767FCD5"          "9047E282",  "E298A2B5"
+"5756404F",  "81E1741E"          "9E25275D",  "D223897B"
+"5290AE6C",  "46EBF7BE"          "F3CC6276",  "4DF7E6D6"
+"5FD048AE",  "7DB07CF0"          "7F9DE509",  "67BDBE82"
+"FD491877",  "CDF90B67"          "1714D3E6",  "421D3D9D"
+"BE8930AF",  "99853848"          "F2FA4395",  "9CB969C2"
+"3ECADF9E",  "C6B42CF2"          "1A64A645",  "FBEF68F5"
+"D439DD55",  "D174DCDA"          "6C999B91",  "987F79F8"
+"03745497",  "7094DA27"          "7DE92639",  "B5EC3AFA"
+"DBB3E6B4",  "123ED068"          "4D125A3E",  "95553B99"
+"43F51CBE",  "5FF1B7E1"          "803AF897",  "E4E8B460"
+"F2639459",  "00F3BB1F"          "C6AFB23A",  "70793C6B"
+"7A0FACF4",  "E8F730A1"          "841201DF",  "A0D1A1A9"
+"148DFB42",  "E0483029"          "C6F253FE",  "35FAD0B0"
+"27C71600",  "7CFB5AE5"          "A6597151",  "EB101333"
+"7346E243",  "819564E3"          "3A4FAF8C",  "3BD7FCD0"
+"6749DD27",  "8D223855"          "AAA944AE",  "ADC4B4C0"
+"89F590E8",  "4BFB3EE0"          "B3ED0988",  "730B3BF8"
+"2BF25221",  "6427A8F1"          "0E2FC4A2",  "3AFCDEB1"
+"91709948",  "70C26C3D"          "9466C734",  "5CED34B3"
+"6B741A48",  "A16DB0E3"          "117F9701",  "A9E2D574"
+"A72047EC",  "A4FF5075"          "0D052030",  "187D20EF"
+"182E8352",  "C0C77BDB"          "33C60871",  "A2F1C96B"
+"07D82FEE",  "40D0A66F"          "80627DBD",  "8CF7F669"
+"DCD7F74C",  "E2ABBCB2"          "964C8865",  "10E3B0C2"
+"0F53374E",  "95B36BD4"          "61DA3B69",  "3191E821"
+"3C8145BA",  "99BA30E5"          "5C365389",  "E17CFCD4"
+"9D6B2B7D",  "D2D13ED7"          "6DA0D30D",  "B18FB895"
+"7C030DE1",  "74E5E9E8"          "608626E7",  "BEA38055"
+"B31BD923",  "73F16680"          "E63F2C09",  "10C9B806"
+"40AC81DB",  "CDF6BBEC"          "C30CA5DB",  "21D7FCC0"
+"BB95E182",  "91C132A3"          "C7B7EAB4",  "A3C96A35"
+"802E4903",  "BF8308FA"          "C65D7839",  "40A7B8A4"
+"D1458F27",  "8DF528BB"          "415643B0",  "E5DDD881"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 40     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to 045B Hex   
+         4. Fourth parameter "password2" to 3F91 Hex   
+         5. Fifth  parameter "address" to 40     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : d512           
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 44     
+     Descriptor in Cell 44           : D838 Hex       
+     Descriptor in Cell 45           : F482 Hex        (Active)
+                                     : 7482 Hex        (InActive)
+     Password1  in Cell 46           : DA4F Hex   
+     Password2  in Cell 47           : B393 Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"A4810B6A",  "8816BAB6"          "EFCBC351",  "98348202"
+"69D78CB6",  "759D6D3D"          "2D9399FE",  "3CCDC287"
+"692B7F64",  "B71CE813"          "53514445",  "ABBB63C7"
+"70529516",  "18C144D7"          "0E0C58AB",  "8FB3C510"
+"A9AC478B",  "C31C6EDF"          "57A117A3",  "F5CFC45D"
+"870143BA",  "1B2C404F"          "87AAB0A7",  "C538C126"
+"6D56BA84",  "7144968D"          "BA289697",  "694C81AF"
+"8E7C4B1A",  "ACED6027"          "68236F53",  "BD099DF7"
+"ADD782AB",  "F2A47059"          "BD7869F4",  "6D4B4E12"
+"A42BF9BF",  "0270B67E"          "E1C1C74F",  "84560717"
+"7281F6A5",  "E4616BCE"          "21FDE9E8",  "396620E6"
+"ACA5021F",  "B6579117"          "C23A86FA",  "442B83CF"
+"2672DA09",  "FC0D6C8F"          "C49F449C",  "86211D97"
+"DC050F4D",  "329166E7"          "5AA2C011",  "1638840E"
+"E91C4F03",  "0A31448B"          "2825C390",  "B9698213"
+"E37F17AC",  "AE7CE487"          "3B1B7FBC",  "843D2487"
+"96D4B80E",  "6A6566C3"          "4B6C3501",  "B333E666"
+"4338FEAD",  "BA679446"          "AE78DC49",  "2D654785"
+"D6578035",  "794B354E"          "4EBD085F",  "3627621F"
+"5AE7AC53",  "085D440F"          "28173546",  "CC2AC047"
+"9A01F42E",  "0E6E65DB"          "B1438753",  "22AC97AF"
+"6162B5B2",  "26289007"          "098FF3F1",  "191C968F"
+"DB82BC55",  "A70A0E92"          "B4935AB0",  "D67642CB"
+"78126357",  "D482E24C"          "822E4CED",  "ED67E24B"
+"139A4D8B",  "8A3111EE"          "B86A61F9",  "B473B4BA"
+"993CCA40",  "3D5104D7"          "8270ECB2",  "3F9C8095"
+"531C15B2",  "0A0ABF64"          "BBBB3458",  "87166205"
+"AFEB78E5",  "16589427"          "FA0F45AE",  "70E1C69D"
+"17C589AC",  "B775B785"          "2041B44C",  "3C5D633F"
+"B7668145",  "0C8EC307"          "DB87045B",  "FE0E824D"
+"574751D3",  "382E1573"          "239187AA",  "FFB9248C"
+"CD162FE9",  "34169607"          "55265C57",  "66376FCA"
+"97C919F9",  "7832950F"          "26E15A08",  "5C7169AF"
+"E3C5DC8E",  "B913446D"          "CEC4B553",  "78658E73"
+"5C738DF3",  "33EB432C"          "8967D9FB",  "2B0C44CD"
+"EB40E4ED",  "6B79C48E"          "AF3D73FE",  "147744B6"
+"10637158",  "79815FCD"          "2D0A34AF",  "ED45A0A6"
+"1B9FF11D",  "FE48EC5B"          "48A5AE15",  "767F7BA3"
+"D30DE551",  "1A76C667"          "908FB4A3",  "BFC7C646"
+"231AFA7C",  "625ACD02"          "291E6CC0",  "E90C936C"
+"80C64F5C",  "9E69E4B2"          "B2D62514",  "D24A806B"
+"82D2E17D",  "DCFCB287"          "9C7BC94D",  "74361D58"
+"C0481783",  "27E9CCEF"          "B627F772",  "22691085"
+"98828F23",  "9E7FE428"          "151A2349",  "6076EDB5"
+"19BAE998",  "E67231C7"          "FAB5D953",  "D1DD4087"
+"57F35E25",  "9206450A"          "FBD3DC64",  "BB7649A1"
+"DC645E92",  "A048B2F3"          "5E3B5A47",  "1E299B84"
+"5F6E6784",  "735B4EE1"          "DC4C9B10",  "356F6D92"
+"905442F5",  "6A10C107"          "02DDB4FA",  "3965471A"
+"8FCD74B3",  "F4A4E5F4"          "75B4D526",  "2D5D6080"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 44     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to DA4F Hex   
+         4. Fourth parameter "password2" to B393 Hex   
+         5. Fifth  parameter "address" to 44     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : d1024          
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 48     
+     Descriptor in Cell 48           : E133 Hex       
+     Descriptor in Cell 49           : DA39 Hex        (Active)
+                                     : 5A39 Hex        (InActive)
+     Password1  in Cell 50           : CF31 Hex   
+     Password2  in Cell 51           : 670C Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"EDF1502D",  "989FD7AA"          "AD42E82E",  "FE829DAB"
+"6B69F8BA",  "F8477E49"          "B685A7E7",  "E4F09B7F"
+"B19BC426",  "B1C53D01"          "11C76922",  "D606B20C"
+"73E3021A",  "6AD56F47"          "97FD6594",  "5A38ED51"
+"F11D8C4D",  "CCE6B74C"          "14193C7F",  "B1BA28AA"
+"8993AFBF",  "593036C5"          "119CBE90",  "92DA263A"
+"2A361D83",  "18E043CB"          "18EF43C8",  "F663EB62"
+"AABD17A7",  "947C7FDA"          "10DE5E55",  "78E72B22"
+"82A8EF99",  "58E7D682"          "5C7E25AA",  "6C07BD0D"
+"692FE5AA",  "D3E57FB9"          "F6991970",  "1D1AB775"
+"C22AB7C0",  "7E2BA55A"          "60CEF708",  "1EF01E6E"
+"80DE9450",  "653A4E5A"          "7038716C",  "A8E85C38"
+"86D32CB9",  "EFBAC7EB"          "C35477FB",  "ADEFA7E3"
+"87599CAF",  "D87035E0"          "51B03018",  "CF2664A8"
+"C655F3E0",  "DF479EA9"          "C6A54A5A",  "CA2BDC68"
+"9D094A54",  "4B970F79"          "CA4F8814",  "F1E8B64E"
+"8BFE68DA",  "8A3E573A"          "2A2BCA4E",  "488AC921"
+"A58353B3",  "5EE3B5AA"          "ABC747BF",  "BC0D0D18"
+"3FEF4C3E",  "29265A03"          "CDCC2501",  "4CCE165A"
+"D5E25FE1",  "4AC0E7C2"          "433081D5",  "7E052A83"
+"0399C038",  "BBD97786"          "3152A4F4",  "7FEA37AA"
+"DD5D6841",  "1E0E1E68"          "24A84081",  "CBB1ADAA"
+"431B885F",  "DBD36FC0"          "35A27753",  "7874B7FB"
+"F30C16E6",  "3C3BE625"          "9D47997D",  "9FA82F0C"
+"839C5086",  "CE25EDC8"          "38F34AB1",  "9C464D42"
+"0ABBC38B",  "E34FAF99"          "17E5F179",  "F34DCD6A"
+"4846C47F",  "38B26689"          "9B79CAA5",  "6CCB97EC"
+"1236CCEA",  "1E86B6C0"          "F75EB025",  "6DD73539"
+"88C78CA6",  "5C37EFB0"          "9EC99D03",  "64AFF7C1"
+"28E57A90",  "08C617B6"          "71FC0921",  "EDC10FEA"
+"BFE01DDC",  "00F32743"          "A2A0A44C",  "F4462EE0"
+"4910E178",  "289E3629"          "713FA9E6",  "D6F82F20"
+"0062E404",  "5E1B8501"          "A5F077AA",  "6CDE47C3"
+"5FBF8F1E",  "1E46BD09"          "E9DD02E2",  "EFE9BE74"
+"C40C59FD",  "38B2DCF8"          "0A77F79E",  "EE285547"
+"673A987D",  "F6AFBF10"          "CA56C08E",  "5C9398E1"
+"058D2124",  "51FB1A14"          "0DC7CAFC",  "6EC9B73B"
+"7DE94622",  "B219FEFC"          "44F4198A",  "0FF45F5F"
+"C837941E",  "EC9BBDBE"          "704D4AF0",  "2927970D"
+"85644F81",  "C2B6D560"          "256DD736",  "09E1EF32"
+"09B85C45",  "D960AEBA"          "739D1D4E",  "DEBFB7E0"
+"9B14FC27",  "D54E29C8"          "9E0C3033",  "787231F9"
+"41D1EC7B",  "8ABA2F86"          "77742497",  "D28297B0"
+"BC3E6410",  "FEC5A5C2"          "9E4ED0F7",  "C49A177A"
+"9943BF91",  "9077C7EB"          "BB040679",  "6FC0454B"
+"7BAF3313",  "D4E70FB3"          "85088A13",  "FFCD6100"
+"D9C487B8",  "39C3B768"          "BF54D8D6",  "C77F2538"
+"915FE0B7",  "EAF40DA9"          "FEA6E30F",  "5D83B5BD"
+"9D6EFBB1",  "107A338D"          "23D959CA",  "FE23C689"
+"99D9E917",  "5EDAEF51"          "DF1FA2BA",  "9897FFEB"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 48     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to CF31 Hex   
+         4. Fourth parameter "password2" to 670C Hex   
+         5. Fifth  parameter "address" to 48     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : dnl            
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 52     
+     Descriptor in Cell 52           : FC8D Hex       
+     Descriptor in Cell 53           : F3F8 Hex        (Active)
+                                     : 73F8 Hex        (InActive)
+     Password1  in Cell 54           : 6CD4 Hex   
+     Password2  in Cell 55           : E250 Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"568A1C36",  "9C88D2D0"          "2D5206CF",  "46604C01"
+"E763AC4A",  "B7A24B31"          "D19EF378",  "E7245B10"
+"C6EDF93A",  "41487214"          "B31FF635",  "B7F5B319"
+"4E969CAA",  "C48B2A1C"          "26740FB1",  "86CC6393"
+"076FC161",  "35330510"          "B66FC992",  "24E53731"
+"64464A50",  "42763614"          "9F1368AD",  "85EE3287"
+"CA19365B",  "38B97918"          "1AF44A86",  "473E3914"
+"6CC053AF",  "A483FBD8"          "808B2759",  "F312D71D"
+"238A0971",  "96E7E6D0"          "5E832C68",  "DADA6DB0"
+"2B3222B1",  "0ED29215"          "6745E073",  "A2F0EE9A"
+"D67BECD4",  "DC01CB14"          "0226861B",  "DEC833D0"
+"5B912EE0",  "AF1DFBF3"          "FEAD1B89",  "74F79A00"
+"17FCB4FB",  "74E5AE91"          "06765979",  "59596264"
+"7141DC85",  "A3FA5725"          "784C7485",  "02D5E6DC"
+"DBA629F4",  "1E90D690"          "69FBD86D",  "5DBE0EE0"
+"79BBE4E4",  "06BBBBE1"          "59C43231",  "02B27601"
+"3419FB0B",  "E766DA13"          "AD8ABA4E",  "EC05BAB3"
+"382DB3E7",  "169036D0"          "407EEC4C",  "E73A6E57"
+"749AC332",  "A3C1155F"          "B0DB8DAC",  "2CE12740"
+"4EDC628D",  "C39D8173"          "B91D4548",  "03DFF715"
+"ABB35468",  "DB88F0D1"          "B4B294F5",  "36F84047"
+"6F07C875",  "81CBB7B0"          "B860E50D",  "21CF0E5C"
+"EB351C8F",  "B653D231"          "B7036753",  "249F271D"
+"85B6771B",  "056D36B1"          "32FE3E09",  "B1EA6925"
+"44A7EEA5",  "21F65C13"          "FC914935",  "0EA8BEF0"
+"4427461E",  "4F0B9641"          "19B8F824",  "85DAC180"
+"0951629E",  "01579459"          "6017C929",  "07A775A4"
+"4CA24E7D",  "3B924DB0"          "F931B6CF",  "0A453E3B"
+"49D22AC5",  "C78410F9"          "63689C87",  "F5F22AD5"
+"6251FC22",  "36328008"          "73CF10CB",  "27EE0718"
+"0D7C9EBF",  "07642C93"          "C6ED1C7B",  "85DDBC19"
+"6ACB0581",  "96F28691"          "5448CE77",  "8FD77D0B"
+"C06C8223",  "00760A01"          "6A8F762E",  "19784ADD"
+"992B12AF",  "A7A7F0C4"          "ECB0098D",  "C790F655"
+"19DE5539",  "21EE5BE1"          "AE1E5810",  "22DAA675"
+"589CE0B2",  "66E67891"          "D36AC2A7",  "0B319311"
+"DD88C932",  "0CEB5C30"          "13A3D804",  "11145F10"
+"6017E812",  "8A5F6FF0"          "B4E28153",  "E6FC1035"
+"1E0A9159",  "41F41D15"          "16F4AB61",  "6370BFD3"
+"76C697B7",  "CEC27F45"          "2D81DA50",  "43855550"
+"767C646F",  "66744B50"          "5A838D43",  "66397A31"
+"353866BA",  "867056F0"          "143B946A",  "C37E7F10"
+"AD95F4A5",  "A6A2A19D"          "5E5A948B",  "9634EC54"
+"5662CDA3",  "C1D6D530"          "147E3530",  "E7B3361C"
+"ED17BCCC",  "0DFFFB80"          "61AA67E9",  "08A0C9B7"
+"6C127B48",  "48D28704"          "8D1D8D2C",  "E62E2E81"
+"B2C031C5",  "63811FA9"          "C430E7DD",  "E6F3FB79"
+"748C84A7",  "EFC3E0D4"          "6E954CD7",  "E6F3B200"
+"F242F8EC",  "B5915891"          "C881B93C",  "B17E44B4"
+"8A3C324C",  "27B4F200"          "E734A4D3",  "32FB9E51"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 52     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to 6CD4 Hex   
+         4. Fourth parameter "password2" to E250 Hex   
+         5. Fifth  parameter "address" to 52     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : r1             
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 56     
+     Descriptor in Cell 56           : D1AC Hex       
+     Descriptor in Cell 57           : E7AF Hex        (Active)
+                                     : 67AF Hex        (InActive)
+     Password1  in Cell 58           : FC46 Hex   
+     Password2  in Cell 59           : EED3 Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"5617827C",  "0DB66EAE"          "F440D7B1",  "1AB836DA"
+"387EDB81",  "85707CA4"          "4D10531E",  "5092B486"
+"1BC0F676",  "8CD96CAF"          "58C658A5",  "0CA1658D"
+"40F8E4E0",  "CD0CF793"          "2E8812CA",  "80FA7599"
+"08FB28A7",  "32992226"          "7E5E9B74",  "FC016E0E"
+"B5617A86",  "37FC1621"          "1B84C753",  "833C319B"
+"CBA59CA1",  "8E622633"          "E1E31C68",  "7E69ABA3"
+"BCDB82E5",  "5EB403C7"          "FBFC8600",  "CE212F9A"
+"24176EB7",  "2AD1D30B"          "2672FD4A",  "B8CA765D"
+"7B4D52E8",  "41B92691"          "E2B6401A",  "3CA0124F"
+"D708531B",  "62A0F6F9"          "C91558FC",  "D8CBE0D3"
+"ABAC5E18",  "9E373D66"          "7A1F7B30",  "4AC6B5A1"
+"307A2531",  "12B67447"          "0FA33ADD",  "DF80E49F"
+"6A1E2D1B",  "5368F097"          "61D9354A",  "987A2250"
+"F424992A",  "4CC3B242"          "7229B9D1",  "347F15C5"
+"7298367A",  "45304A25"          "4252F3F5",  "A55C3B5F"
+"35A56151",  "24C5B6D3"          "75798C30",  "E1237FBE"
+"8848E31F",  "79EC1F4A"          "BBF04CF1",  "4C453D17"
+"F84FD54B",  "28E4B3DD"          "D8FE0D24",  "14A0EE81"
+"90C2EC7E",  "3780F5B3"          "9C690B9E",  "5778A08A"
+"C430C49D",  "0D005EB6"          "BDDF755A",  "21232C4A"
+"68E31A0B",  "FF1830E3"          "A2ECA6D2",  "3BAABCAB"
+"1DA297B3",  "5C1C4F72"          "026E573C",  "5F3E1696"
+"2755E80E",  "5D68954E"          "88A661EC",  "660003BA"
+"5D245FD9",  "CA2B85A0"          "06BE2A9A",  "AE52D732"
+"3D0596B2",  "EC83860B"          "0245B9E8",  "0A19E7B7"
+"22CDD3D3",  "5BF9D7E9"          "6944AA8E",  "D8553E6E"
+"457F9F12",  "629806A7"          "E2BD7894",  "22C4D3E6"
+"7A40A6E9",  "2CDCB2E9"          "ADD28C6F",  "BC841A27"
+"04F06E15",  "0D9E26AC"          "C97832AF",  "310499E4"
+"BAC16E11",  "17211DDE"          "B0245FCD",  "28253B42"
+"1AA01CBA",  "CE414440"          "43178BAB",  "5F6CB21A"
+"F1DAFE47",  "D3794112"          "B4FA6616",  "6FD156C1"
+"3BCA83A2",  "2DCCF073"          "43592B70",  "241C7645"
+"4A4CD15C",  "E9B73BFA"          "F88948F7",  "38602BA6"
+"F93C53A5",  "A23A6BEE"          "2A13E58B",  "5EA85A8A"
+"8ACD9983",  "65A8A870"          "FCD91B56",  "699663A7"
+"10EA014B",  "8778DB6A"          "A3B13E87",  "28E820BB"
+"E2406C99",  "F7BD54E9"          "4169FC37",  "71286D87"
+"CE5CCF4E",  "3A73248E"          "896BF7A1",  "4C8419B0"
+"23C134C0",  "289C32A6"          "44B9CF95",  "0CC06793"
+"E40C7DF2",  "60065D73"          "030A519E",  "F9C6F795"
+"5ADAC4F6",  "20F7318B"          "4890D7DE",  "BA68444D"
+"0636E4DB",  "BC8005AD"          "034CF163",  "1BC13DC5"
+"B24D970D",  "ACF8BEE9"          "8C1FB9BF",  "7802B50F"
+"C4A7B3DE",  "8B99FD47"          "E907AB7E",  "F8718F5E"
+"F3CE5F33",  "E920B02B"          "90708C1E",  "9B74B7EA"
+"DB576183",  "09AC2491"          "63A5047A",  "3BA446AE"
+"B778D22D",  "5AD00680"          "F3F50C12",  "B6965E0D"
+"E2D16AE2",  "5C5D27D7"          "441EC226",  "1E34CCE8"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 56     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to FC46 Hex   
+         4. Fourth parameter "password2" to EED3 Hex   
+         5. Fifth  parameter "address" to 56     
+<End of Pseudo-code>
+
+****************************************************************************************************
+
+Name of Application                  : r2             
+Protected by
+     Item type                       : Algorithm with Password
+     At starting address of          : 60     
+     Descriptor in Cell 60           : FF9C Hex       
+     Descriptor in Cell 61           : F0CA Hex        (Active)
+                                     : 70CA Hex        (InActive)
+     Password1  in Cell 62           : 655A Hex   
+     Password2  in Cell 63           : 24E6 Hex   
+     Activation Type is              : Always Active
+     Query Response Pairs Generated  : 100          
+
+Query -----> Response            Query -----> Response
+"1C4D5CBC",  "6A3043FD"          "20B42A87",  "18E56527"
+"90141517",  "A5514B5D"          "A9F97170",  "773D6D24"
+"DFF6D0B5",  "0C2303CF"          "833BA97B",  "70E10106"
+"988E1D76",  "2F2B534F"          "8A72301D",  "3621734C"
+"CC3102E7",  "A8F067A7"          "A9D2ED4A",  "3D6126CD"
+"0EF6B21D",  "9470C093"          "776EE5A5",  "88CB5F2D"
+"25A3D4FD",  "28616287"          "ED61CF2B",  "184D67C9"
+"CC688120",  "6D916446"          "5E28A0C0",  "BC81E155"
+"F085C350",  "07CD035D"          "D2413962",  "5E9347D7"
+"A489AFAC",  "43F50336"          "63AC3CF4",  "34D5CF39"
+"B42F3849",  "02434F9E"          "36C7B856",  "32B153BB"
+"AC04B70C",  "3D6545C4"          "4425FAA0",  "1FD9B3A5"
+"0DA00B5F",  "3A2D32AD"          "7B569A37",  "11A5D3D3"
+"6B75870F",  "1201FA7B"          "2BDEB4BB",  "2E214F74"
+"4E22D286",  "140556C7"          "7EA66D95",  "2485C7E6"
+"812535B3",  "0FF90760"          "A47D0DB7",  "39A153C5"
+"A694A59C",  "B01B4927"          "C2354F76",  "BABB4D2D"
+"409604B6",  "039347B5"          "8B37C7D1",  "3BE0F78F"
+"717694EE",  "0DF11BAD"          "A716B8AC",  "46813BBD"
+"18B73143",  "2CB5158F"          "91BB6306",  "31E942C3"
+"B1F75C16",  "BC93574D"          "AA668B0B",  "2A810BB1"
+"2E67DFE8",  "0E854635"          "0A5ABC02",  "6AE8AB45"
+"76A1D00F",  "1AC951A5"          "0FEB0CFE",  "16DBE38C"
+"36E1E748",  "16C14FBC"          "EAD27AAD",  "074967ED"
+"CE13A325",  "AC71C06F"          "537AEDE0",  "17E143AF"
+"F453B64A",  "32D769DC"          "D18C35C8",  "161D86D3"
+"0F946B4C",  "97C10D77"          "56CAC03E",  "2FE94346"
+"0B0364EF",  "3535C9C7"          "4B2B8DC4",  "0455C245"
+"DA765A9E",  "91A146FD"          "3BAB2975",  "B5854D0D"
+"E324927C",  "2C2B2B76"          "51AE2AF8",  "24AD69E7"
+"33E82DB4",  "4C3D8DEF"          "7F3A0B56",  "18A9D595"
+"A295617F",  "5E9183D6"          "3869E313",  "0B890DA0"
+"8B5AFEC9",  "5C9556D5"          "C4C8EC37",  "3065C9B6"
+"61073082",  "182167F7"          "1F239D2E",  "2BE149DD"
+"4F0473C3",  "29D18B79"          "284E6D2B",  "48E1228F"
+"688139E1",  "2FF1C9EC"          "009B5CD9",  "059306ED"
+"90853BEA",  "86814B9D"          "2B9F4089",  "BBD347AC"
+"7E30E686",  "1049DFBD"          "783AB4D5",  "38B041FD"
+"E8F70E00",  "98EB22E5"          "6F2E226B",  "41A92385"
+"3DA1B589",  "8FEDE20F"          "5FF36FF0",  "28C14DC5"
+"20119E37",  "36A3479B"          "730529B3",  "9CC5708D"
+"5ECC1D72",  "73C7279F"          "5F3710B5",  "144B67CE"
+"7883714C",  "B527E8B1"          "B7930B95",  "12F902C7"
+"1D3DEB75",  "B3E959A7"          "46F0C9D0",  "5FE35B85"
+"B8053973",  "2DC3C7DC"          "BBE3DDF3",  "5EC963DF"
+"34EC9A1A",  "0E073E87"          "BF8F22CC",  "21A7D3F4"
+"11760C89",  "E4C04E57"          "0073BFD4",  "BD7D0345"
+"F25E691D",  "2539037D"          "A649DCE6",  "324B6688"
+"D5208082",  "59675D85"          "63F840C8",  "8412620D"
+"F9D8717C",  "04A9D29F"          "87C19A92",  "18C75ECD"
+
+<Implement the following code in future release of your software>
+
+<Beginning of Pseudo-code>
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro Query function with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "address" set to 60     
+         3. Query string set to one of the string listed above
+            Third  parameter "data" points to the query string
+         4. Fourth parameter "length" set to the query string length
+         5. Fifth  parameter "ResponsePtr" points to response string
+  If SuperPro Query function returns Success and
+     the Response string matches Then continue
+  Else
+    retry 4 times, check the API result and compare the response string
+    Prompt user to check the key and Call SuperPro Query again
+    If Query/Response still mismatches
+      display "Upgrade version not paid. Call to upgrade to new version"
+      Terminate <Upgrade App Name>
+
+Once your Customer has called in and upgraded to the new version
+of <Upgrade App Name>, do the following to make your SuperPro
+work for your new version.
+
+       
+       
+         
+            
+
+                     
+
+Allocate UNITINFO struct
+Call SuperPro Initialize function with no parameter
+Call SuperPro FindFirstUnit function with
+         1. First  parameter "DevID" set to 16F6 Hex
+         2. Second parameter "handle" points to UNITINFO
+
+If key found(e.g. SuperPro FindFirstUnit returns Success)
+  Call SuperPro ActivateAlgorithm with
+         1. First  parameter "handle" points to UNITINFO
+         2. Second parameter "WritePassword" to 6473 Hex        
+         3. Third  parameter "password1" to 655A Hex   
+         4. Fourth parameter "password2" to 24E6 Hex   
+         5. Fifth  parameter "address" to 60     
+<End of Pseudo-code>
+
+****************************************************************************************************
+

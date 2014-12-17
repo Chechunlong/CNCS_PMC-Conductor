@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: hisd - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"\proj\temp/" /Fp"\proj\temp/hisd.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\his\hisd\archive.cpp"
+"C:\proj\pmc\kernel\his\hisd\buffer.cpp"
+"C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp"
+"C:\proj\pmc\kernel\his\hisd\common.cpp"
+"C:\proj\pmc\kernel\his\hisd\main.cpp"
+"C:\proj\pmc\kernel\his\hisd\precomp.cpp"
+"C:\proj\pmc\kernel\his\hisd\query.cpp"
+"C:\proj\pmc\kernel\his\hisd\random.cpp"
+"C:\proj\pmc\kernel\his\hisd\recorder.cpp"
+"C:\proj\pmc\kernel\his\hisd\shell.cpp"
+"C:\proj\pmc\kernel\his\hisd\stream.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\proj\target\bin/hisd.pdb" /debug /machine:I386 /out:"\proj\target\bin/hisd.exe" /libpath:"\proj\imp_all" 
+\proj\temp\archive.obj
+\proj\temp\buffer.obj
+\proj\temp\bufferMgr.obj
+\proj\temp\common.obj
+\proj\temp\main.obj
+\proj\temp\precomp.obj
+\proj\temp\query.obj
+\proj\temp\random.obj
+\proj\temp\recorder.obj
+\proj\temp\shell.obj
+\proj\temp\stream.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4.tmp"
+<h3>Output Window</h3>
+Compiling...
+archive.cpp
+buffer.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(17) : warning C4786: '?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_TAG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(21) : warning C4786: '??0?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N@std@@QAE@XZ' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_TAG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N@std@@QAE@ABViterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@1@AB_N@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_TAG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(25) : warning C4786: '??0?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N@std@@QAE@ABU?$pair@$DCAB@$DCAC@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_TAG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+bufferMgr.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@_N@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@1@AB_N@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(70) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(25) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@_N@std@@QAE@ABU?$pair@$DCAB@$DCAC@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(70) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,bool>' being compiled
+C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(96) : warning C4101: 'u1' : unreferenced local variable
+C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(96) : warning C4101: 'u2' : unreferenced local variable
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@V123@@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@1@0@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(410) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(25) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@V123@@std@@QAE@ABU?$pair@$DCAB@$DCAC@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(410) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator>' being compiled
+common.cpp
+main.cpp
+precomp.cpp
+query.cpp
+random.cpp
+recorder.cpp
+shell.cpp
+stream.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocator@Upmc_value_t@@@2@@std@@V123@@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocator@Upmc_value_t@@@2@@1@0@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\stream.cpp(43) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct pmc_value_t>,struct std::map<__int64,struct pmc_value_t,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::iterator,class std::_Tree<__int64,struct std::pair<__int64 const ,struct pmc_value_t>,struct std::map<__int64,struct pmc_value_t,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::iterator>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocator@Upmc_value_t@@@2@@std@@_N@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocator@Upmc_value_t@@@2@@1@AB_N@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\stream.cpp(224) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct pmc_value_t>,struct std::map<__int64,struct pmc_value_t,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::iterator,bool>' being compiled
+C:\proj\pmc\kernel\his\hisd\stream.cpp(249) : warning C4305: '=' : truncation from 'const double' to 'float'
+Linking...
+
+
+
+<h3>Results</h3>
+hisd.exe - 0 error(s), 13 warning(s)
+</pre>
+</body>
+</html>

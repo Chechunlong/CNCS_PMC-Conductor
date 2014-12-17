@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: librtkgui - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"\proj\temp/rtkgui.res" /d "NDEBUG" "C:\proj\pmc\3.5\kernel\lib\librtkgui\rtkgui.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBRTKGUI_EXPORTS" /Fp"\proj\temp/librtkgui.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\3.5\kernel\lib\librtkgui\waitDlg.cpp"
+"C:\proj\pmc\3.5\kernel\lib\librtkgui\aboutDlg.cpp"
+"C:\proj\pmc\3.5\kernel\lib\librtkgui\dllVersion.cpp"
+"C:\proj\pmc\3.5\kernel\lib\librtkgui\hyperLink.cpp"
+"C:\proj\pmc\3.5\kernel\lib\librtkgui\msgBox.cpp"
+"C:\proj\pmc\3.5\kernel\lib\librtkgui\pmc_about.cpp"
+"C:\proj\pmc\3.5\kernel\lib\librtkgui\precomp.cpp"
+"C:\proj\pmc\3.5\kernel\lib\librtkgui\rtkgui.cpp"
+"C:\proj\pmc\3.5\kernel\lib\librtkgui\showDib.cpp"
+"C:\proj\pmc\3.5\kernel\lib\librtkgui\utils.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/librtkgui.pdb" /machine:I386 /def:".\rtkgui.def" /out:"\proj\target\bin/librtkgui.dll" /implib:"\proj\target\bin/librtkgui.lib" /libpath:"\proj\imp_all" 
+\proj\temp\waitDlg.obj
+\proj\temp\aboutDlg.obj
+\proj\temp\dllVersion.obj
+\proj\temp\hyperLink.obj
+\proj\temp\msgBox.obj
+\proj\temp\pmc_about.obj
+\proj\temp\precomp.obj
+\proj\temp\rtkgui.obj
+\proj\temp\showDib.obj
+\proj\temp\utils.obj
+\proj\temp\rtkgui.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+waitDlg.cpp
+aboutDlg.cpp
+dllVersion.cpp
+hyperLink.cpp
+msgBox.cpp
+pmc_about.cpp
+precomp.cpp
+rtkgui.cpp
+showDib.cpp
+utils.cpp
+Linking...
+   Creating library \proj\target\bin/librtkgui.lib and object \proj\target\bin/librtkgui.exp
+
+
+
+<h3>Results</h3>
+librtkgui.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

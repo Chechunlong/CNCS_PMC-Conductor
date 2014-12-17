@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: evtlq - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"\proj\temp/evtlq.res" /d "NDEBUG" /d "_AFXDLL" "C:\proj\pmc\kernel\evt\evtlq\evtlq.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1AA.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\proj\inc_all" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /D "EVTLQ" /Fp"\proj\temp/evtlq.pch" /Yu"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /panxh/inc_all" " /c 
+"C:\proj\pmc\kernel\evt\evtlq\ChildView.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\DlgQuery.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\DlgQueryById.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\DlgServerIP.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\evtlq.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\MainFrm.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\QuerySocket.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1AA.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1AB.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\proj\inc_all" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /D "EVTLQ" /Fp"\proj\temp/evtlq.pch" /Yc"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /panxh/inc_all" " /c 
+"C:\proj\pmc\kernel\evt\evtlq\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1AB.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1AC.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"\proj\target\bin/evtlq.pdb" /machine:I386 /out:"\proj\target\bin/evtlq.exe" /libpath:"\proj\imp_all" /libpath:"/panxh/imp_all" 
+\proj\temp\ChildView.obj
+\proj\temp\DlgQuery.obj
+\proj\temp\DlgQueryById.obj
+\proj\temp\DlgServerIP.obj
+\proj\temp\evtlq.obj
+\proj\temp\MainFrm.obj
+\proj\temp\QuerySocket.obj
+\proj\temp\StdAfx.obj
+\proj\temp\evtlq.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1AC.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildView.cpp
+DlgQuery.cpp
+DlgQueryById.cpp
+DlgServerIP.cpp
+evtlq.cpp
+MainFrm.cpp
+QuerySocket.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "COMCTL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "LIBRTKNET.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "LIBUTILS.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+evtlq.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

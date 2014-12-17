@@ -1,0 +1,2132 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libcalc_device - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPCE.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBCALC_DEVICE_EXPORTS" /Fp"\proj\temp/libcalc_device.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\actech\calc\libcalc_device\device.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPCE.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPCF.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libcalc_device.pdb" /machine:I386 /out:"\proj\target\bin/libcalc_device.dll" /implib:"\proj\target\bin/libcalc_device.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPCF.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libcalc_device.lib and object \proj\target\bin/libcalc_device.exp
+
+
+
+<h3>Results</h3>
+libcalc_device.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libmath - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD3.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBMATH_EXPORTS" /Fp"\proj\temp/libmath.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\actech\calc\libmath\expression.cpp"
+"C:\proj\pmc\drivers\actech\calc\libmath\value.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD3.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libmath.pdb" /machine:I386 /out:"\proj\target\bin/libmath.dll" /implib:"\proj\target\bin/libmath.lib" /libpath:"\proj\imp_all" 
+\proj\temp\expression.obj
+\proj\temp\value.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD4.tmp"
+<h3>Output Window</h3>
+Compiling...
+expression.cpp
+value.cpp
+Linking...
+   Creating library \proj\target\bin/libmath.lib and object \proj\target\bin/libmath.exp
+LINK : warning LNK4089: all references to "ADVAPI32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+libmath.dll - 0 error(s), 3 warning(s)
+<h3>
+--------------------Configuration: libecho_device - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD8.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBECHO_DEVICE_EXPORTS" /Fp"\proj\temp/libecho_device.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\actech\libecho_device\device.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD8.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libecho_device.pdb" /machine:I386 /out:"\proj\target\bin/libecho_device.dll" /implib:"\proj\target\bin/libecho_device.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD9.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libecho_device.lib and object \proj\target\bin/libecho_device.exp
+
+
+
+<h3>Results</h3>
+libecho_device.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libf8net - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDD.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBF8NET_EXPORTS" /Fp"\proj\temp/libf8net.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\actech\libf8net\device.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDD.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDE.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libf8net.pdb" /machine:I386 /out:"\proj\target\bin/libf8net.dll" /implib:"\proj\target\bin/libf8net.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDE.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libf8net.lib and object \proj\target\bin/libf8net.exp
+
+
+
+<h3>Results</h3>
+libf8net.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libpmcf8_device - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE2.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /I "\proj\conductor\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBPMCF8_DEVICE_EXPORTS" /Fp"\proj\temp/libpmcf8_device.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\actech\libpmcf8_device\device.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE2.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libpmcf8_device.pdb" /machine:I386 /out:"\proj\target\bin/libpmcf8_device.dll" /implib:"\proj\target\bin/libpmcf8_device.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE3.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libpmcf8_device.lib and object \proj\target\bin/libpmcf8_device.exp
+
+
+
+<h3>Results</h3>
+libpmcf8_device.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libpmcopc - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE7.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /I "\proj\inc_all\opc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBPMCOPC_EXPORTS" /Fp"\proj\temp/libpmcopc.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\actech\libpmcopc\device.cpp"
+"C:\proj\pmc\drivers\actech\libpmcopc\libpmcopc.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE7.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE8.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libpmcopc.pdb" /machine:I386 /out:"\proj\target\bin/libpmcopc.dll" /implib:"\proj\target\bin/libpmcopc.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+\proj\temp\libpmcopc.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE8.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+libpmcopc.cpp
+Linking...
+   Creating library \proj\target\bin/libpmcopc.lib and object \proj\target\bin/libpmcopc.exp
+
+
+
+<h3>Results</h3>
+libpmcopc.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libs960_device - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPEC.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBS960_DEVICE_EXPORTS" /Fp"\proj\temp/libs960_device.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\actech\libs960_device\device.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPEC.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPED.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libs960_device.pdb" /machine:I386 /out:"\proj\target\bin/libs960_device.dll" /implib:"\proj\target\bin/libs960_device.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPED.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libs960_device.lib and object \proj\target\bin/libs960_device.exp
+
+
+
+<h3>Results</h3>
+libs960_device.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libc200ha_device - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF1.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBC200HA_DEVICE_EXPORTS" /Fp"\proj\temp/libc200ha_device.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\omron\libc200ha_device\device.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF1.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF2.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libc200ha_device.pdb" /machine:I386 /out:"\proj\target\bin/libc200ha_device.dll" /implib:"\proj\target\bin/libc200ha_device.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF2.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libc200ha_device.lib and object \proj\target\bin/libc200ha_device.exp
+
+
+
+<h3>Results</h3>
+libc200ha_device.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libmodbusplus - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF6.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBMODBUSPLUS_EXPORTS" /Fp"\proj\temp/libmodbusplus.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\schneider\libmodbusplus\device.cpp"
+"C:\proj\pmc\drivers\schneider\libmodbusplus\libs.cpp"
+"C:\proj\pmc\drivers\schneider\libmodbusplus\modicon.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF6.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF7.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libmodbusplus.pdb" /machine:I386 /out:"\proj\target\bin/libmodbusplus.dll" /implib:"\proj\target\bin/libmodbusplus.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+\proj\temp\libs.obj
+\proj\temp\modicon.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF7.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+libs.cpp
+modicon.cpp
+Linking...
+   Creating library \proj\target\bin/libmodbusplus.lib and object \proj\target\bin/libmodbusplus.exp
+
+
+
+<h3>Results</h3>
+libmodbusplus.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libmodbustcp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFB.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBMODBUSTCP_EXPORTS" /Fp"\proj\temp/libmodbustcp.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\schneider\libmodbustcp\device.cpp"
+"C:\proj\pmc\drivers\schneider\libmodbustcp\modicon.cpp"
+"C:\proj\pmc\drivers\schneider\libmodbustcp\precomp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFB.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFC.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libmodbustcp.pdb" /machine:I386 /out:"\proj\target\bin/libmodbustcp.dll" /implib:"\proj\target\bin/libmodbustcp.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+\proj\temp\modicon.obj
+\proj\temp\precomp.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFC.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+modicon.cpp
+precomp.cpp
+Linking...
+   Creating library \proj\target\bin/libmodbustcp.lib and object \proj\target\bin/libmodbustcp.exp
+
+
+
+<h3>Results</h3>
+libmodbustcp.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: lib465d_device - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP100.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIB465D_DEVICE_EXPORTS" /Fp"\proj\temp/lib465d_device.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\shangyi\lib465d_device\465d-balance.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP100.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP101.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/lib465d_device.pdb" /machine:I386 /out:"\proj\target\bin/lib465d_device.dll" /implib:"\proj\target\bin/lib465d_device.lib" /libpath:"\proj\imp_all" 
+"\proj\temp\465d-balance.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP101.tmp"
+<h3>Output Window</h3>
+Compiling...
+465d-balance.cpp
+Linking...
+   Creating library \proj\target\bin/lib465d_device.lib and object \proj\target\bin/lib465d_device.exp
+
+
+
+<h3>Results</h3>
+lib465d_device.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: keyc - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"\proj\temp/keyc.res" /d "NDEBUG" /d "_AFXDLL" "C:\proj\pmc\hmi\keyc\keyc.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP105.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"\proj\temp/keyc.pch" /Yu"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\hmi\keyc\DlgHotkey.cpp"
+"C:\proj\pmc\hmi\keyc\keyc.cpp"
+"C:\proj\pmc\hmi\keyc\keycDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP105.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP106.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"\proj\temp/keyc.pch" /Yc"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\hmi\keyc\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP106.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP107.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"\proj\target\bin/keyc.pdb" /machine:I386 /out:"\proj\target\bin/keyc.exe" /libpath:"\proj\imp_all" 
+\proj\temp\DlgHotkey.obj
+\proj\temp\keyc.obj
+\proj\temp\keycDlg.obj
+\proj\temp\StdAfx.obj
+\proj\temp\keyc.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP107.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgHotkey.cpp
+keyc.cpp
+keycDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+keyc.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libpmcgina - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP109.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBPMCGINA_EXPORTS" /Fp"\proj\temp/libpmcgina.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\hmi\libpmcgina\ginastub.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP109.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libpmcgina.pdb" /machine:I386 /def:".\libpmcgina.def" /out:"\proj\target\bin/libpmcgina.dll" /implib:"\proj\target\bin/libpmcgina.lib" /libpath:"\proj\imp_all" 
+\proj\temp\ginastub.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10A.tmp"
+<h3>Output Window</h3>
+Compiling...
+ginastub.c
+Linking...
+   Creating library \proj\target\bin/libpmcgina.lib and object \proj\target\bin/libpmcgina.exp
+
+
+
+<h3>Results</h3>
+libpmcgina.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MCDraw - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"\proj\temp/MCDraw.res" /d "NDEBUG" /d "_AFXDLL" "C:\proj\pmc\hmi\mcdraw\MCDraw.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10E.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"\proj\temp/" /Fp"\proj\temp/MCDraw.pch" /Yu"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /pmc2/sdk/include" " /c 
+"C:\proj\pmc\hmi\mcdraw\DiaBlink.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaButtonA.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaButtonD.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaButtonWnd.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaCellAttr.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaColorA.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaColorAA.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaColorD.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaColorDA.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaDirection.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaDnyAttr.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaEnable.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaFillH.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaFillV.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaInputA.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaInputD.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaPosH.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaPosV.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaReplace.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaSave.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaSelect.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaSizeH.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaSizeV.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaSlideH.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaSlidV.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaTrendAttr.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaValueA.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaValueD.cpp"
+"C:\proj\pmc\hmi\mcdraw\DiaVisibility.cpp"
+"C:\proj\pmc\hmi\mcdraw\MainFrm.cpp"
+"C:\proj\pmc\hmi\mcdraw\MCDraw.cpp"
+"C:\proj\pmc\hmi\mcdraw\MCDrawDoc.cpp"
+"C:\proj\pmc\hmi\mcdraw\MCDrawView.cpp"
+"C:\proj\pmc\hmi\mcdraw\OptGrid.cpp"
+"C:\proj\pmc\hmi\mcdraw\OptShow.cpp"
+"C:\proj\pmc\hmi\mcdraw\OptWindow.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10F.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"\proj\temp/" /Fp"\proj\temp/MCDraw.pch" /Yc"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /pmc2/sdk/include" " /c 
+"C:\proj\pmc\hmi\mcdraw\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP10F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP110.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"\proj\target\bin/MCDraw.pdb" /debug /machine:I386 /out:"\proj\target\bin/MCDraw.exe" /libpath:"\proj\imp_all" 
+\proj\temp\DiaBlink.obj
+\proj\temp\DiaButtonA.obj
+\proj\temp\DiaButtonD.obj
+\proj\temp\DiaButtonWnd.obj
+\proj\temp\DiaCellAttr.obj
+\proj\temp\DiaColorA.obj
+\proj\temp\DiaColorAA.obj
+\proj\temp\DiaColorD.obj
+\proj\temp\DiaColorDA.obj
+\proj\temp\DiaDirection.obj
+\proj\temp\DiaDnyAttr.obj
+\proj\temp\DiaEnable.obj
+\proj\temp\DiaFillH.obj
+\proj\temp\DiaFillV.obj
+\proj\temp\DiaInputA.obj
+\proj\temp\DiaInputD.obj
+\proj\temp\DiaPosH.obj
+\proj\temp\DiaPosV.obj
+\proj\temp\DiaReplace.obj
+\proj\temp\DiaSave.obj
+\proj\temp\DiaSelect.obj
+\proj\temp\DiaSizeH.obj
+\proj\temp\DiaSizeV.obj
+\proj\temp\DiaSlideH.obj
+\proj\temp\DiaSlidV.obj
+\proj\temp\DiaTrendAttr.obj
+\proj\temp\DiaValueA.obj
+\proj\temp\DiaValueD.obj
+\proj\temp\DiaVisibility.obj
+\proj\temp\MainFrm.obj
+\proj\temp\MCDraw.obj
+\proj\temp\MCDrawDoc.obj
+\proj\temp\MCDrawView.obj
+\proj\temp\OptGrid.obj
+\proj\temp\OptShow.obj
+\proj\temp\OptWindow.obj
+\proj\temp\StdAfx.obj
+\proj\temp\MCDraw.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP110.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DiaBlink.cpp
+DiaButtonA.cpp
+DiaButtonD.cpp
+DiaButtonWnd.cpp
+DiaCellAttr.cpp
+DiaColorA.cpp
+DiaColorAA.cpp
+DiaColorD.cpp
+DiaColorDA.cpp
+DiaDirection.cpp
+DiaDnyAttr.cpp
+DiaEnable.cpp
+DiaFillH.cpp
+DiaFillV.cpp
+DiaInputA.cpp
+DiaInputD.cpp
+DiaPosH.cpp
+DiaPosV.cpp
+DiaReplace.cpp
+DiaSave.cpp
+Generating Code...
+Compiling...
+DiaSelect.cpp
+DiaSizeH.cpp
+DiaSizeV.cpp
+DiaSlideH.cpp
+DiaSlidV.cpp
+DiaTrendAttr.cpp
+DiaValueA.cpp
+DiaValueD.cpp
+DiaVisibility.cpp
+MainFrm.cpp
+MCDraw.cpp
+MCDrawDoc.cpp
+MCDrawView.cpp
+OptGrid.cpp
+OptShow.cpp
+OptWindow.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MCDraw.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: mcview - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"\proj\temp/mcview.res" /d "NDEBUG" /d "_AFXDLL" "C:\proj\pmc\hmi\mcView\mcview.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP112.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"\proj\temp/" /Fp"\proj\temp/mcview.pch" /Yu"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /pmc2/sdk/include" " /c 
+"C:\proj\pmc\hmi\mcView\AlarmRecord.cpp"
+"C:\proj\pmc\hmi\mcView\Arc.cpp"
+"C:\proj\pmc\hmi\mcView\Button.cpp"
+"C:\proj\pmc\hmi\mcView\Cell.cpp"
+"C:\proj\pmc\hmi\mcView\common.cpp"
+"C:\proj\pmc\hmi\mcView\DiaAlarmList.cpp"
+"C:\proj\pmc\hmi\mcView\DiaInputA.cpp"
+"C:\proj\pmc\hmi\mcView\DiaInputD.cpp"
+"C:\proj\pmc\hmi\mcView\DiaPassword.cpp"
+"C:\proj\pmc\hmi\mcView\DiaSystem.cpp"
+"C:\proj\pmc\hmi\mcView\DlgAbout.cpp"
+"C:\proj\pmc\hmi\mcView\DlgDnyTip.cpp"
+"C:\proj\pmc\hmi\mcView\DlgLoop.cpp"
+"C:\proj\pmc\hmi\mcView\DlgSelect.cpp"
+"C:\proj\pmc\hmi\mcView\DlgTrendComSav.cpp"
+"C:\proj\pmc\hmi\mcView\DlgTrendTime.cpp"
+"C:\proj\pmc\hmi\mcView\DnyAttr.cpp"
+"C:\proj\pmc\hmi\mcView\Element.cpp"
+"C:\proj\pmc\hmi\mcView\Ellipse.cpp"
+"C:\proj\pmc\hmi\mcView\FView.cpp"
+"C:\proj\pmc\hmi\mcView\keyhook.cpp"
+"C:\proj\pmc\hmi\mcView\libs.cpp"
+"C:\proj\pmc\hmi\mcView\Line.cpp"
+"C:\proj\pmc\hmi\mcView\mcview.cpp"
+"C:\proj\pmc\hmi\mcView\mcviewDlg.cpp"
+"C:\proj\pmc\hmi\mcView\Meta.cpp"
+"C:\proj\pmc\hmi\mcView\Polygon.cpp"
+"C:\proj\pmc\hmi\mcView\PolyLine.cpp"
+"C:\proj\pmc\hmi\mcView\Rectangle.cpp"
+"C:\proj\pmc\hmi\mcView\RoundRect.cpp"
+"C:\proj\pmc\hmi\mcView\Text.cpp"
+"C:\proj\pmc\hmi\mcView\Trend.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP112.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP113.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"\proj\temp/" /Fp"\proj\temp/mcview.pch" /Yc"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /pmc2/sdk/include" " /c 
+"C:\proj\pmc\hmi\mcView\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP113.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP114.tmp" with contents
+[
+Rpcrt4.lib /nologo /subsystem:windows /incremental:no /pdb:"\proj\target\bin/mcview.pdb" /debug /machine:I386 /out:"\proj\target\bin/mcview.exe" /libpath:"\proj\imp_all" 
+\proj\temp\AlarmRecord.obj
+\proj\temp\Arc.obj
+\proj\temp\Button.obj
+\proj\temp\Cell.obj
+\proj\temp\common.obj
+\proj\temp\DiaAlarmList.obj
+\proj\temp\DiaInputA.obj
+\proj\temp\DiaInputD.obj
+\proj\temp\DiaPassword.obj
+\proj\temp\DiaSystem.obj
+\proj\temp\DlgAbout.obj
+\proj\temp\DlgDnyTip.obj
+\proj\temp\DlgLoop.obj
+\proj\temp\DlgSelect.obj
+\proj\temp\DlgTrendComSav.obj
+\proj\temp\DlgTrendTime.obj
+\proj\temp\DnyAttr.obj
+\proj\temp\Element.obj
+\proj\temp\Ellipse.obj
+\proj\temp\FView.obj
+\proj\temp\keyhook.obj
+\proj\temp\libs.obj
+\proj\temp\Line.obj
+\proj\temp\mcview.obj
+\proj\temp\mcviewDlg.obj
+\proj\temp\Meta.obj
+\proj\temp\Polygon.obj
+\proj\temp\PolyLine.obj
+\proj\temp\Rectangle.obj
+\proj\temp\RoundRect.obj
+\proj\temp\StdAfx.obj
+\proj\temp\Text.obj
+\proj\temp\Trend.obj
+\proj\temp\mcview.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP114.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AlarmRecord.cpp
+Arc.cpp
+Button.cpp
+Cell.cpp
+common.cpp
+DiaAlarmList.cpp
+DiaInputA.cpp
+DiaInputD.cpp
+DiaPassword.cpp
+DiaSystem.cpp
+DlgAbout.cpp
+DlgDnyTip.cpp
+DlgLoop.cpp
+DlgSelect.cpp
+DlgTrendComSav.cpp
+DlgTrendTime.cpp
+DnyAttr.cpp
+Element.cpp
+Ellipse.cpp
+FView.cpp
+Generating Code...
+Compiling...
+keyhook.cpp
+libs.cpp
+Line.cpp
+mcview.cpp
+mcviewDlg.cpp
+Meta.cpp
+Polygon.cpp
+PolyLine.cpp
+Rectangle.cpp
+RoundRect.cpp
+Text.cpp
+Trend.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+mcview.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: pmcui - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP116.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PMCUI_EXPORTS" /D "_WINDLL" /D "_AFXDLL" /Fp"\proj\temp/pmcui.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\hmi\pmcui\Arc.cpp"
+"C:\proj\pmc\hmi\pmcui\Button.cpp"
+"C:\proj\pmc\hmi\pmcui\Cell.cpp"
+"C:\proj\pmc\hmi\pmcui\Cursor.cpp"
+"C:\proj\pmc\hmi\pmcui\DnyAttr.cpp"
+"C:\proj\pmc\hmi\pmcui\Element.cpp"
+"C:\proj\pmc\hmi\pmcui\Ellipse.cpp"
+"C:\proj\pmc\hmi\pmcui\Line.cpp"
+"C:\proj\pmc\hmi\pmcui\Meta.cpp"
+"C:\proj\pmc\hmi\pmcui\PMCUI.cpp"
+"C:\proj\pmc\hmi\pmcui\Polygon.cpp"
+"C:\proj\pmc\hmi\pmcui\PolyLine.cpp"
+"C:\proj\pmc\hmi\pmcui\Rectangle.cpp"
+"C:\proj\pmc\hmi\pmcui\RoundRect.cpp"
+"C:\proj\pmc\hmi\pmcui\StdAfx.cpp"
+"C:\proj\pmc\hmi\pmcui\Text.cpp"
+"C:\proj\pmc\hmi\pmcui\trans_file.cpp"
+"C:\proj\pmc\hmi\pmcui\Trend.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP116.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP117.tmp" with contents
+[
+/nologo /dll /incremental:no /pdb:"\proj\target\bin/pmcui.pdb" /machine:I386 /out:"\proj\target\bin/pmcui.dll" /implib:"\proj\target\bin/pmcui.lib" /libpath:"\proj\imp_all" 
+\proj\temp\Arc.obj
+\proj\temp\Button.obj
+\proj\temp\Cell.obj
+\proj\temp\Cursor.obj
+\proj\temp\DnyAttr.obj
+\proj\temp\Element.obj
+\proj\temp\Ellipse.obj
+\proj\temp\Line.obj
+\proj\temp\Meta.obj
+\proj\temp\PMCUI.obj
+\proj\temp\Polygon.obj
+\proj\temp\PolyLine.obj
+\proj\temp\Rectangle.obj
+\proj\temp\RoundRect.obj
+\proj\temp\StdAfx.obj
+\proj\temp\Text.obj
+\proj\temp\trans_file.obj
+\proj\temp\Trend.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP117.tmp"
+<h3>Output Window</h3>
+Compiling...
+Arc.cpp
+Button.cpp
+Cell.cpp
+Cursor.cpp
+DnyAttr.cpp
+Element.cpp
+Ellipse.cpp
+Line.cpp
+Meta.cpp
+PMCUI.cpp
+Polygon.cpp
+PolyLine.cpp
+Rectangle.cpp
+RoundRect.cpp
+StdAfx.cpp
+Text.cpp
+trans_file.cpp
+Trend.cpp
+Linking...
+   Creating library \proj\target\bin/pmcui.lib and object \proj\target\bin/pmcui.exp
+
+
+
+<h3>Results</h3>
+pmcui.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libpmcdb - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBPMCDB_EXPORTS" /Fp"\proj\temp/libpmcdb.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\interfaces\libpmcdb\olemain.cpp"
+"C:\proj\pmc\interfaces\libpmcdb\pmcdb.cpp"
+"C:\proj\pmc\interfaces\libpmcdb\precomp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libpmcdb.pdb" /machine:I386 /def:".\pmcdb.def" /out:"\proj\target\bin/libpmcdb.dll" /implib:"\proj\target\bin/libpmcdb.lib" /libpath:"\proj\imp_all" 
+\proj\temp\olemain.obj
+\proj\temp\pmcdb.obj
+\proj\temp\precomp.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11C.tmp"
+<h3>Output Window</h3>
+Compiling...
+olemain.cpp
+pmcdb.cpp
+precomp.cpp
+Linking...
+   Creating library \proj\target\bin/libpmcdb.lib and object \proj\target\bin/libpmcdb.exp
+
+
+
+<h3>Results</h3>
+libpmcdb.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: pmc2pi - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP120.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\proj\temp/pmc2pi.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\interfaces\pmc2pi\buffer.cpp"
+"C:\proj\pmc\interfaces\pmc2pi\pmc2pi.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP120.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP121.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\proj\target\bin/pmc2pi.pdb" /machine:I386 /out:"\proj\target\bin/pmc2pi.exe" /libpath:"\proj\imp_all" 
+\proj\temp\buffer.obj
+\proj\temp\pmc2pi.obj
+.\pi_lib\piapi32.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP121.tmp"
+<h3>Output Window</h3>
+Compiling...
+buffer.cpp
+pmc2pi.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+pmc2pi.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: pmcsvr - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "midl.exe /tlb ".\pmcsvr.tlb" /h "pmcsvr.h" /iid "pmcsvr_i.c" /Oicf "C:\proj\pmc\interfaces\pmcsvr\pmcsvr.idl""
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP123.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "\proj\inc_all" /I "\proj\inc_all\opc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"\proj\temp/pmcsvr.pch" /Yu"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /GZ /c 
+"C:\proj\pmc\interfaces\pmcsvr\datagroup.cpp"
+"C:\proj\pmc\interfaces\pmcsvr\opcserver.cpp"
+"C:\proj\pmc\interfaces\pmcsvr\pmcdb.cpp"
+"C:\proj\pmc\interfaces\pmcsvr\pmcdb_idl_i.c"
+"C:\proj\pmc\interfaces\pmcsvr\pmcsvr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP123.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP124.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "\proj\inc_all" /I "\proj\inc_all\opc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"\proj\temp/pmcsvr.pch" /Yc"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /GZ /c 
+"C:\proj\pmc\interfaces\pmcsvr\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP124.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP125.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"\proj\target\bin/pmcsvr.pdb" /debug /machine:I386 /out:"\proj\target\bin/pmcsvr.exe" /pdbtype:sept /libpath:"\proj\imp_all" 
+\proj\temp\datagroup.obj
+\proj\temp\opcserver.obj
+\proj\temp\pmcdb.obj
+\proj\temp\pmcdb_idl_i.obj
+\proj\temp\pmcsvr.obj
+\proj\temp\StdAfx.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP125.tmp"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP126.bat" with contents
+[
+@echo off
+"\proj\target\bin\pmcsvr.exe" /RegServer
+echo regsvr32 exec. time > "\proj\target\bin\regsvr32.trg"
+echo Server registration done!
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP126.bat"
+Creating Type Library...
+Microsoft (R) MIDL Compiler Version 5.01.0164  
+Copyright (c) Microsoft Corp 1991-1997. All rights reserved.
+Processing C:\proj\pmc\interfaces\pmcsvr\pmcsvr.idl
+pmcsvr.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ocidl.idl
+ocidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oleidl.idl
+oleidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\servprov.idl
+servprov.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\urlmon.idl
+urlmon.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\msxml.idl
+msxml.idl
+Processing .\opcda.idl
+opcda.idl
+Processing .\pmcdb_idl.idl
+pmcdb_idl.idl
+Compiling...
+StdAfx.cpp
+Compiling...
+datagroup.cpp
+opcserver.cpp
+C:\proj\pmc\interfaces\pmcsvr\opcserver.cpp(68) : warning C4541: 'dynamic_cast' used on polymorphic type 'struct IUnknown' with /GR-; unpredictable behavior may result
+pmcdb.cpp
+C:\proj\pmc\interfaces\pmcsvr\pmcdb.cpp(282) : error C2511: 'writeSnapshots' : overloaded member function 'long (unsigned long,struct tagVARIANT,struct tagVARIANT)' not found in 'CPmcDB'
+        c:\proj\pmc\interfaces\pmcsvr\pmcdb.h(13) : see declaration of 'CPmcDB'
+Generating Code...
+Compiling...
+pmcdb_idl_i.c
+c:\proj\pmc\interfaces\pmcsvr\pmcdb_idl_i.c(48) : fatal error C1010: unexpected end of file while looking for precompiled header directive
+Generating Code...
+Compiling...
+pmcsvr.cpp
+c:\program files\microsoft visual studio\vc98\atl\include\atlcom.h(4905) : error C2970: 'IConnectionPointImpl' : template argument 'piid' : invalid address of static variable 'DIID_IPmcDBEvents'
+        c:\program files\microsoft visual studio\vc98\atl\include\atlcom.h(4946) : see declaration of 'IConnectionPointImpl'
+        c:\proj\pmc\interfaces\pmcsvr\pmcsvrcp.h(6) : see reference to class template instantiation 'ATL::?$IConnectionPointImpl@VCPmcDB@@$1DIID_IPmcDBEventsVCComDynamicUnkArray@ATL@@' being compiled
+        c:\proj\pmc\interfaces\pmcsvr\pmcdb.h(20) : see reference to class template instantiation 'CProxyIPmcDBEvents<class CPmcDB>' being compiled
+c:\program files\microsoft visual studio\vc98\atl\include\atlcom.h(4905) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+Generating Code...
+Command line warning D4028 : minimal rebuild failure, reverting to normal build
+Error executing cl.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+pmcsvr.exe - 4 error(s), 2 warning(s)
+<h3>
+--------------------Configuration: evtd - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP133.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\proj\temp/evtd.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\evt\evtd\evtd.cpp"
+"C:\proj\pmc\kernel\evt\evtd\evtsrv.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP133.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP134.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\proj\target\bin/evtd.pdb" /machine:I386 /out:"\proj\target\bin/evtd.exe" /libpath:"\proj\imp_all" 
+\proj\temp\evtd.obj
+\proj\temp\evtsrv.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP134.tmp"
+<h3>Output Window</h3>
+Compiling...
+evtd.cpp
+evtsrv.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+evtd.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: evtlq - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"\proj\temp/evtlq.res" /d "NDEBUG" /d "_AFXDLL" "C:\proj\pmc\kernel\evt\evtlq\evtlq.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP136.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\proj\inc_all" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /D "EVTLQ" /Fp"\proj\temp/evtlq.pch" /Yu"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /panxh/inc_all" " /c 
+"C:\proj\pmc\kernel\evt\evtlq\ChildView.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\DlgQuery.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\DlgQueryById.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\DlgServerIP.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\evtlq.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\MainFrm.cpp"
+"C:\proj\pmc\kernel\evt\evtlq\QuerySocket.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP136.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP137.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\proj\inc_all" /D "NDEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /D "EVTLQ" /Fp"\proj\temp/evtlq.pch" /Yc"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /panxh/inc_all" " /c 
+"C:\proj\pmc\kernel\evt\evtlq\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP137.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP138.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"\proj\target\bin/evtlq.pdb" /machine:I386 /out:"\proj\target\bin/evtlq.exe" /libpath:"\proj\imp_all" /libpath:"/panxh/imp_all" 
+\proj\temp\ChildView.obj
+\proj\temp\DlgQuery.obj
+\proj\temp\DlgQueryById.obj
+\proj\temp\DlgServerIP.obj
+\proj\temp\evtlq.obj
+\proj\temp\MainFrm.obj
+\proj\temp\QuerySocket.obj
+\proj\temp\StdAfx.obj
+\proj\temp\evtlq.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP138.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildView.cpp
+DlgQuery.cpp
+DlgQueryById.cpp
+DlgServerIP.cpp
+evtlq.cpp
+MainFrm.cpp
+QuerySocket.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "COMCTL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "LIBRTKNET.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "LIBUTILS.dll" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+evtlq.exe - 0 error(s), 3 warning(s)
+<h3>
+--------------------Configuration: libhis - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBHIS_EXPORTS" /Fp"\proj\temp/libhis.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\evt\libhis\libhis.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libhis.pdb" /machine:I386 /out:"\proj\target\bin/libhis.dll" /implib:"\proj\target\bin/libhis.lib" /libpath:"\proj\imp_all" 
+\proj\temp\libhis.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13B.tmp"
+<h3>Output Window</h3>
+Compiling...
+libhis.cpp
+Linking...
+   Creating library \proj\target\bin/libhis.lib and object \proj\target\bin/libhis.exp
+
+
+
+<h3>Results</h3>
+libhis.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: gpsd - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13F.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"\proj\temp/" /Fp"\proj\temp/gpsd.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\gpsd\gpsd.cpp"
+"C:\proj\pmc\kernel\gpsd\GpsService.cpp"
+"C:\proj\pmc\kernel\gpsd\NTService.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP140.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\proj\target\bin/gpsd.pdb" /machine:I386 /out:"\proj\target\bin/gpsd.exe" /libpath:"\proj\imp_all" 
+\proj\temp\gpsd.obj
+\proj\temp\GpsService.obj
+\proj\temp\NTService.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP140.tmp"
+<h3>Output Window</h3>
+Compiling...
+gpsd.cpp
+GpsService.cpp
+NTService.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+gpsd.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: hisd - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP142.tmp" with contents
+[
+/nologo /MT /W3 /GX /Zi /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"\proj\temp/" /Fp"\proj\temp/hisd.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\his\hisd\archive.cpp"
+"C:\proj\pmc\kernel\his\hisd\buffer.cpp"
+"C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp"
+"C:\proj\pmc\kernel\his\hisd\common.cpp"
+"C:\proj\pmc\kernel\his\hisd\main.cpp"
+"C:\proj\pmc\kernel\his\hisd\precomp.cpp"
+"C:\proj\pmc\kernel\his\hisd\query.cpp"
+"C:\proj\pmc\kernel\his\hisd\random.cpp"
+"C:\proj\pmc\kernel\his\hisd\recorder.cpp"
+"C:\proj\pmc\kernel\his\hisd\shell.cpp"
+"C:\proj\pmc\kernel\his\hisd\stream.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP142.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP143.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\proj\target\bin/hisd.pdb" /debug /machine:I386 /out:"\proj\target\bin/hisd.exe" /libpath:"\proj\imp_all" 
+\proj\temp\archive.obj
+\proj\temp\buffer.obj
+\proj\temp\bufferMgr.obj
+\proj\temp\common.obj
+\proj\temp\main.obj
+\proj\temp\precomp.obj
+\proj\temp\query.obj
+\proj\temp\random.obj
+\proj\temp\recorder.obj
+\proj\temp\shell.obj
+\proj\temp\stream.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP143.tmp"
+<h3>Output Window</h3>
+Compiling...
+archive.cpp
+buffer.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(17) : warning C4786: '?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_TAG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(21) : warning C4786: '??0?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N@std@@QAE@XZ' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_TAG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N@std@@QAE@ABViterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@1@AB_N@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_TAG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(25) : warning C4786: '??0?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N@std@@QAE@ABU?$pair@$DCAB@$DCAC@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_TAG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+bufferMgr.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@_N@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@1@AB_N@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(70) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(25) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@_N@std@@QAE@ABU?$pair@$DCAB@$DCAC@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(70) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,bool>' being compiled
+C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(96) : warning C4101: 'u1' : unreferenced local variable
+C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(96) : warning C4101: 'u2' : unreferenced local variable
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@V123@@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@1@0@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(410) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(25) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@V123@@std@@QAE@ABU?$pair@$DCAB@$DCAC@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(410) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator>' being compiled
+common.cpp
+main.cpp
+precomp.cpp
+query.cpp
+random.cpp
+recorder.cpp
+shell.cpp
+stream.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocator@Upmc_value_t@@@2@@std@@V123@@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocator@Upmc_value_t@@@2@@1@0@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\stream.cpp(43) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct pmc_value_t>,struct std::map<__int64,struct pmc_value_t,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::iterator,class std::_Tree<__int64,struct std::pair<__int64 const ,struct pmc_value_t>,struct std::map<__int64,struct pmc_value_t,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::iterator>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocator@Upmc_value_t@@@2@@std@@_N@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocator@Upmc_value_t@@@2@@1@AB_N@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\stream.cpp(224) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct pmc_value_t>,struct std::map<__int64,struct pmc_value_t,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::iterator,bool>' being compiled
+C:\proj\pmc\kernel\his\hisd\stream.cpp(249) : warning C4305: '=' : truncation from 'const double' to 'float'
+Linking...
+
+
+
+<h3>Results</h3>
+hisd.exe - 0 error(s), 13 warning(s)
+<h3>
+--------------------Configuration: hisq - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"\proj\temp/hisq.res" /d "NDEBUG" /d "_AFXDLL" "C:\proj\pmc\kernel\his\hisq\hisq.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP145.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fp"\proj\temp/hisq.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\his\hisq\buffer.cpp"
+"C:\proj\pmc\kernel\his\hisq\ChildView.cpp"
+"C:\proj\pmc\kernel\his\hisq\DlgCount.cpp"
+"C:\proj\pmc\kernel\his\hisq\DlgFmtCurve.cpp"
+"C:\proj\pmc\kernel\his\hisq\DlgFormat.cpp"
+"C:\proj\pmc\kernel\his\hisq\DlgQuery.cpp"
+"C:\proj\pmc\kernel\his\hisq\DlgServerIP.cpp"
+"C:\proj\pmc\kernel\his\hisq\HisList.cpp"
+"C:\proj\pmc\kernel\his\hisq\hisq.cpp"
+"C:\proj\pmc\kernel\his\hisq\MainFrm.cpp"
+"C:\proj\pmc\kernel\his\hisq\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP145.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP146.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"\proj\target\bin/hisq.pdb" /machine:I386 /out:"\proj\target\bin/hisq.exe" /libpath:"\proj\imp_all" 
+\proj\temp\buffer.obj
+\proj\temp\ChildView.obj
+\proj\temp\DlgCount.obj
+\proj\temp\DlgFmtCurve.obj
+\proj\temp\DlgFormat.obj
+\proj\temp\DlgQuery.obj
+\proj\temp\DlgServerIP.obj
+\proj\temp\HisList.obj
+\proj\temp\hisq.obj
+\proj\temp\MainFrm.obj
+\proj\temp\StdAfx.obj
+\proj\temp\hisq.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP146.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+buffer.cpp
+ChildView.cpp
+C:\proj\pmc\kernel\his\hisq\ChildView.cpp(232) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\proj\pmc\kernel\his\hisq\ChildView.cpp(238) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\proj\pmc\kernel\his\hisq\ChildView.cpp(248) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\proj\pmc\kernel\his\hisq\ChildView.cpp(254) : warning C4305: '=' : truncation from 'const double' to 'float'
+DlgCount.cpp
+DlgFmtCurve.cpp
+DlgFormat.cpp
+DlgQuery.cpp
+DlgServerIP.cpp
+HisList.cpp
+hisq.cpp
+MainFrm.cpp
+StdAfx.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+hisq.exe - 0 error(s), 4 warning(s)
+<h3>
+--------------------Configuration: libhisproxy - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP148.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBHISPROXY_EXPORTS" /Fp"\proj\temp/libhisproxy.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\his\libhisproxy\archiveCache.cpp"
+"C:\proj\pmc\kernel\his\libhisproxy\common.cpp"
+"C:\proj\pmc\kernel\his\libhisproxy\hisproxy.cpp"
+"C:\proj\pmc\kernel\his\libhisproxy\precomp.cpp"
+"C:\proj\pmc\kernel\his\libhisproxy\wrappers.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP148.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP149.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libhisproxy.pdb" /machine:I386 /def:".\hisproxy.def" /out:"\proj\target\bin/libhisproxy.dll" /implib:"\proj\target\bin/libhisproxy.lib" /libpath:"\proj\imp_all" 
+\proj\temp\archiveCache.obj
+\proj\temp\common.obj
+\proj\temp\hisproxy.obj
+\proj\temp\precomp.obj
+\proj\temp\wrappers.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP149.tmp"
+<h3>Output Window</h3>
+Compiling...
+archiveCache.cpp
+common.cpp
+hisproxy.cpp
+precomp.cpp
+wrappers.cpp
+Linking...
+   Creating library \proj\target\bin/libhisproxy.lib and object \proj\target\bin/libhisproxy.exp
+
+
+
+<h3>Results</h3>
+libhisproxy.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libconfigman - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14D.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBCONFIGMAN_EXPORTS" /Fp"\proj\temp/libconfigman.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\libconfigman\configman.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libconfigman.pdb" /machine:I386 /def:".\configman.def" /out:"\proj\target\bin/libconfigman.dll" /implib:"\proj\target\bin/libconfigman.lib" /libpath:"\proj\imp_all" 
+\proj\temp\configman.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14E.tmp"
+<h3>Output Window</h3>
+Compiling...
+configman.cpp
+Linking...
+   Creating library \proj\target\bin/libconfigman.lib and object \proj\target\bin/libconfigman.exp
+
+
+
+<h3>Results</h3>
+libconfigman.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libinsmod - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP152.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBINSMOD_EXPORTS" /Fp"\proj\temp/libinsmod.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\libinsmod\loadsys.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP152.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP153.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libinsmod.pdb" /machine:I386 /def:".\insmod.def" /out:"\proj\target\bin/libinsmod.dll" /implib:"\proj\target\bin/libinsmod.lib" /libpath:"\proj\imp_all" 
+\proj\temp\loadsys.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP153.tmp"
+<h3>Output Window</h3>
+Compiling...
+loadsys.cpp
+Linking...
+   Creating library \proj\target\bin/libinsmod.lib and object \proj\target\bin/libinsmod.exp
+
+
+
+<h3>Results</h3>
+libinsmod.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libioss - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP157.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBIOSS_EXPORTS" /Fp"\proj\temp/libioss.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\libioss\dbrefresher.cpp"
+"C:\proj\pmc\kernel\lib\libioss\devices.cpp"
+"C:\proj\pmc\kernel\lib\libioss\drivers.cpp"
+"C:\proj\pmc\kernel\lib\libioss\exception.cpp"
+"C:\proj\pmc\kernel\lib\libioss\ioss.cpp"
+"C:\proj\pmc\kernel\lib\libioss\pnp.cpp"
+"C:\proj\pmc\kernel\lib\libioss\precomp.cpp"
+"C:\proj\pmc\kernel\lib\libioss\tagman.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP157.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP158.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libioss.pdb" /machine:I386 /def:".\libioss.def" /out:"\proj\target\bin/libioss.dll" /implib:"\proj\target\bin/libioss.lib" /libpath:"\proj\imp_all" 
+\proj\temp\dbrefresher.obj
+\proj\temp\devices.obj
+\proj\temp\drivers.obj
+\proj\temp\exception.obj
+\proj\temp\ioss.obj
+\proj\temp\pnp.obj
+\proj\temp\precomp.obj
+\proj\temp\tagman.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP158.tmp"
+<h3>Output Window</h3>
+Compiling...
+dbrefresher.cpp
+devices.cpp
+drivers.cpp
+exception.cpp
+ioss.cpp
+C:\proj\pmc\kernel\lib\libioss\ioss.cpp(67) : warning C4305: '=' : truncation from 'const double' to 'float'
+pnp.cpp
+precomp.cpp
+tagman.cpp
+Linking...
+   Creating library \proj\target\bin/libioss.lib and object \proj\target\bin/libioss.exp
+
+
+
+<h3>Results</h3>
+libioss.dll - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: libntservice - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP15C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBNTSERVICE_EXPORTS" /Fp"\proj\temp/libntservice.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\libntservice\ntservice.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP15C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP15D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libntservice.pdb" /machine:I386 /out:"\proj\target\bin/libntservice.dll" /implib:"\proj\target\bin/libntservice.lib" /libpath:"\proj\imp_all" 
+\proj\temp\NTService.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP15D.tmp"
+<h3>Output Window</h3>
+Compiling...
+ntservice.cpp
+Linking...
+   Creating library \proj\target\bin/libntservice.lib and object \proj\target\bin/libntservice.exp
+
+
+
+<h3>Results</h3>
+libntservice.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libpmckey - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP161.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBPMCKEY_EXPORTS" /Fp"\proj\temp/libpmckey.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\libpmckey\d3des.c"
+"C:\proj\pmc\kernel\lib\libpmckey\hdid.cpp"
+"C:\proj\pmc\kernel\lib\libpmckey\pmc_license.cpp"
+"C:\proj\pmc\kernel\lib\libpmckey\pmckey.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP161.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP162.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libpmckey.pdb" /machine:I386 /def:".\pmckey.def" /out:"\proj\target\bin/libpmckey.dll" /implib:"\proj\target\bin/libpmckey.lib" /libpath:"\proj\imp_all" 
+\proj\temp\d3des.obj
+\proj\temp\hdid.obj
+\proj\temp\pmc_license.obj
+\proj\temp\pmckey.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP162.tmp"
+<h3>Output Window</h3>
+Compiling...
+d3des.c
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(168) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(169) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(170) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(171) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(172) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(173) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(174) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(175) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(407) : warning C4090: 'function' : different 'const' qualifiers
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(407) : warning C4024: 'deskey' : different types for formal and actual parameter 1
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(409) : warning C4090: 'function' : different 'const' qualifiers
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(409) : warning C4024: 'deskey' : different types for formal and actual parameter 1
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(420) : warning C4090: 'function' : different 'const' qualifiers
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(420) : warning C4024: 'scrunch' : different types for formal and actual parameter 1
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(437) : warning C4090: 'function' : different 'const' qualifiers
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(437) : warning C4024: 'scrunch' : different types for formal and actual parameter 1
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(438) : warning C4090: 'function' : different 'const' qualifiers
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(438) : warning C4024: 'scrunch' : different types for formal and actual parameter 1
+hdid.cpp
+pmc_license.cpp
+pmckey.cpp
+Linking...
+   Creating library \proj\target\bin/libpmckey.lib and object \proj\target\bin/libpmckey.exp
+
+
+
+<h3>Results</h3>
+libpmckey.dll - 0 error(s), 18 warning(s)
+<h3>
+--------------------Configuration: libpowermgr - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP166.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBPOWERMGR_EXPORTS" /Fp"\proj\temp/libpowermgr.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\libpowermgr\powermgr.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP166.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP167.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libpowermgr.pdb" /machine:I386 /def:".\powermgr.def" /out:"\proj\target\bin/libpowermgr.dll" /implib:"\proj\target\bin/libpowermgr.lib" /libpath:"\proj\imp_all" 
+\proj\temp\powermgr.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP167.tmp"
+<h3>Output Window</h3>
+Compiling...
+powermgr.cpp
+Linking...
+   Creating library \proj\target\bin/libpowermgr.lib and object \proj\target\bin/libpowermgr.exp
+
+
+
+<h3>Results</h3>
+libpowermgr.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: librtdb - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBRTDB_EXPORTS" /Fp"\proj\temp/librtdb.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\librtdb\arithmetic.cpp"
+"C:\proj\pmc\kernel\lib\librtdb\cursor.cpp"
+"C:\proj\pmc\kernel\lib\librtdb\dbutils.cpp"
+"C:\proj\pmc\kernel\lib\librtdb\events.cpp"
+"C:\proj\pmc\kernel\lib\librtdb\librtdb.cpp"
+"C:\proj\pmc\kernel\lib\librtdb\precomp.cpp"
+"C:\proj\pmc\kernel\lib\librtdb\rtdblock.cpp"
+"C:\proj\pmc\kernel\lib\librtdb\typecast.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/librtdb.pdb" /machine:I386 /def:".\rtdb.def" /out:"\proj\target\bin/librtdb.dll" /implib:"\proj\target\bin/librtdb.lib" /libpath:"\proj\imp_all" 
+\proj\temp\arithmetic.obj
+\proj\temp\Cursor.obj
+\proj\temp\dbutils.obj
+\proj\temp\events.obj
+\proj\temp\librtdb.obj
+\proj\temp\precomp.obj
+\proj\temp\rtdblock.obj
+\proj\temp\typecast.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16C.tmp"
+<h3>Output Window</h3>
+Compiling...
+arithmetic.cpp
+cursor.cpp
+dbutils.cpp
+events.cpp
+librtdb.cpp
+precomp.cpp
+rtdblock.cpp
+typecast.cpp
+Linking...
+   Creating library \proj\target\bin/librtdb.lib and object \proj\target\bin/librtdb.exp
+
+
+
+<h3>Results</h3>
+librtdb.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: librtk - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP170.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBRTK_EXPORTS" /Fp"\proj\temp/librtk.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\librtk\callstk.cpp"
+"C:\proj\pmc\kernel\lib\librtk\compat.cpp"
+"C:\proj\pmc\kernel\lib\librtk\errno.cpp"
+"C:\proj\pmc\kernel\lib\librtk\event.cpp"
+"C:\proj\pmc\kernel\lib\librtk\guid.cpp"
+"C:\proj\pmc\kernel\lib\librtk\librtk.cpp"
+"C:\proj\pmc\kernel\lib\librtk\libs.cpp"
+"C:\proj\pmc\kernel\lib\librtk\lock.cpp"
+"C:\proj\pmc\kernel\lib\librtk\log.cpp"
+"C:\proj\pmc\kernel\lib\librtk\mutex.cpp"
+"C:\proj\pmc\kernel\lib\librtk\object.cpp"
+"C:\proj\pmc\kernel\lib\librtk\precomp.cpp"
+"C:\proj\pmc\kernel\lib\librtk\profile.cpp"
+"C:\proj\pmc\kernel\lib\librtk\rthread.cpp"
+"C:\proj\pmc\kernel\lib\librtk\rwlock.cpp"
+"C:\proj\pmc\kernel\lib\librtk\search.cpp"
+"C:\proj\pmc\kernel\lib\librtk\semaphore.cpp"
+"C:\proj\pmc\kernel\lib\librtk\shrmem.cpp"
+"C:\proj\pmc\kernel\lib\librtk\thread.cpp"
+"C:\proj\pmc\kernel\lib\librtk\threadPool.cpp"
+"C:\proj\pmc\kernel\lib\librtk\treenode.cpp"
+"C:\proj\pmc\kernel\lib\librtk\waitable.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP170.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP171.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/librtk.pdb" /machine:I386 /def:".\rtk.def" /out:"\proj\target\bin/librtk.dll" /implib:"\proj\target\bin/librtk.lib" /libpath:"\proj\imp_all" 
+\proj\temp\callstk.obj
+\proj\temp\compat.obj
+\proj\temp\errno.obj
+\proj\temp\event.obj
+\proj\temp\guid.obj
+\proj\temp\librtk.obj
+\proj\temp\libs.obj
+\proj\temp\lock.obj
+\proj\temp\log.obj
+\proj\temp\mutex.obj
+\proj\temp\object.obj
+\proj\temp\precomp.obj
+\proj\temp\profile.obj
+\proj\temp\rthread.obj
+\proj\temp\rwlock.obj
+\proj\temp\search.obj
+\proj\temp\semaphore.obj
+\proj\temp\shrmem.obj
+\proj\temp\thread.obj
+\proj\temp\threadPool.obj
+\proj\temp\treenode.obj
+\proj\temp\waitable.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP171.tmp"
+<h3>Output Window</h3>
+Compiling...
+callstk.cpp
+compat.cpp
+errno.cpp
+event.cpp
+guid.cpp
+librtk.cpp
+libs.cpp
+lock.cpp
+log.cpp
+mutex.cpp
+object.cpp
+precomp.cpp
+profile.cpp
+rthread.cpp
+rwlock.cpp
+search.cpp
+semaphore.cpp
+shrmem.cpp
+thread.cpp
+threadPool.cpp
+treenode.cpp
+C:\proj\pmc\kernel\lib\librtk\treenode.cpp(253) : warning C4541: 'dynamic_cast' used on polymorphic type 'class CTreeNode' with /GR-; unpredictable behavior may result
+waitable.cpp
+Linking...
+   Creating library \proj\target\bin/librtk.lib and object \proj\target\bin/librtk.exp
+
+
+
+<h3>Results</h3>
+librtk.dll - 0 error(s), 1 warning(s)
+<h3>
+--------------------Configuration: librtkgui - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"\proj\temp/rtkgui.res" /d "NDEBUG" "C:\proj\pmc\kernel\lib\librtkgui\rtkgui.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP175.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBRTKGUI_EXPORTS" /Fp"\proj\temp/librtkgui.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\librtkgui\aboutDlg.cpp"
+"C:\proj\pmc\kernel\lib\librtkgui\dllVersion.cpp"
+"C:\proj\pmc\kernel\lib\librtkgui\hyperLink.cpp"
+"C:\proj\pmc\kernel\lib\librtkgui\msgBox.cpp"
+"C:\proj\pmc\kernel\lib\librtkgui\pmc_about.cpp"
+"C:\proj\pmc\kernel\lib\librtkgui\precomp.cpp"
+"C:\proj\pmc\kernel\lib\librtkgui\rtkgui.cpp"
+"C:\proj\pmc\kernel\lib\librtkgui\showDib.cpp"
+"C:\proj\pmc\kernel\lib\librtkgui\utils.cpp"
+"C:\proj\pmc\kernel\lib\librtkgui\waitDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP175.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP176.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/librtkgui.pdb" /machine:I386 /def:".\rtkgui.def" /out:"\proj\target\bin/librtkgui.dll" /implib:"\proj\target\bin/librtkgui.lib" /libpath:"\proj\imp_all" 
+\proj\temp\aboutDlg.obj
+\proj\temp\dllVersion.obj
+\proj\temp\hyperLink.obj
+\proj\temp\msgBox.obj
+\proj\temp\pmc_about.obj
+\proj\temp\precomp.obj
+\proj\temp\rtkgui.obj
+\proj\temp\showDib.obj
+\proj\temp\utils.obj
+\proj\temp\waitDlg.obj
+\proj\temp\rtkgui.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP176.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+aboutDlg.cpp
+dllVersion.cpp
+hyperLink.cpp
+msgBox.cpp
+pmc_about.cpp
+precomp.cpp
+rtkgui.cpp
+showDib.cpp
+utils.cpp
+waitDlg.cpp
+Linking...
+   Creating library \proj\target\bin/librtkgui.lib and object \proj\target\bin/librtkgui.exp
+
+
+
+<h3>Results</h3>
+librtkgui.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: librtknet - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP17A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBRTKNET_EXPORTS" /Fp"\proj\temp/librtknet.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\librtknet\debug.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\intrfc.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\libs.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\mcudp.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\packman.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\precomp.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\rtknet.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\rtksocket.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\transaction.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\vbus.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP17A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP17B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/librtknet.pdb" /machine:I386 /def:".\rtknet.def" /out:"\proj\target\bin/librtknet.dll" /implib:"\proj\target\bin/librtknet.lib" /libpath:"\proj\imp_all" 
+\proj\temp\debug.obj
+\proj\temp\intrfc.obj
+\proj\temp\libs.obj
+\proj\temp\mcudp.obj
+\proj\temp\packman.obj
+\proj\temp\precomp.obj
+\proj\temp\rtknet.obj
+\proj\temp\rtksocket.obj
+\proj\temp\transaction.obj
+\proj\temp\vbus.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP17B.tmp"
+<h3>Output Window</h3>
+Compiling...
+debug.cpp
+intrfc.cpp
+libs.cpp
+mcudp.cpp
+packman.cpp
+precomp.cpp
+rtknet.cpp
+rtksocket.cpp
+transaction.cpp
+vbus.cpp
+Linking...
+   Creating library \proj\target\bin/librtknet.lib and object \proj\target\bin/librtknet.exp
+
+
+
+<h3>Results</h3>
+librtknet.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: librtkproxy - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP17F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBRTKPROXY_EXPORTS" /Fp"\proj\temp/librtkproxy.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\librtkproxy\add_edit_groups.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\add_edit_tags.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\busprocs.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\devices.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\discover.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\dispatch.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\drop_groups.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\drop_tags.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\ftp.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\precomp.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\read_tags.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\reload_tags.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\rtkproxy.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\worker.cpp"
+"C:\proj\pmc\kernel\lib\librtkproxy\write_tags.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP17F.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP180.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/librtkproxy.pdb" /machine:I386 /def:".\rtkproxy.def" /out:"\proj\target\bin/librtkproxy.dll" /implib:"\proj\target\bin/librtkproxy.lib" /libpath:"\proj\imp_all" 
+\proj\temp\add_edit_groups.obj
+\proj\temp\add_edit_tags.obj
+\proj\temp\busprocs.obj
+\proj\temp\devices.obj
+\proj\temp\discover.obj
+\proj\temp\dispatch.obj
+\proj\temp\drop_groups.obj
+\proj\temp\drop_tags.obj
+\proj\temp\ftp.obj
+\proj\temp\precomp.obj
+\proj\temp\read_tags.obj
+\proj\temp\reload_tags.obj
+\proj\temp\rtkproxy.obj
+\proj\temp\worker.obj
+\proj\temp\write_tags.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP180.tmp"
+<h3>Output Window</h3>
+Compiling...
+add_edit_groups.cpp
+add_edit_tags.cpp
+busprocs.cpp
+devices.cpp
+discover.cpp
+dispatch.cpp
+drop_groups.cpp
+drop_tags.cpp
+ftp.cpp
+precomp.cpp
+read_tags.cpp
+reload_tags.cpp
+rtkproxy.cpp
+worker.cpp
+write_tags.cpp
+Linking...
+   Creating library \proj\target\bin/librtkproxy.lib and object \proj\target\bin/librtkproxy.exp
+
+
+
+<h3>Results</h3>
+librtkproxy.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: librtkshell - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP184.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBRTKSHELL_EXPORTS" /Fp"\proj\temp/librtkshell.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\librtkshell\rtk_shell.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP184.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP185.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/librtkshell.pdb" /machine:I386 /def:".\rtkshell.def" /out:"\proj\target\bin/librtkshell.dll" /implib:"\proj\target\bin/librtkshell.lib" /libpath:"\proj\imp_all" 
+\proj\temp\rtk_shell.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP185.tmp"
+<h3>Output Window</h3>
+Compiling...
+rtk_shell.cpp
+Linking...
+   Creating library \proj\target\bin/librtkshell.lib and object \proj\target\bin/librtkshell.exp
+
+
+
+<h3>Results</h3>
+librtkshell.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libutils - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP189.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBUTILS_EXPORTS" /Fp"\proj\temp/libutils.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\libutils\appname.c"
+"C:\proj\pmc\kernel\lib\libutils\array.c"
+"C:\proj\pmc\kernel\lib\libutils\cargsex.cpp"
+"C:\proj\pmc\kernel\lib\libutils\cargsexW.cpp"
+"C:\proj\pmc\kernel\lib\libutils\crc.c"
+"C:\proj\pmc\kernel\lib\libutils\dbgtrace.c"
+"C:\proj\pmc\kernel\lib\libutils\delete_registry_key.cpp"
+"C:\proj\pmc\kernel\lib\libutils\dllmain.c"
+"C:\proj\pmc\kernel\lib\libutils\exception.c"
+"C:\proj\pmc\kernel\lib\libutils\files.c"
+"C:\proj\pmc\kernel\lib\libutils\filesW.c"
+"C:\proj\pmc\kernel\lib\libutils\nt.c"
+"C:\proj\pmc\kernel\lib\libutils\pattern.c"
+"C:\proj\pmc\kernel\lib\libutils\patternW.c"
+"C:\proj\pmc\kernel\lib\libutils\precomp.c"
+"C:\proj\pmc\kernel\lib\libutils\procdump.c"
+"C:\proj\pmc\kernel\lib\libutils\registry.c"
+"C:\proj\pmc\kernel\lib\libutils\runonce.c"
+"C:\proj\pmc\kernel\lib\libutils\strutils.c"
+"C:\proj\pmc\kernel\lib\libutils\sys_ini.c"
+"C:\proj\pmc\kernel\lib\libutils\util_arg.c"
+"C:\proj\pmc\kernel\lib\libutils\util_argW.c"
+"C:\proj\pmc\kernel\lib\libutils\utils.c"
+"C:\proj\pmc\kernel\lib\libutils\win98.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP189.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP18A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libutils.pdb" /machine:I386 /def:".\utils.def" /out:"\proj\target\bin/libutils.dll" /implib:"\proj\target\bin/libutils.lib" /libpath:"\proj\imp_all" 
+\proj\temp\appname.obj
+\proj\temp\array.obj
+\proj\temp\cargsex.obj
+\proj\temp\cargsexW.obj
+\proj\temp\crc.obj
+\proj\temp\dbgtrace.obj
+\proj\temp\delete_registry_key.obj
+\proj\temp\dllmain.obj
+\proj\temp\exception.obj
+\proj\temp\files.obj
+\proj\temp\filesW.obj
+\proj\temp\nt.obj
+\proj\temp\pattern.obj
+\proj\temp\patternW.obj
+\proj\temp\precomp.obj
+\proj\temp\procdump.obj
+\proj\temp\registry.obj
+\proj\temp\runonce.obj
+\proj\temp\strutils.obj
+\proj\temp\sys_ini.obj
+\proj\temp\util_arg.obj
+\proj\temp\util_argW.obj
+\proj\temp\utils.obj
+\proj\temp\win98.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP18A.tmp"
+<h3>Output Window</h3>
+Compiling...
+appname.c
+array.c
+cargsex.cpp
+cargsexW.cpp
+crc.c
+dbgtrace.c
+delete_registry_key.cpp
+dllmain.c
+exception.c
+files.c
+filesW.c
+nt.c
+pattern.c
+patternW.c
+precomp.c
+procdump.c
+registry.c
+runonce.c
+strutils.c
+sys_ini.c
+util_arg.c
+util_argW.c
+utils.c
+win98.c
+Linking...
+   Creating library \proj\target\bin/libutils.lib and object \proj\target\bin/libutils.exp
+
+
+
+<h3>Results</h3>
+libutils.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libvbus - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP18E.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBVBUS_EXPORTS" /Fp"\proj\temp/libvbus.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\libvbus\debug.cpp"
+"C:\proj\pmc\kernel\lib\libvbus\intrfc.cpp"
+"C:\proj\pmc\kernel\lib\libvbus\mcudp.cpp"
+"C:\proj\pmc\kernel\lib\libvbus\packman.cpp"
+"C:\proj\pmc\kernel\lib\libvbus\precomp.cpp"
+"C:\proj\pmc\kernel\lib\libvbus\rtknet.cpp"
+"C:\proj\pmc\kernel\lib\libvbus\rtksocket.cpp"
+"C:\proj\pmc\kernel\lib\libvbus\transaction.cpp"
+"C:\proj\pmc\kernel\lib\libvbus\vbus.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP18E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP18F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libvbus.pdb" /machine:I386 /def:".\vbus.def" /out:"\proj\target\bin/libvbus.dll" /implib:"\proj\target\bin/libvbus.lib" /libpath:"\proj\imp_all" 
+\proj\temp\debug.obj
+\proj\temp\intrfc.obj
+\proj\temp\mcudp.obj
+\proj\temp\packman.obj
+\proj\temp\precomp.obj
+\proj\temp\rtknet.obj
+\proj\temp\rtksocket.obj
+\proj\temp\transaction.obj
+\proj\temp\vbus.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP18F.tmp"
+<h3>Output Window</h3>
+Compiling...
+debug.cpp
+intrfc.cpp
+mcudp.cpp
+packman.cpp
+precomp.cpp
+rtknet.cpp
+rtksocket.cpp
+transaction.cpp
+vbus.cpp
+Linking...
+   Creating library \proj\target\bin/libvbus.lib and object \proj\target\bin/libvbus.exp
+
+
+
+<h3>Results</h3>
+libvbus.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libzlib_shared - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP193.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBZLIB_SHARED_EXPORTS" /Fp"\proj\temp/libzlib_shared.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\libzlib_shared\adler32.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\compress.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\crc32.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\deflate.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\gzio.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\infback.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\inffast.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\inflate.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\inftrees.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\minigzip.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\trees.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\uncompr.c"
+"C:\proj\pmc\kernel\lib\libzlib_shared\zutil.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP193.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP194.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libzlib_shared.pdb" /machine:I386 /def:".\zlib.def" /out:"\proj\target\bin/libzlib_shared.dll" /implib:"\proj\target\bin/libzlib_shared.lib" 
+\proj\temp\adler32.obj
+\proj\temp\compress.obj
+\proj\temp\crc32.obj
+\proj\temp\deflate.obj
+\proj\temp\gzio.obj
+\proj\temp\infback.obj
+\proj\temp\inffast.obj
+\proj\temp\inflate.obj
+\proj\temp\inftrees.obj
+\proj\temp\minigzip.obj
+\proj\temp\trees.obj
+\proj\temp\uncompr.obj
+\proj\temp\zutil.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP194.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infback.c
+inffast.c
+inflate.c
+inftrees.c
+minigzip.c
+trees.c
+uncompr.c
+zutil.c
+Linking...
+   Creating library \proj\target\bin/libzlib_shared.lib and object \proj\target\bin/libzlib_shared.exp
+
+
+
+<h3>Results</h3>
+libzlib_shared.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: netd - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP198.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\proj\temp/netd.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\netd\netd.cpp"
+"C:\proj\pmc\kernel\netd\netService.cpp"
+"C:\proj\pmc\kernel\netd\NTService.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP198.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP199.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\proj\target\bin/netd.pdb" /machine:I386 /out:"\proj\target\bin/netd.exe" /libpath:"\proj\imp_all" 
+\proj\temp\netd.obj
+\proj\temp\netService.obj
+\proj\temp\NTService.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP199.tmp"
+<h3>Output Window</h3>
+Compiling...
+netd.cpp
+netService.cpp
+NTService.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+netd.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: pmcd - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\proj\temp/pmcd.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\pmcd\alarm.cpp"
+"C:\proj\pmc\kernel\pmcd\backup.cpp"
+"C:\proj\pmc\kernel\pmcd\busprocs.cpp"
+"C:\proj\pmc\kernel\pmcd\config.cpp"
+"C:\proj\pmc\kernel\pmcd\debug.cpp"
+"C:\proj\pmc\kernel\pmcd\log.cpp"
+"C:\proj\pmc\kernel\pmcd\operation.cpp"
+"C:\proj\pmc\kernel\pmcd\pmcd.cpp"
+"C:\proj\pmc\kernel\pmcd\precomp.cpp"
+"C:\proj\pmc\kernel\pmcd\profile.cpp"
+"C:\proj\pmc\kernel\pmcd\rtdata.cpp"
+"C:\proj\pmc\kernel\pmcd\rtkserver.cpp"
+"C:\proj\pmc\kernel\pmcd\shell_procs.cpp"
+"C:\proj\pmc\kernel\pmcd\start_exit.cpp"
+"C:\proj\pmc\kernel\pmcd\system.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19C.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\proj\target\bin/pmcd.pdb" /machine:I386 /out:"\proj\target\bin/pmcd.exe" /libpath:"\proj\imp_all" 
+\proj\temp\alarm.obj
+\proj\temp\backup.obj
+\proj\temp\busprocs.obj
+\proj\temp\config.obj
+\proj\temp\debug.obj
+\proj\temp\log.obj
+\proj\temp\operation.obj
+\proj\temp\pmcd.obj
+\proj\temp\precomp.obj
+\proj\temp\profile.obj
+\proj\temp\rtdata.obj
+\proj\temp\rtkserver.obj
+\proj\temp\shell_procs.obj
+\proj\temp\start_exit.obj
+\proj\temp\system.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19C.tmp"
+<h3>Output Window</h3>
+Compiling...
+alarm.cpp
+backup.cpp
+busprocs.cpp
+config.cpp
+debug.cpp
+log.cpp
+operation.cpp
+pmcd.cpp
+precomp.cpp
+profile.cpp
+rtdata.cpp
+rtkserver.cpp
+shell_procs.cpp
+start_exit.cpp
+system.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+pmcd.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: libspac - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19E.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBSPAC_EXPORTS" /Fp"\proj\temp/libspac.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\spac\libspac\libspac.cpp"
+"C:\proj\pmc\kernel\spac\libspac\precomp.cpp"
+"C:\proj\pmc\kernel\spac\libspac\spacshm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libspac.pdb" /machine:I386 /def:".\spac.def" /out:"\proj\target\bin/libspac.dll" /implib:"\proj\target\bin/libspac.lib" /libpath:"\proj\imp_all" 
+\proj\temp\libspac.obj
+\proj\temp\precomp.obj
+\proj\temp\spacshm.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19F.tmp"
+<h3>Output Window</h3>
+Compiling...
+libspac.cpp
+precomp.cpp
+spacshm.cpp
+Linking...
+   Creating library \proj\target\bin/libspac.lib and object \proj\target\bin/libspac.exp
+
+
+
+<h3>Results</h3>
+libspac.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: spacd - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A3.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"\proj\temp/spacd.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\spac\spacd\comm.cpp"
+"C:\proj\pmc\kernel\spac\spacd\fh.cpp"
+"C:\proj\pmc\kernel\spac\spacd\spacd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A3.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\proj\target\bin/spacd.pdb" /machine:I386 /out:"\proj\target\bin/spacd.exe" /libpath:"\proj\imp_all" 
+\proj\temp\comm.obj
+\proj\temp\fh.obj
+\proj\temp\spacd.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A4.tmp"
+<h3>Output Window</h3>
+Compiling...
+comm.cpp
+fh.cpp
+spacd.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+spacd.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libutils - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1D.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBUTILS_EXPORTS" /Fp"\proj\temp/libutils.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\3.5\kernel\lib\libutils\win98.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\appname.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\array.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\cargsex.cpp"
+"C:\proj\pmc\3.5\kernel\lib\libutils\cargsexW.cpp"
+"C:\proj\pmc\3.5\kernel\lib\libutils\crc.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\dbgtrace.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\delete_registry_key.cpp"
+"C:\proj\pmc\3.5\kernel\lib\libutils\dllmain.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\exception.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\files.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\filesW.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\nt.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\pattern.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\patternW.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\precomp.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\procdump.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\registry.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\runonce.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\strutils.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\sys_ini.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\util_arg.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\util_argW.c"
+"C:\proj\pmc\3.5\kernel\lib\libutils\utils.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libutils.pdb" /machine:I386 /def:".\utils.def" /out:"\proj\target\bin/libutils.dll" /implib:"\proj\target\bin/libutils.lib" /libpath:"\proj\imp_all" 
+\proj\temp\win98.obj
+\proj\temp\appname.obj
+\proj\temp\array.obj
+\proj\temp\cargsex.obj
+\proj\temp\cargsexW.obj
+\proj\temp\crc.obj
+\proj\temp\dbgtrace.obj
+\proj\temp\delete_registry_key.obj
+\proj\temp\dllmain.obj
+\proj\temp\exception.obj
+\proj\temp\files.obj
+\proj\temp\filesW.obj
+\proj\temp\nt.obj
+\proj\temp\pattern.obj
+\proj\temp\patternW.obj
+\proj\temp\precomp.obj
+\proj\temp\procdump.obj
+\proj\temp\registry.obj
+\proj\temp\runonce.obj
+\proj\temp\strutils.obj
+\proj\temp\sys_ini.obj
+\proj\temp\util_arg.obj
+\proj\temp\util_argW.obj
+\proj\temp\utils.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1E.tmp"
+<h3>Output Window</h3>
+Compiling...
+win98.c
+appname.c
+array.c
+cargsex.cpp
+cargsexW.cpp
+crc.c
+dbgtrace.c
+delete_registry_key.cpp
+dllmain.c
+exception.c
+files.c
+filesW.c
+nt.c
+pattern.c
+patternW.c
+precomp.c
+procdump.c
+registry.c
+runonce.c
+strutils.c
+sys_ini.c
+util_arg.c
+util_argW.c
+utils.c
+Linking...
+   Creating library \proj\target\bin/libutils.lib and object \proj\target\bin/libutils.exp
+
+
+
+<h3>Results</h3>
+libutils.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

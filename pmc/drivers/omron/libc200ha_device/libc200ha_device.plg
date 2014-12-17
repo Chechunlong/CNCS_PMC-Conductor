@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libc200ha_device - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBC200HA_DEVICE_EXPORTS" /Fp"\proj\temp/libc200ha_device.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\3.5\drivers\omron\libc200ha_device\device.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libc200ha_device.pdb" /machine:I386 /out:"\proj\target\bin/libc200ha_device.dll" /implib:"\proj\target\bin/libc200ha_device.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPB.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libc200ha_device.lib and object \proj\target\bin/libc200ha_device.exp
+
+
+
+<h3>Results</h3>
+libc200ha_device.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

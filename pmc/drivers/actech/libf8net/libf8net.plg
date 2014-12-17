@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libf8net - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3D5.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBF8NET_EXPORTS" /Fp"\proj\temp/libf8net.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\3.5\drivers\actech\libf8net\device.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3D5.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3D6.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libf8net.pdb" /machine:I386 /out:"\proj\target\bin/libf8net.dll" /implib:"\proj\target\bin/libf8net.lib" /libpath:"\proj\imp_all" 
+\proj\temp\device.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3D6.tmp"
+<h3>Output Window</h3>
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libf8net.lib and object \proj\target\bin/libf8net.exp
+
+
+
+<h3>Results</h3>
+libf8net.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

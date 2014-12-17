@@ -1,0 +1,29 @@
+// libpmcobj.idl : libpmcobj 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库 (libpmcobj.tlb) 和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+import "pmcdb_idl.idl";
+
+[
+	uuid(7500bccd-43d9-4f4e-8e2d-98d69b0f0bac),
+	version(1.0),
+	helpstring("libpmcdb 1.0 类型库")
+]
+library libpmcdb
+{
+	importlib("stdole2.tlb");
+	
+	[
+		uuid(2D73E244-9861-40E2-93FB-DF02068FD9A0),
+		helpstring("PmcDB Class"),
+		noncreatable
+	]
+	coclass PmcDB{
+		[default] interface IPmcDB;
+		[default, source] dispinterface IPmcDBEvents;
+	};
+};

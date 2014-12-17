@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+<TITLE>A First-Come First Served Readers/Writers Lock for POSIX Threads</TITLE>
+<LINK REV="made" HREF="mailto:pixel@no.mandrakesoft.com">
+</HEAD>
+
+<BODY>
+
+<A NAME="__index__"></A>
+<!-- INDEX BEGIN -->
+<!--
+
+<UL>
+
+	<LI><A HREF="#name">
+<FONT SIZE=-1>NAME</FONT></A></LI>
+	<LI><A HREF="#synopsis">
+<FONT SIZE=-1>SYNOPSIS</FONT></A></LI>
+	<LI><A HREF="#description">
+<FONT SIZE=-1>DESCRIPTION</FONT></A></LI>
+	<LI><A HREF="#asyncsignal safety">
+<FONT SIZE=-1>ASYNC-SIGNAL</FONT> 
+<FONT SIZE=-1>SAFETY</FONT></A></LI>
+	<LI><A HREF="#return value">
+<FONT SIZE=-1>RETURN</FONT> 
+<FONT SIZE=-1>VALUE</FONT></A></LI>
+	<LI><A HREF="#author">
+<FONT SIZE=-1>AUTHOR</FONT></A></LI>
+	<LI><A HREF="#example">
+<FONT SIZE=-1>EXAMPLE</FONT></A></LI>
+</UL>
+-->
+<!-- INDEX END -->
+
+<P>
+<HR>
+<H1><A NAME="name">
+<FONT SIZE=-1>NAME</FONT></A></H1>
+<P>pthread_rwlock_fcfs_alloc, 
+pthread_rwlock_fcfs_gain_read, pthread_rwlock_gain_write, 
+pthread_rwlock_fcfs_timed_gain_read, pthread_rwlock_fcfs_timed_gain_write,
+pthread_rwlock_fcfs_try_gain_read, pthread_rwlock_fcfs_try_gain_write,
+pthread_rwlock_fcfs_release,
+pthread_rwlock_fcfs_destroy - operations on a first-come first-served 
+readers/writers lock.</P>
+<P>
+<HR>
+<H1><A NAME="synopsis">
+<FONT SIZE=-1>SYNOPSIS</FONT></A></H1>
+<P><STRONG>#include &lt;pthread/rwlock_fcfs.h&gt;</STRONG></P>
+<P><STRONG>pthread_rwlock_fcfs_t</STRONG> * <EM>rwlock</EM> = <STRONG>pthread_rwlock_fcfs_alloc</STRONG>();</P>
+<P><STRONG>void</STRONG> <STRONG>pthread_rwlock_fcfs_gain_read</STRONG>(<STRONG>pthread_rwlock_fcfs_t</STRONG> * <EM>rwlock</EM>);</P>
+<P><STRONG>void</STRONG> <STRONG>pthread_rwlock_fcfs_gain_write</STRONG>(<STRONG>pthread_rwlock_fcfs_t</STRONG> * <EM>rwlock</EM>);</P>
+<P><STRONG>void</STRONG> <STRONG>pthread_rwlock_fcfs_try_gain_read</STRONG>(<STRONG>pthread_rwlock_fcfs_t</STRONG> * <EM>rwlock</EM>);</P>
+<P><STRONG>void</STRONG> <STRONG>pthread_rwlock_fcfs_try_gain_write</STRONG>(<STRONG>pthread_rwlock_fcfs_t</STRONG> * <EM>rwlock</EM>);</P>
+<P><STRONG>int</STRONG> <STRONG>pthread_rwlock_fcfs_timed_gain_read</STRONG>(<STRONG>pthread_rwlock_fcfs_t</STRONG> * <EM>rwlock</EM>, <STRONG>const struct timespec</STRONG> * <EM>abstime</EM>, <STRONG>int</STRONG> (*<EM>continue_callback</EM>)(<STRONG>void</STRONG> * context), <STRONG>void</STRONG> * <EM>context</EM>);</P>
+<P><STRONG>int</STRONG> <STRONG>pthread_rwlock_fcfs_timed_gain_write</STRONG>(<STRONG>pthread_rwlock_fcfs_t</STRONG> * <EM>rwlock</EM>, <STRONG>const struct timespec</STRONG> * <EM>abstime</EM>, <STRONG>int</STRONG> (*<EM>continue_callback</EM>)(<STRONG>void</STRONG> * context), <STRONG>void</STRONG> * <EM>context</EM>);</P>
+<P><STRONG>void</STRONG> <STRONG>pthread_rwlock_fcfs_release</STRONG>(<STRONG>pthread_rwlock_fcfs_t</STRONG> * <EM>rwlock</EM>);</P>
+<P><STRONG>void</STRONG> <STRONG>pthread_rwlock_fcfs_destroy</STRONG>(<STRONG>pthread_rwlock_fcfs_t</STRONG> * <EM>rwlock</EM>);</P>
+<P>
+<HR>
+<H1><A NAME="description">
+<FONT SIZE=-1>DESCRIPTION</FONT></A></H1>
+<P>
+<FONT SIZE=-1>A</FONT> Readers/Writers Lock (or ``rwlock'' for short) is a mechanism that allows an 
+arbitrary number of readers, or alternatively one and only one writer to 
+access a resource at a given time. 
+<FONT SIZE=-1>A</FONT> First-Come First-Served RWLock makes sure
+every pending thread will get its turn eventually.</P>
+<P>To create a new rwlock call <STRONG>pthread_rwlock_fcfs_alloc</STRONG>(). From then on, more
+than one thread can use the lock simultaneously.</P>
+<P><STRONG>pthread_rwlock_fcfs_gain_read</STRONG> and <STRONG>pthread_rwlock_fcfs_gain_write</STRONG> can be
+used to gain read or write access for <EM>rwlock</EM>. They block indefinitely until
+the access is granted.</P>
+<P><STRONG>pthread_rwlock_fcfs_try_gain_read</STRONG> and <STRONG>pthread_rwlock_fcfs_try_gain_write</STRONG>
+attempt to gain a read or write permission and if they do not succeed they 
+exit immediately. They return 0 upon success and non-zero otherwise.</P>
+<P><STRONG>pthread_rwlock_fcfs_timed_gain_read</STRONG> and <STRONG>pthread_rwlock_fcfs_timed_gain_write</STRONG> 
+attempt to gain a permission while initially waiting until <EM>abstime</EM>. If by 
+that time access is not granted, then <EM>continue_callback</EM> will be called to 
+find out if the functions should continue waiting.</P>
+<P><EM>continue_callback</EM> is responsible for setting a new value for <EM>abstime</EM> and
+should return 1 if it wishes to continue wait for a permission or 0 otherwise. 
+<EM>callback_context</EM> is the argument which it receives as an argument.</P>
+<P>If <EM>continue_callback</EM> is set to 
+<FONT SIZE=-1>NULL,</FONT> then it will be ignored, and the 
+function will terminate once the initial wait is over.</P>
+<P><STRONG>pthread_rwlock_fcfs_timed_gain_read</STRONG> and <STRONG>pthread_rwlock_fcfs_timed_gain_write</STRONG> 
+return 0 upon success and 1 if they failed to gain a read or write permission.</P>
+<P><STRONG>pthread_rwlock_fcfs_release</STRONG> releases a previously granted 
+read or write permission.</P>
+<P><STRONG>pthread_rwlock_fcfs_destroy</STRONG> can be used to destroy a previously allocated
+<EM>rwlock</EM>.</P>
+<P>
+<HR>
+<H1><A NAME="asyncsignal safety">
+<FONT SIZE=-1>ASYNC-SIGNAL</FONT> 
+<FONT SIZE=-1>SAFETY</FONT></A></H1>
+<P>These RWLock functions are not async-signal safe, and should not be called
+from a signal handler.</P>
+<P>
+<HR>
+<H1><A NAME="return value">
+<FONT SIZE=-1>RETURN</FONT> 
+<FONT SIZE=-1>VALUE</FONT></A></H1>
+<P>All condition variable functions return 0 on success and a non-zero error
+code on error.</P>
+<P>
+<HR>
+<H1><A NAME="author">
+<FONT SIZE=-1>AUTHOR</FONT></A></H1>
+<P>Shlomi Fish &lt;<A HREF="mailto:shlomif@vipe.technion.ac.il">shlomif@vipe.technion.ac.il</A>&gt;.</P>
+<P>
+<HR>
+<H1><A NAME="example">
+<FONT SIZE=-1>EXAMPLE</FONT></A></H1>
+<P>See the <EM>test_rwlock.c</EM> file inside the pthreads' 
+<FONT SIZE=-1>FCFS</FONT> RWLock distribution.</P>
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libspac - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP203.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBSPAC_EXPORTS" /Fp"\proj\temp/libspac.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\PROJ\PMC\3.5\KERNEL\SPAC\libspac\libspac.cpp"
+"C:\PROJ\PMC\3.5\KERNEL\SPAC\libspac\precomp.cpp"
+"C:\PROJ\PMC\3.5\KERNEL\SPAC\libspac\spacshm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP203.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP204.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libspac.pdb" /machine:I386 /def:".\spac.def" /out:"\proj\target\bin/libspac.dll" /implib:"\proj\target\bin/libspac.lib" /libpath:"\proj\imp_all" 
+\proj\temp\libspac.obj
+\proj\temp\precomp.obj
+\proj\temp\spacshm.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP204.tmp"
+<h3>Output Window</h3>
+Compiling...
+libspac.cpp
+precomp.cpp
+spacshm.cpp
+Linking...
+   Creating library \proj\target\bin/libspac.lib and object \proj\target\bin/libspac.exp
+
+
+
+<h3>Results</h3>
+libspac.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

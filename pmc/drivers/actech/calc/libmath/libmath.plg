@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libmath - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBMATH_EXPORTS" /D "_WINDLL" /D "_AFXDLL" /Fp"\proj\temp/libmath.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\drivers\actech\calc\libmath\expression.cpp"
+"C:\proj\pmc\drivers\actech\calc\libmath\value.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A6.tmp" 
+Creating command line "link.exe /nologo /dll /incremental:no /pdb:"\proj\target\bin/libmath.pdb" /machine:I386 /out:"\proj\target\bin/libmath.dll" /implib:"\proj\target\bin/libmath.lib" /libpath:"\proj\imp_all"  \proj\temp\expression.obj \proj\temp\value.obj "
+<h3>Output Window</h3>
+Compiling...
+expression.cpp
+value.cpp
+Linking...
+   Creating library \proj\target\bin/libmath.lib and object \proj\target\bin/libmath.exp
+
+
+
+<h3>Results</h3>
+libmath.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

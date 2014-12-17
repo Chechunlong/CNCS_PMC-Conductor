@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libntservice - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBNTSERVICE_EXPORTS" /Fp"\proj\temp/libntservice.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\3.5\kernel\lib\libntservice\ntservice.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libntservice.pdb" /machine:I386 /out:"\proj\target\bin/libntservice.dll" /implib:"\proj\target\bin/libntservice.lib" /libpath:"\proj\imp_all" 
+\proj\temp\ntservice.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2B.tmp"
+<h3>Output Window</h3>
+Compiling...
+ntservice.cpp
+Linking...
+   Creating library \proj\target\bin/libntservice.lib and object \proj\target\bin/libntservice.exp
+
+
+
+<h3>Results</h3>
+libntservice.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

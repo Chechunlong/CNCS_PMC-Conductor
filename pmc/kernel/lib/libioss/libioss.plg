@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libioss - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBIOSS_EXPORTS" /Fp"\proj\temp/libioss.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\libioss\dbrefresher.cpp"
+"C:\proj\pmc\kernel\lib\libioss\devices.cpp"
+"C:\proj\pmc\kernel\lib\libioss\drivers.cpp"
+"C:\proj\pmc\kernel\lib\libioss\exception.cpp"
+"C:\proj\pmc\kernel\lib\libioss\ioss.cpp"
+"C:\proj\pmc\kernel\lib\libioss\pnp.cpp"
+"C:\proj\pmc\kernel\lib\libioss\precomp.cpp"
+"C:\proj\pmc\kernel\lib\libioss\tagman.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP11.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libioss.pdb" /machine:I386 /def:".\libioss.def" /out:"\proj\target\bin/libioss.dll" /implib:"\proj\target\bin/libioss.lib" /libpath:"\proj\imp_all" 
+\proj\temp\dbrefresher.obj
+\proj\temp\devices.obj
+\proj\temp\drivers.obj
+\proj\temp\exception.obj
+\proj\temp\ioss.obj
+\proj\temp\pnp.obj
+\proj\temp\precomp.obj
+\proj\temp\tagman.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP12.tmp"
+<h3>Output Window</h3>
+Compiling...
+dbrefresher.cpp
+devices.cpp
+drivers.cpp
+exception.cpp
+ioss.cpp
+C:\proj\pmc\kernel\lib\libioss\ioss.cpp(67) : warning C4305: '=' : truncation from 'const double' to 'float'
+pnp.cpp
+precomp.cpp
+tagman.cpp
+Linking...
+   Creating library \proj\target\bin/libioss.lib and object \proj\target\bin/libioss.exp
+
+
+
+<h3>Results</h3>
+libioss.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

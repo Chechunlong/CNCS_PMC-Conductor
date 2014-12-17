@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SetAdj - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "_AFXDLL" /FR"\chenjun\debug/" /Fp"\chenjun\debug/SetAdj.pch" /Yu"stdafx.h" /Fo"\chenjun\debug/" /Fd"\chenjun\debug/" /FD /GZ /c 
+"E:\chenjun\pCms\gpsd\SetAdj\SetAdj.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP22.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP23.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /D "_AFXDLL" /FR"\chenjun\debug/" /Fp"\chenjun\debug/SetAdj.pch" /Yc"stdafx.h" /Fo"\chenjun\debug/" /Fd"\chenjun\debug/" /FD /GZ /c 
+"E:\chenjun\pCms\gpsd\SetAdj\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP23.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP24.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib /nologo /subsystem:console /incremental:yes /pdb:"\sdk\bin/SetAdj.pdb" /debug /machine:I386 /out:"\sdk\bin/SetAdj.exe" /pdbtype:sept 
+\chenjun\debug\SetAdj.obj
+\chenjun\debug\StdAfx.obj
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP24.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+SetAdj.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"\sdk\bin/SetAdj.bsc"  \chenjun\debug\StdAfx.sbr \chenjun\debug\SetAdj.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SetAdj.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

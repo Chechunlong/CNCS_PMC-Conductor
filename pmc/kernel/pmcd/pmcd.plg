@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: pmcd - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP52.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:no /pdb:"\proj\target\bin/pmcd.pdb" /machine:I386 /out:"\proj\target\bin/pmcd.exe" /libpath:"\proj\imp_all" 
+\proj\temp\alarm.obj
+\proj\temp\backup.obj
+\proj\temp\busprocs.obj
+\proj\temp\config.obj
+\proj\temp\debug.obj
+\proj\temp\log.obj
+\proj\temp\operation.obj
+\proj\temp\pmcd.obj
+\proj\temp\precomp.obj
+\proj\temp\profile.obj
+\proj\temp\rtdata.obj
+\proj\temp\rtkserver.obj
+\proj\temp\shell_procs.obj
+\proj\temp\start_exit.obj
+\proj\temp\system.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP52.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /INCREMENTAL:NO specification
+   Creating library \proj\target\bin/pmcd.lib and object \proj\target\bin/pmcd.exp
+LINK : warning LNK4098: defaultlib "LIBCMT" conflicts with use of other libs; use /NODEFAULTLIB:library
+config.obj : error LNK2001: unresolved external symbol _ITreeNode_traverse
+config.obj : error LNK2001: unresolved external symbol __imp__delete_blk
+config.obj : error LNK2001: unresolved external symbol __imp__ICBlk_add_blk
+config.obj : error LNK2001: unresolved external symbol __imp__IBlk_from_stream
+config.obj : error LNK2001: unresolved external symbol _ke_get_blk
+config.obj : error LNK2001: unresolved external symbol __imp__IMemStream_bind
+config.obj : error LNK2001: unresolved external symbol _IMemStream_create
+config.obj : error LNK2001: unresolved external symbol _get_IMemStream_vtable
+config.obj : error LNK2001: unresolved external symbol _ki_init_bblk
+config.obj : error LNK2001: unresolved external symbol __imp__IBlk_peer
+config.obj : error LNK2001: unresolved external symbol _ki_logblk
+config.obj : error LNK2001: unresolved external symbol _ki_sched
+config.obj : error LNK2001: unresolved external symbol _ke_set_hash
+config.obj : error LNK2001: unresolved external symbol _ITreeNode_umount
+config.obj : error LNK2001: unresolved external symbol _ITreeNode_umount_children
+config.obj : error LNK2001: unresolved external symbol _ke_del_hash
+config.obj : error LNK2001: unresolved external symbol _ki_finalize_bblk
+config.obj : error LNK2001: unresolved external symbol _ki_cancel
+config.obj : error LNK2001: unresolved external symbol _ki_reset
+config.obj : error LNK2001: unresolved external symbol _ki_start_1
+config.obj : error LNK2001: unresolved external symbol _ki_log
+config.obj : error LNK2001: unresolved external symbol _ki_clear_user_program
+config.obj : error LNK2001: unresolved external symbol __imp__IBlk_real_pin
+config.obj : error LNK2001: unresolved external symbol __imp__ICBlk_link
+config.obj : error LNK2001: unresolved external symbol __imp__IBlk_is_output
+config.obj : error LNK2001: unresolved external symbol __imp__ICBlk_unlink
+config.obj : error LNK2001: unresolved external symbol __imp__ICBlk_get_link
+config.obj : error LNK2001: unresolved external symbol __imp__ICBlk_add_pin
+config.obj : error LNK2001: unresolved external symbol __imp__ICBlk_del_pin
+config.obj : error LNK2001: unresolved external symbol _ki_init_mem_pointers
+config.obj : error LNK2001: unresolved external symbol _io_write_config
+config.obj : error LNK2001: unresolved external symbol _ki_switch_to
+config.obj : error LNK2001: unresolved external symbol _ke_set_flag
+config.obj : error LNK2001: unresolved external symbol _g_kernel
+config.obj : error LNK2001: unresolved external symbol _ki_suspend_to_nvram
+config.obj : error LNK2001: unresolved external symbol _ki_resume_from_nvram
+config.obj : error LNK2001: unresolved external symbol _ke_unlock
+config.obj : error LNK2001: unresolved external symbol _ke_lock
+rtkserver.obj : error LNK2001: unresolved external symbol "void __stdcall on_config(struct __tag_RTK_PACKET const *,void *)" (?on_config@@YGXPBU__tag_RTK_PACKET@@PAX@Z)
+rtkserver.obj : error LNK2001: unresolved external symbol "void __cdecl init_config(void)" (?init_config@@YAXXZ)
+rtkserver.obj : error LNK2001: unresolved external symbol "void __cdecl uninit_config(void)" (?uninit_config@@YAXXZ)
+\proj\target\bin/pmcd.exe : fatal error LNK1120: 41 unresolved externals
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+pmcd.exe - 42 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

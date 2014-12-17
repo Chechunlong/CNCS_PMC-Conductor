@@ -1,0 +1,150 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MCDraw - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2F2.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"\proj\temp/" /Fp"\proj\temp/MCDraw.pch" /Yu"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /pmc2/sdk/include" " /c 
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaBlink.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaButtonA.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaButtonD.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaButtonWnd.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaCellAttr.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaColorA.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaColorAA.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaColorD.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaColorDA.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaDirection.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaDnyAttr.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaEnable.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaFillH.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaFillV.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaInputA.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaInputD.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaPosH.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaPosV.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaReplace.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaSave.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaSelect.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaSizeH.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaSizeV.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaSlideH.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaSlidV.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaTrendAttr.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaValueA.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaValueD.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\DiaVisibility.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\MainFrm.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\MCDraw.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\MCDrawDoc.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\MCDrawView.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\OptGrid.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\OptShow.cpp"
+"C:\proj\pmc\3.5\hmi\mcdraw\OptWindow.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2F2.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2F3.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"\proj\temp/" /Fp"\proj\temp/MCDraw.pch" /Yc"stdafx.h" /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /I /pmc2/sdk/include" " /c 
+"C:\proj\pmc\3.5\hmi\mcdraw\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2F3.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2F4.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"\proj\target\bin/MCDraw.pdb" /debug /machine:I386 /out:"\proj\target\bin/MCDraw.exe" /libpath:"\proj\imp_all" 
+\proj\temp\DiaBlink.obj
+\proj\temp\DiaButtonA.obj
+\proj\temp\DiaButtonD.obj
+\proj\temp\DiaButtonWnd.obj
+\proj\temp\DiaCellAttr.obj
+\proj\temp\DiaColorA.obj
+\proj\temp\DiaColorAA.obj
+\proj\temp\DiaColorD.obj
+\proj\temp\DiaColorDA.obj
+\proj\temp\DiaDirection.obj
+\proj\temp\DiaDnyAttr.obj
+\proj\temp\DiaEnable.obj
+\proj\temp\DiaFillH.obj
+\proj\temp\DiaFillV.obj
+\proj\temp\DiaInputA.obj
+\proj\temp\DiaInputD.obj
+\proj\temp\DiaPosH.obj
+\proj\temp\DiaPosV.obj
+\proj\temp\DiaReplace.obj
+\proj\temp\DiaSave.obj
+\proj\temp\DiaSelect.obj
+\proj\temp\DiaSizeH.obj
+\proj\temp\DiaSizeV.obj
+\proj\temp\DiaSlideH.obj
+\proj\temp\DiaSlidV.obj
+\proj\temp\DiaTrendAttr.obj
+\proj\temp\DiaValueA.obj
+\proj\temp\DiaValueD.obj
+\proj\temp\DiaVisibility.obj
+\proj\temp\MainFrm.obj
+\proj\temp\MCDraw.obj
+\proj\temp\MCDrawDoc.obj
+\proj\temp\MCDrawView.obj
+\proj\temp\OptGrid.obj
+\proj\temp\OptShow.obj
+\proj\temp\OptWindow.obj
+\proj\temp\StdAfx.obj
+\proj\temp\MCDraw.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2F4.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+DiaBlink.cpp
+DiaButtonA.cpp
+DiaButtonD.cpp
+DiaButtonWnd.cpp
+DiaCellAttr.cpp
+DiaColorA.cpp
+DiaColorAA.cpp
+DiaColorD.cpp
+DiaColorDA.cpp
+DiaDirection.cpp
+DiaDnyAttr.cpp
+DiaEnable.cpp
+DiaFillH.cpp
+DiaFillV.cpp
+DiaInputA.cpp
+DiaInputD.cpp
+DiaPosH.cpp
+DiaPosV.cpp
+DiaReplace.cpp
+DiaSave.cpp
+Generating Code...
+Compiling...
+DiaSelect.cpp
+DiaSizeH.cpp
+DiaSizeV.cpp
+DiaSlideH.cpp
+DiaSlidV.cpp
+DiaTrendAttr.cpp
+DiaValueA.cpp
+DiaValueD.cpp
+DiaVisibility.cpp
+MainFrm.cpp
+MCDraw.cpp
+MCDrawDoc.cpp
+MCDrawView.cpp
+OptGrid.cpp
+OptShow.cpp
+OptWindow.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MCDraw.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

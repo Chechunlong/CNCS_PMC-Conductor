@@ -1,0 +1,9 @@
+pmc2pi是pmc向pi传送数据的接口服务程序
+可以通过文件pmc2pi.ini制定pi中的数据源
+支持'R'和'I'两种数据类型
+对于'R'型数据：
+    istat=0 表示数据有效，istat=-1 表示数据无效
+    rval为数据值
+对于'I'型数据
+    istat=0 表示"Off"，istat=1 表示"On"，istat=-1 表示数据无效
+    rval无意义

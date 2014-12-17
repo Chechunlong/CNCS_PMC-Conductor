@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: pmcui - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PMCUI_EXPORTS" /D "_WINDLL" /D "_AFXDLL" /Fp"\proj\temp/pmcui.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\3.5\hmi\pmcui\Trend.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Arc.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Button.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Cell.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Cursor.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\DnyAttr.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Element.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Ellipse.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Line.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Meta.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\PMCUI.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Polygon.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\PolyLine.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Rectangle.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\RoundRect.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\StdAfx.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\Text.cpp"
+"C:\proj\pmc\3.5\hmi\pmcui\trans_file.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D8.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D9.tmp" with contents
+[
+/nologo /dll /incremental:no /pdb:"\proj\target\bin/pmcui.pdb" /machine:I386 /out:"\proj\target\bin/pmcui.dll" /implib:"\proj\target\bin/pmcui.lib" /libpath:"\proj\imp_all" 
+\proj\temp\Trend.obj
+\proj\temp\Arc.obj
+\proj\temp\Button.obj
+\proj\temp\Cell.obj
+\proj\temp\Cursor.obj
+\proj\temp\DnyAttr.obj
+\proj\temp\Element.obj
+\proj\temp\Ellipse.obj
+\proj\temp\Line.obj
+\proj\temp\Meta.obj
+\proj\temp\PMCUI.obj
+\proj\temp\Polygon.obj
+\proj\temp\PolyLine.obj
+\proj\temp\Rectangle.obj
+\proj\temp\RoundRect.obj
+\proj\temp\StdAfx.obj
+\proj\temp\Text.obj
+\proj\temp\trans_file.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D9.tmp"
+<h3>Output Window</h3>
+Compiling...
+Trend.cpp
+Arc.cpp
+Button.cpp
+Cell.cpp
+Cursor.cpp
+DnyAttr.cpp
+Element.cpp
+Ellipse.cpp
+Line.cpp
+Meta.cpp
+PMCUI.cpp
+Polygon.cpp
+PolyLine.cpp
+Rectangle.cpp
+RoundRect.cpp
+StdAfx.cpp
+Text.cpp
+trans_file.cpp
+Linking...
+   Creating library \proj\target\bin/pmcui.lib and object \proj\target\bin/pmcui.exp
+
+
+
+<h3>Results</h3>
+pmcui.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,251 @@
+File name: D:\PROJ\PMCKEY\DOG\PMC.LST
+ 
+          0/8  |  1/9  |  2/A  |  3/B  ||  4/C  |  5/D  |  6/E  |  7/F
+      --------------------------------------------------------------------     
+   00 | 0000 SN 0000 DI 0000 OP 0000 OP  0000 WP 0000 RW 0000 RW 0000 RW |
+   08 | D1FD IA 77DA IA 8A32 AP EC6B AP  F654 IA 65CA IA 843B AP B8EB AP |
+   10 | D30B IA 5FBB IA 4D7C AP B0D6 AP  C232 IA 4BB3 IA 67AF AP CC00 AP |
+   18 | F48D IA 7471 IA 3467 AP 667B AP  DE70 IA 55BE IA 5A9E AP 6C52 AP |
+   20 | EA65 IA 45BD IA 717D AP DF88 AP  DCAA IA 5252 IA BC6B AP B451 AP |
+   28 | E27E IA 799D IA 045B AP 3F91 AP  D838 IA 7482 IA DA4F AP B393 AP |
+   30 | E133 IA 5A39 IA CF31 AP 670C AP  FC8D IA 73F8 IA 6CD4 AP E250 AP |
+   38 | D1AC IA 67AF IA FC46 AP EED3 AP  FF9C IA 70CA IA 655A AP 24E6 AP |
+      --------------------------------------------------------------------     
+ 
+Identifier:  r64
+Item type:   Algorithm with Password
+Address:     08
+ 
+Algorithm Descriptor
+ Word 1:    D1FD  at address  08
+ Word 2:    77DA  at address  09
+ 
+Activation Password
+ Word 1:    8A32  at address  0A
+ Word 2:    EC6B  at address  0B
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  r128
+Item type:   Algorithm with Password
+Address:     0C
+ 
+Algorithm Descriptor
+ Word 1:    F654  at address  0C
+ Word 2:    65CA  at address  0D
+ 
+Activation Password
+ Word 1:    843B  at address  0E
+ Word 2:    B8EB  at address  0F
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  r256
+Item type:   Algorithm with Password
+Address:     10
+ 
+Algorithm Descriptor
+ Word 1:    D30B  at address  10
+ Word 2:    5FBB  at address  11
+ 
+Activation Password
+ Word 1:    4D7C  at address  12
+ Word 2:    B0D6  at address  13
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  r512
+Item type:   Algorithm with Password
+Address:     14
+ 
+Algorithm Descriptor
+ Word 1:    C232  at address  14
+ Word 2:    4BB3  at address  15
+ 
+Activation Password
+ Word 1:    67AF  at address  16
+ Word 2:    CC00  at address  17
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  r1024
+Item type:   Algorithm with Password
+Address:     18
+ 
+Algorithm Descriptor
+ Word 1:    F48D  at address  18
+ Word 2:    7471  at address  19
+ 
+Activation Password
+ Word 1:    3467  at address  1A
+ Word 2:    667B  at address  1B
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  rnl
+Item type:   Algorithm with Password
+Address:     1C
+ 
+Algorithm Descriptor
+ Word 1:    DE70  at address  1C
+ Word 2:    55BE  at address  1D
+ 
+Activation Password
+ Word 1:    5A9E  at address  1E
+ Word 2:    6C52  at address  1F
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  d64
+Item type:   Algorithm with Password
+Address:     20
+ 
+Algorithm Descriptor
+ Word 1:    EA65  at address  20
+ Word 2:    45BD  at address  21
+ 
+Activation Password
+ Word 1:    717D  at address  22
+ Word 2:    DF88  at address  23
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  d128
+Item type:   Algorithm with Password
+Address:     24
+ 
+Algorithm Descriptor
+ Word 1:    DCAA  at address  24
+ Word 2:    5252  at address  25
+ 
+Activation Password
+ Word 1:    BC6B  at address  26
+ Word 2:    B451  at address  27
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  d256
+Item type:   Algorithm with Password
+Address:     28
+ 
+Algorithm Descriptor
+ Word 1:    E27E  at address  28
+ Word 2:    799D  at address  29
+ 
+Activation Password
+ Word 1:    045B  at address  2A
+ Word 2:    3F91  at address  2B
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  d512
+Item type:   Algorithm with Password
+Address:     2C
+ 
+Algorithm Descriptor
+ Word 1:    D838  at address  2C
+ Word 2:    7482  at address  2D
+ 
+Activation Password
+ Word 1:    DA4F  at address  2E
+ Word 2:    B393  at address  2F
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  d1024
+Item type:   Algorithm with Password
+Address:     30
+ 
+Algorithm Descriptor
+ Word 1:    E133  at address  30
+ Word 2:    5A39  at address  31
+ 
+Activation Password
+ Word 1:    CF31  at address  32
+ Word 2:    670C  at address  33
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  dnl
+Item type:   Algorithm with Password
+Address:     34
+ 
+Algorithm Descriptor
+ Word 1:    FC8D  at address  34
+ Word 2:    73F8  at address  35
+ 
+Activation Password
+ Word 1:    6CD4  at address  36
+ Word 2:    E250  at address  37
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  r1
+Item type:   Algorithm with Password
+Address:     38
+ 
+Algorithm Descriptor
+ Word 1:    D1AC  at address  38
+ Word 2:    67AF  at address  39
+ 
+Activation Password
+ Word 1:    FC46  at address  3A
+ Word 2:    EED3  at address  3B
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+=====================================================
+ 
+Identifier:  r2
+Item type:   Algorithm with Password
+Address:     3C
+ 
+Algorithm Descriptor
+ Word 1:    FF9C  at address  3C
+ Word 2:    70CA  at address  3D
+ 
+Activation Password
+ Word 1:    655A  at address  3E
+ Word 2:    24E6  at address  3F
+ 
+Algoritm is Inactive
+ 
+Activation type is Always Active
+ 

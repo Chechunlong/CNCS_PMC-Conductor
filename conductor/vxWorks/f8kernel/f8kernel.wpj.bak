@@ -1,0 +1,1256 @@
+Document file - DO NOT EDIT
+
+<BEGIN> BUILD_RULE_archive
+
+<END>
+
+<BEGIN> BUILD_RULE_f8kernel.out
+
+<END>
+
+<BEGIN> BUILD_RULE_f8kernel.pl
+
+<END>
+
+<BEGIN> BUILD_RULE_objects
+
+<END>
+
+<BEGIN> BUILD__CURRENT
+build_noarchive
+<END>
+
+<BEGIN> BUILD__LIST
+build_noarchive
+<END>
+
+<BEGIN> BUILD_build_noarchive_BUILDRULE
+f8kernel.out
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_AR
+arpentium
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_ARCHIVE
+$(PRJ_DIR)/PENTIUMgnu/f8kernel.a
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_AS
+ccpentium
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_CC
+ccpentium
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_CC_ARCH_SPEC
+-mcpu=pentium -march=pentium
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_CFLAGS
+-D__VXWORKS__ \
+	-DHAVE_STDIO \
+	-DINCLUDE_TCP_STREAM \
+	-Id:/panxh/conductor/include \
+	-Id:/panxh/common/include \
+	-Id:/panxh/common/include/compiler/gcc \
+	-Id:/panxh/common/include/public \
+	-Id:/panxh/common/include/private \
+	-Id:/panxh/conductor/vxWorks \
+	-I$(WIND_BASE)/target/h/ \
+	-I$(PRJ_DIR)/../etx2 \
+	-ID:/panxh/common/include/arch/x86 \
+	-g \
+	-std=gnu9x \
+	-mcpu=pentium \
+	-march=pentium \
+	-nostdlib \
+	-fno-builtin \
+	-fno-defer-pop \
+	-DCPU=PENTIUM \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_CFLAGS_AS
+-g \
+	-mcpu=pentium \
+	-march=pentium \
+	-ansi \
+	-nostdlib \
+	-fno-builtin \
+	-fno-defer-pop \
+	-P \
+	-xassembler-with-cpp \
+	-I. \
+	-I$(WIND_BASE)/target/h/ \
+	-DCPU=PENTIUM \
+	-DTOOL_FAMILY=gnu \
+	-DTOOL=gnu
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_CPP
+ccpentium -E -P
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_HEX_FLAGS
+
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_LD
+ldpentium
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_LDFLAGS
+-X -N
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_LD_PARTIAL
+ccpentium -r -nostdlib -Wl,-X
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_LD_PARTIAL_FLAGS
+-X -r
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_NM
+nmpentium -g
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_OPTION_DEFINE_MACRO
+-D
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_OPTION_DEPEND
+-M -w
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_OPTION_GENERATE_DEPENDENCY_FILE
+-MD
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_OPTION_INCLUDE_DIR
+-I
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_OPTION_LANG_C
+-xc
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_OPTION_UNDEFINE_MACRO
+-U
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_POST_BUILD_RULE
+copy f8kernel.out d:\tmp /y
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_PRJ_LIBS
+../libz.a
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_SIZE
+sizepentium
+<END>
+
+<BEGIN> BUILD_build_noarchive_MACRO_TOOL_FAMILY
+gnu
+<END>
+
+<BEGIN> BUILD_build_noarchive_RO_DEPEND_PATH
+{$(WIND_BASE)/target/h/} \
+	{$(WIND_BASE)/target/src/} \
+	{$(WIND_BASE)/target/config/} \
+	d:/panxh/conductor/include \
+	d:/panxh/conductor/include \
+	d:/panxh/conductor/include/gcc
+<END>
+
+<BEGIN> BUILD_build_noarchive_TC
+::tc_PENTIUMgnu
+<END>
+
+<BEGIN> CORE_INFO_TYPE
+::prj_vxApp
+<END>
+
+<BEGIN> CORE_INFO_VERSION
+2.2
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/bblk.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/bblk.c_dependencies
+D:/panxh/conductor/kernel/fbd/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/bblk.c_objects
+bblk.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/bblk.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/blk.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/blk.c_dependencies
+D:/panxh/conductor/kernel/fbd/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/blk.c_objects
+blk.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/blk.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/cblk.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/cblk.c_dependencies
+D:/panxh/conductor/kernel/fbd/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/cblk.c_objects
+cblk.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/cblk.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/fbd.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/fbd.c_dependencies
+D:/panxh/conductor/kernel/fbd/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/fbd.c_objects
+fbd.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fbd/fbd.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/ex.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/ex.c_dependencies
+D:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	D:/panxh/conductor/kernel/fkern/irprocs.h \
+	D:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/ex.c_objects
+ex.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/ex.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/fbd_os.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/fbd_os.c_dependencies
+D:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	D:/panxh/conductor/kernel/fkern/irprocs.h \
+	D:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/fbd_os.c_objects
+fbd_os.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/fbd_os.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/iec61499.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/iec61499.c_dependencies
+D:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	D:/panxh/conductor/kernel/fkern/irprocs.h \
+	D:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/iec61499.c_objects
+iec61499.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/iec61499.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/ld_os.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/ld_os.c_dependencies
+D:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	D:/panxh/conductor/kernel/fkern/irprocs.h \
+	D:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/ld_os.c_objects
+ld_os.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/ld_os.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/peer.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/peer.c_dependencies
+D:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	D:/panxh/conductor/kernel/fkern/irprocs.h \
+	D:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/peer.c_objects
+peer.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/peer.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/sfc_os.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/sfc_os.c_dependencies
+D:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	D:/panxh/conductor/kernel/fkern/irprocs.h \
+	D:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/sfc_os.c_objects
+sfc_os.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/sfc_os.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vartable.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vartable.c_dependencies
+D:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	D:/panxh/conductor/kernel/fkern/irprocs.h \
+	D:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vartable.c_objects
+vartable.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vartable.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/version.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/version.c_dependencies
+D:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	D:/panxh/conductor/kernel/fkern/irprocs.h \
+	D:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/version.c_objects
+version.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/version.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vxworks/io.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vxworks/io.c_dependencies
+D:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	D:/panxh/conductor/kernel/fkern/irprocs.h \
+	D:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vxworks/io.c_objects
+io.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vxworks/io.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vxworks/time.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vxworks/time.c_dependencies
+
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vxworks/time.c_objects
+time.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/kernel/fkern/vxworks/time.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/cobj/bstr.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/cobj/bstr.c_dependencies
+D:/panxh/conductor/lib/cobj/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/cobj/bstr.c_objects
+bstr.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/cobj/bstr.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/cobj/tcpstream.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/cobj/tcpstream.c_dependencies
+D:/panxh/conductor/lib/cobj/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/cobj/tcpstream.c_objects
+tcpstream.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/cobj/tcpstream.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/mm/vxworks_mm.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/mm/vxworks_mm.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/private/profile.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/mm/vxworks_mm.c_objects
+vxworks_mm.o
+<END>
+
+<BEGIN> FILE_D:/panxh/conductor/lib/mm/vxworks_mm.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../pthread/queue.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../pthread/queue.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	$(PRJ_DIR)/../pthread/rwlock_fcfs_queue.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../pthread/queue.c_objects
+queue.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../pthread/queue.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../pthread/rwlock.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../pthread/rwlock.c_dependencies
+$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	$(PRJ_DIR)/../pthread/rwlock_fcfs.h \
+	$(PRJ_DIR)/../pthread/rwlock_fcfs_queue.h
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../pthread/rwlock.c_objects
+rwlock.o
+<END>
+
+<BEGIN> FILE_$(PRJ_DIR)/../pthread/rwlock.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/agent.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/agent.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/agent.c_objects
+agent.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/agent.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/config.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/config.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/config.c_objects
+config.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/config.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/dbg.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/dbg.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/dbg.c_objects
+dbg.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/dbg.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/hash.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/hash.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/hash.c_objects
+hash.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/hash.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/irprocs.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/irprocs.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/irprocs.c_objects
+irprocs.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/irprocs.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/kern.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/kern.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/kern.c_objects
+kern.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/kern.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/ki.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/ki.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/ki.c_objects
+ki.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/ki.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/lalist.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/lalist.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/lalist.c_objects
+lalist.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/lalist.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/standby.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/standby.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h \
+	d:/panxh/conductor/kernel/fkern/vxworks/ether_peer.c
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/standby.c_objects
+standby.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/standby.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/vxworks/lock.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/vxworks/lock.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h \
+	$(PRJ_DIR)/../pthread/rwlock_fcfs.h \
+	$(PRJ_DIR)/../pthread/rwlock_fcfs_queue.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/vxworks/lock.c_objects
+lock.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/vxworks/lock.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/vxworks/main.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/vxworks/main.c_dependencies
+d:/panxh/conductor/kernel/fkern/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/librtk.h \
+	d:/panxh/common/include/utils.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/rtk_error.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h \
+	d:/panxh/conductor/kernel/fkern/irprocs.h \
+	d:/panxh/conductor/kernel/fkern/ki.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/vxworks/main.c_objects
+main.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/kernel/fkern/vxworks/main.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/cobj.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/cobj.c_dependencies
+d:/panxh/conductor/lib/cobj/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/cobj.c_objects
+cobj.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/cobj.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/fstream.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/fstream.c_dependencies
+d:/panxh/conductor/lib/cobj/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/fstream.c_objects
+fstream.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/fstream.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/mstream.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/mstream.c_dependencies
+d:/panxh/conductor/lib/cobj/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/mstream.c_objects
+mstream.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/mstream.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/stream.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/stream.c_dependencies
+d:/panxh/conductor/lib/cobj/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/stream.c_objects
+stream.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/stream.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/streamable.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/streamable.c_dependencies
+d:/panxh/conductor/lib/cobj/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/streamable.c_objects
+streamable.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/streamable.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/treelist.c_dependDone
+TRUE
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/treelist.c_dependencies
+d:/panxh/conductor/lib/cobj/precomp.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stddef.h \
+	$(WIND_BASE)/host/$(WIND_HOST_TYPE)/lib/gcc-lib/i586-wrs-vxworks/2.9-PentiumIII-010221/include/stdarg.h \
+	d:/panxh/common/include/rtk_compat.h \
+	d:/panxh/common/include/rtk_config.h \
+	d:/panxh/common/include/rtkdefs.h \
+	d:/panxh/common/include/arch/x86/cpu_features.h \
+	d:/panxh/common/include/private/profile.h \
+	d:/panxh/common/include/compiler/gcc/pshpack1.h \
+	d:/panxh/common/include/compiler/gcc/poppack.h \
+	d:/panxh/common/include/public/rtk_list_entry.h
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/treelist.c_objects
+treelist.o
+<END>
+
+<BEGIN> FILE_d:/panxh/conductor/lib/cobj/treelist.c_tool
+C/C++ compiler
+<END>
+
+<BEGIN> PROJECT_FILES
+d:/panxh/conductor/kernel/fkern/irprocs.c \
+	d:/panxh/conductor/kernel/fkern/agent.c \
+	d:/panxh/conductor/kernel/fkern/config.c \
+	d:/panxh/conductor/kernel/fkern/hash.c \
+	d:/panxh/conductor/kernel/fkern/ki.c \
+	d:/panxh/conductor/lib/cobj/streamable.c \
+	d:/panxh/conductor/lib/cobj/treelist.c \
+	d:/panxh/conductor/lib/cobj/cobj.c \
+	d:/panxh/conductor/lib/cobj/mstream.c \
+	d:/panxh/conductor/lib/cobj/stream.c \
+	d:/panxh/conductor/kernel/fkern/lalist.c \
+	d:/panxh/conductor/kernel/fkern/kern.c \
+	d:/panxh/conductor/kernel/fkern/dbg.c \
+	d:/panxh/conductor/kernel/fkern/vxworks/main.c \
+	d:/panxh/conductor/kernel/fkern/vxworks/lock.c \
+	d:/panxh/conductor/lib/cobj/fstream.c \
+	d:/panxh/conductor/kernel/fkern/standby.c \
+	D:/panxh/conductor/lib/mm/vxworks_mm.c \
+	D:/panxh/conductor/kernel/fkern/vartable.c \
+	D:/panxh/conductor/kernel/fkern/ex.c \
+	D:/panxh/conductor/lib/cobj/bstr.c \
+	D:/panxh/conductor/lib/cobj/tcpstream.c \
+	$(PRJ_DIR)/../pthread/queue.c \
+	$(PRJ_DIR)/../pthread/rwlock.c \
+	D:/panxh/conductor/kernel/fkern/fbd_os.c \
+	D:/panxh/conductor/kernel/fbd/bblk.c \
+	D:/panxh/conductor/kernel/fbd/blk.c \
+	D:/panxh/conductor/kernel/fbd/cblk.c \
+	D:/panxh/conductor/kernel/fbd/fbd.c \
+	D:/panxh/conductor/kernel/fkern/iec61499.c \
+	D:/panxh/conductor/kernel/fkern/sfc_os.c \
+	D:/panxh/conductor/kernel/fkern/ld_os.c \
+	D:/panxh/conductor/kernel/fkern/peer.c \
+	D:/panxh/conductor/kernel/fkern/vxworks/io.c \
+	D:/panxh/conductor/kernel/fkern/vxworks/time.c \
+	D:/panxh/conductor/kernel/fkern/version.c
+<END>
+
+<BEGIN> userComments
+<Enter description here>
+<END>
+

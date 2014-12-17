@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: librtknet - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP188.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBRTKNET_EXPORTS" /Fp"\proj\temp/librtknet.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\pmc\kernel\lib\librtknet\debug.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\intrfc.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\libs.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\mcudp.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\packman.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\precomp.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\rtknet.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\rtksocket.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\transaction.cpp"
+"C:\proj\pmc\kernel\lib\librtknet\vbus.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP188.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP189.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/librtknet.pdb" /machine:I386 /def:".\rtknet.def" /out:"\proj\target\bin/librtknet.dll" /implib:"\proj\target\bin/librtknet.lib" /libpath:"\proj\imp_all" 
+\proj\temp\debug.obj
+\proj\temp\intrfc.obj
+\proj\temp\libs.obj
+\proj\temp\mcudp.obj
+\proj\temp\packman.obj
+\proj\temp\precomp.obj
+\proj\temp\rtknet.obj
+\proj\temp\rtksocket.obj
+\proj\temp\transaction.obj
+\proj\temp\vbus.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP189.tmp"
+<h3>Output Window</h3>
+Compiling...
+debug.cpp
+intrfc.cpp
+libs.cpp
+mcudp.cpp
+packman.cpp
+precomp.cpp
+rtknet.cpp
+rtksocket.cpp
+transaction.cpp
+vbus.cpp
+Linking...
+   Creating library \proj\target\bin/librtknet.lib and object \proj\target\bin/librtknet.exp
+
+
+
+<h3>Results</h3>
+librtknet.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

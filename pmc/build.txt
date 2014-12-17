@@ -1,0 +1,760 @@
+Deleting intermediate files and output files for project 'libcalc_device - Win32 Release'.
+Deleting intermediate files and output files for project 'libmath - Win32 Release'.
+Deleting intermediate files and output files for project 'libecho_device - Win32 Release'.
+Deleting intermediate files and output files for project 'libf8net - Win32 Release'.
+Deleting intermediate files and output files for project 'libpmcf8_device - Win32 Release'.
+Deleting intermediate files and output files for project 'libpmcopc - Win32 Release'.
+Deleting intermediate files and output files for project 'libs960_device - Win32 Release'.
+Deleting intermediate files and output files for project 'libc200ha_device - Win32 Release'.
+Deleting intermediate files and output files for project 'libmodbusplus - Win32 Release'.
+Deleting intermediate files and output files for project 'libmodbustcp - Win32 Release'.
+Deleting intermediate files and output files for project 'lib465d_device - Win32 Release'.
+Deleting intermediate files and output files for project 'keyc - Win32 Release'.
+Deleting intermediate files and output files for project 'libpmcgina - Win32 Release'.
+Deleting intermediate files and output files for project 'MCDraw - Win32 Release'.
+Deleting intermediate files and output files for project 'mcview - Win32 Release'.
+Deleting intermediate files and output files for project 'pmcui - Win32 Release'.
+Deleting intermediate files and output files for project 'libpmcdb - Win32 Release'.
+Deleting intermediate files and output files for project 'pmc2pi - Win32 Release'.
+Deleting intermediate files and output files for project 'pmcsvr - Win32 Debug'.
+Deleting intermediate files and output files for project 'evtd - Win32 Release'.
+Deleting intermediate files and output files for project 'evtlq - Win32 Release'.
+Deleting intermediate files and output files for project 'libhis - Win32 Release'.
+Deleting intermediate files and output files for project 'gpsd - Win32 Release'.
+Deleting intermediate files and output files for project 'hisd - Win32 Release'.
+Deleting intermediate files and output files for project 'hisq - Win32 Release'.
+Deleting intermediate files and output files for project 'libhisproxy - Win32 Release'.
+Deleting intermediate files and output files for project 'libconfigman - Win32 Release'.
+Deleting intermediate files and output files for project 'libinsmod - Win32 Release'.
+Deleting intermediate files and output files for project 'libioss - Win32 Release'.
+Deleting intermediate files and output files for project 'libntservice - Win32 Release'.
+Deleting intermediate files and output files for project 'libpmckey - Win32 Release'.
+Deleting intermediate files and output files for project 'libpowermgr - Win32 Release'.
+Deleting intermediate files and output files for project 'librtdb - Win32 Release'.
+Deleting intermediate files and output files for project 'librtk - Win32 Release'.
+Deleting intermediate files and output files for project 'librtkgui - Win32 Release'.
+Deleting intermediate files and output files for project 'librtknet - Win32 Release'.
+Deleting intermediate files and output files for project 'librtkproxy - Win32 Release'.
+Deleting intermediate files and output files for project 'librtkshell - Win32 Release'.
+Deleting intermediate files and output files for project 'libutils - Win32 Release'.
+Deleting intermediate files and output files for project 'libvbus - Win32 Release'.
+Deleting intermediate files and output files for project 'libzlib_shared - Win32 Release'.
+Deleting intermediate files and output files for project 'netd - Win32 Release'.
+Deleting intermediate files and output files for project 'pmcd - Win32 Release'.
+Deleting intermediate files and output files for project 'libspac - Win32 Release'.
+Deleting intermediate files and output files for project 'spacd - Win32 Release'.
+--------------------Configuration: libcalc_device - Win32 Release--------------------
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libcalc_device.lib and object \proj\target\bin/libcalc_device.exp
+
+libcalc_device.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libmath - Win32 Release--------------------
+Compiling...
+expression.cpp
+value.cpp
+Linking...
+   Creating library \proj\target\bin/libmath.lib and object \proj\target\bin/libmath.exp
+LINK : warning LNK4089: all references to "ADVAPI32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+
+libmath.dll - 0 error(s), 3 warning(s)
+--------------------Configuration: libecho_device - Win32 Release--------------------
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libecho_device.lib and object \proj\target\bin/libecho_device.exp
+
+libecho_device.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libf8net - Win32 Release--------------------
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libf8net.lib and object \proj\target\bin/libf8net.exp
+
+libf8net.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libpmcf8_device - Win32 Release--------------------
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libpmcf8_device.lib and object \proj\target\bin/libpmcf8_device.exp
+
+libpmcf8_device.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libpmcopc - Win32 Release--------------------
+Compiling...
+device.cpp
+libpmcopc.cpp
+Linking...
+   Creating library \proj\target\bin/libpmcopc.lib and object \proj\target\bin/libpmcopc.exp
+
+libpmcopc.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libs960_device - Win32 Release--------------------
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libs960_device.lib and object \proj\target\bin/libs960_device.exp
+
+libs960_device.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libc200ha_device - Win32 Release--------------------
+Compiling...
+device.cpp
+Linking...
+   Creating library \proj\target\bin/libc200ha_device.lib and object \proj\target\bin/libc200ha_device.exp
+
+libc200ha_device.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libmodbusplus - Win32 Release--------------------
+Compiling...
+device.cpp
+libs.cpp
+modicon.cpp
+Linking...
+   Creating library \proj\target\bin/libmodbusplus.lib and object \proj\target\bin/libmodbusplus.exp
+
+libmodbusplus.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libmodbustcp - Win32 Release--------------------
+Compiling...
+device.cpp
+modicon.cpp
+precomp.cpp
+Linking...
+   Creating library \proj\target\bin/libmodbustcp.lib and object \proj\target\bin/libmodbustcp.exp
+
+libmodbustcp.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: lib465d_device - Win32 Release--------------------
+Compiling...
+465d-balance.cpp
+Linking...
+   Creating library \proj\target\bin/lib465d_device.lib and object \proj\target\bin/lib465d_device.exp
+
+lib465d_device.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: keyc - Win32 Release--------------------
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgHotkey.cpp
+keyc.cpp
+keycDlg.cpp
+Generating Code...
+Linking...
+
+keyc.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: libpmcgina - Win32 Release--------------------
+Compiling...
+ginastub.c
+Linking...
+   Creating library \proj\target\bin/libpmcgina.lib and object \proj\target\bin/libpmcgina.exp
+
+libpmcgina.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: MCDraw - Win32 Release--------------------
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DiaBlink.cpp
+DiaButtonA.cpp
+DiaButtonD.cpp
+DiaButtonWnd.cpp
+DiaCellAttr.cpp
+DiaColorA.cpp
+DiaColorAA.cpp
+DiaColorD.cpp
+DiaColorDA.cpp
+DiaDirection.cpp
+DiaDnyAttr.cpp
+DiaEnable.cpp
+DiaFillH.cpp
+DiaFillV.cpp
+DiaInputA.cpp
+DiaInputD.cpp
+DiaPosH.cpp
+DiaPosV.cpp
+DiaReplace.cpp
+DiaSave.cpp
+Generating Code...
+Compiling...
+DiaSelect.cpp
+DiaSizeH.cpp
+DiaSizeV.cpp
+DiaSlideH.cpp
+DiaSlidV.cpp
+DiaTrendAttr.cpp
+DiaValueA.cpp
+DiaValueD.cpp
+DiaVisibility.cpp
+MainFrm.cpp
+MCDraw.cpp
+MCDrawDoc.cpp
+MCDrawView.cpp
+OptGrid.cpp
+OptShow.cpp
+OptWindow.cpp
+Generating Code...
+Linking...
+
+MCDraw.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: mcview - Win32 Release--------------------
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AlarmRecord.cpp
+Arc.cpp
+Button.cpp
+Cell.cpp
+common.cpp
+DiaAlarmList.cpp
+DiaInputA.cpp
+DiaInputD.cpp
+DiaPassword.cpp
+DiaSystem.cpp
+DlgAbout.cpp
+DlgDnyTip.cpp
+DlgLoop.cpp
+DlgSelect.cpp
+DlgTrendComSav.cpp
+DlgTrendTime.cpp
+DnyAttr.cpp
+Element.cpp
+Ellipse.cpp
+FView.cpp
+Generating Code...
+Compiling...
+keyhook.cpp
+libs.cpp
+Line.cpp
+mcview.cpp
+mcviewDlg.cpp
+Meta.cpp
+Polygon.cpp
+PolyLine.cpp
+Rectangle.cpp
+RoundRect.cpp
+Text.cpp
+Trend.cpp
+Generating Code...
+Linking...
+
+mcview.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: pmcui - Win32 Release--------------------
+Compiling...
+Arc.cpp
+Button.cpp
+Cell.cpp
+Cursor.cpp
+DnyAttr.cpp
+Element.cpp
+Ellipse.cpp
+Line.cpp
+Meta.cpp
+PMCUI.cpp
+Polygon.cpp
+PolyLine.cpp
+Rectangle.cpp
+RoundRect.cpp
+StdAfx.cpp
+Text.cpp
+trans_file.cpp
+Trend.cpp
+Linking...
+   Creating library \proj\target\bin/pmcui.lib and object \proj\target\bin/pmcui.exp
+
+pmcui.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libpmcdb - Win32 Release--------------------
+Compiling...
+olemain.cpp
+pmcdb.cpp
+precomp.cpp
+Linking...
+   Creating library \proj\target\bin/libpmcdb.lib and object \proj\target\bin/libpmcdb.exp
+
+libpmcdb.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: pmc2pi - Win32 Release--------------------
+Compiling...
+buffer.cpp
+pmc2pi.cpp
+Linking...
+
+pmc2pi.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: pmcsvr - Win32 Debug--------------------
+Creating Type Library...
+Microsoft (R) MIDL Compiler Version 5.01.0164  
+Copyright (c) Microsoft Corp 1991-1997. All rights reserved.
+Processing C:\proj\pmc\interfaces\pmcsvr\pmcsvr.idl
+pmcsvr.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ocidl.idl
+ocidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oleidl.idl
+oleidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\servprov.idl
+servprov.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\urlmon.idl
+urlmon.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\msxml.idl
+msxml.idl
+Processing .\opcda.idl
+opcda.idl
+Processing .\pmcdb_idl.idl
+pmcdb_idl.idl
+Compiling...
+StdAfx.cpp
+Compiling...
+datagroup.cpp
+opcserver.cpp
+C:\proj\pmc\interfaces\pmcsvr\opcserver.cpp(68) : warning C4541: 'dynamic_cast' used on polymorphic type 'struct IUnknown' with /GR-; unpredictable behavior may result
+pmcdb.cpp
+C:\proj\pmc\interfaces\pmcsvr\pmcdb.cpp(282) : error C2511: 'writeSnapshots' : overloaded member function 'long (unsigned long,struct tagVARIANT,struct tagVARIANT)' not found in 'CPmcDB'
+        c:\proj\pmc\interfaces\pmcsvr\pmcdb.h(13) : see declaration of 'CPmcDB'
+Generating Code...
+Compiling...
+pmcdb_idl_i.c
+c:\proj\pmc\interfaces\pmcsvr\pmcdb_idl_i.c(48) : fatal error C1010: unexpected end of file while looking for precompiled header directive
+Generating Code...
+Compiling...
+pmcsvr.cpp
+c:\program files\microsoft visual studio\vc98\atl\include\atlcom.h(4905) : error C2970: 'IConnectionPointImpl' : template argument 'piid' : invalid address of static variable 'DIID_IPmcDBEvents'
+        c:\program files\microsoft visual studio\vc98\atl\include\atlcom.h(4946) : see declaration of 'IConnectionPointImpl'
+        c:\proj\pmc\interfaces\pmcsvr\pmcsvrcp.h(6) : see reference to class template instantiation 'ATL::?$IConnectionPointImpl@VCPmcDB@@$1DIID_IPmcDBEventsVCComDynamicUnkArray@ATL@@' being compiled
+        c:\proj\pmc\interfaces\pmcsvr\pmcdb.h(20) : see reference to class template instantiation 'CProxyIPmcDBEvents<class CPmcDB>' being compiled
+c:\program files\microsoft visual studio\vc98\atl\include\atlcom.h(4905) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+Generating Code...
+Command line warning D4028 : minimal rebuild failure, reverting to normal build
+Error executing cl.exe.
+
+pmcsvr.exe - 4 error(s), 2 warning(s)
+--------------------Configuration: evtd - Win32 Release--------------------
+Compiling...
+evtd.cpp
+evtsrv.cpp
+Linking...
+
+evtd.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: evtlq - Win32 Release--------------------
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildView.cpp
+DlgQuery.cpp
+DlgQueryById.cpp
+DlgServerIP.cpp
+evtlq.cpp
+MainFrm.cpp
+QuerySocket.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "COMCTL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "LIBRTKNET.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "LIBUTILS.dll" discarded by /OPT:REF
+
+evtlq.exe - 0 error(s), 3 warning(s)
+--------------------Configuration: libhis - Win32 Release--------------------
+Compiling...
+libhis.cpp
+Linking...
+   Creating library \proj\target\bin/libhis.lib and object \proj\target\bin/libhis.exp
+
+libhis.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: gpsd - Win32 Release--------------------
+Compiling...
+gpsd.cpp
+GpsService.cpp
+NTService.cpp
+Linking...
+
+gpsd.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: hisd - Win32 Release--------------------
+Compiling...
+archive.cpp
+buffer.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(17) : warning C4786: '?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_NAME
+@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_T
+AG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(21) : warning C4786: '??0?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_N
+AME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N@std@@QAE@XZ' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_T
+AG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_N
+AME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N@std@@QAE@ABViterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PA
+VCHislogStream@@U?$less@U__tag_TAG_NAME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@1@AB_N@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_T
+AG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(25) : warning C4786: '??0?$pair@Viterator@?$_Tree@U__tag_TAG_NAME@@U?$pair@$$CBU__tag_TAG_NAME@@PAVCHislogStream@@@std@@U_Kfn@?$map@U__tag_TAG_NAME@@PAVCHislogStream@@U?$less@U__tag_TAG_N
+AME@@@std@@V?$allocator@PAVCHislogStream@@@4@@3@U?$less@U__tag_TAG_NAME@@@3@V?$allocator@PAVCHislogStream@@@3@@std@@_N@std@@QAE@ABU?$pair@$DCAB@$DCAC@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\buffer.cpp(222) : see reference to class template instantiation 'std::pair<class std::_Tree<struct __tag_TAG_NAME,struct std::pair<struct __tag_TAG_NAME const ,class CHislogStream *>,struct std::map<struct __tag_T
+AG_NAME,class CHislogStream *,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::_Kfn,struct std::less<struct __tag_TAG_NAME>,class std::allocator<class CHislogStream *> >::iterator,bool>' being compiled
+bufferMgr.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@
+@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@_N@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@V?$
+allocator@Uarchive_list_entry_t@@@2@@1@AB_N@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(70) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_
+t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,bool>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(25) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@
+@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@_N@std@@QAE@ABU?$pair@$DCAB@$DCAC@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(70) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry_
+t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,bool>' being compiled
+C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(96) : warning C4101: 'u1' : unreferenced local variable
+C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(96) : warning C4101: 'u2' : unreferenced local variable
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@
+@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@V123@@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@@2@U?$less@_J@2@
+V?$allocator@Uarchive_list_entry_t@@@2@@1@0@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(410) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry
+_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_li
+st_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator>' being compi
+led
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(25) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUarchive_list_entry_t@@@std@@U_Kfn@?$map@_JUarchive_list_entry_t@@U?$less@_J@std@@V?$allocator@Uarchive_list_entry_t@@@3@
+@2@U?$less@_J@2@V?$allocator@Uarchive_list_entry_t@@@2@@std@@V123@@std@@QAE@ABU?$pair@$DCAB@$DCAC@@1@@Z' : identifier was truncated to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\bufferMgr.cpp(410) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_list_entry_t>,struct std::map<__int64,struct archive_list_entry
+_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator,class std::_Tree<__int64,struct std::pair<__int64 const ,struct archive_li
+st_entry_t>,struct std::map<__int64,struct archive_list_entry_t,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct archive_list_entry_t> >::iterator>' being compi
+led
+common.cpp
+main.cpp
+precomp.cpp
+query.cpp
+random.cpp
+recorder.cpp
+shell.cpp
+stream.cpp
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocato
+r@Upmc_value_t@@@2@@std@@V123@@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocator@Upmc_value_t@@@2@@1@0@Z' : identifier was truncate
+d to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\stream.cpp(43) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct pmc_value_t>,struct std::map<__int64,struct pmc_value_t,struct std::less<__
+int64>,class std::allocator<struct pmc_value_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::iterator,class std::_Tree<__int64,struct std::pair<__int64 const ,struct pmc_value_t>,struct std::map<__int64,struct pmc_va
+lue_t,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::iterator>' being compiled
+C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\utility(23) : warning C4786: '??0?$pair@Viterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocato
+r@Upmc_value_t@@@2@@std@@_N@std@@QAE@ABViterator@?$_Tree@_JU?$pair@$$CB_JUpmc_value_t@@@std@@U_Kfn@?$map@_JUpmc_value_t@@U?$less@_J@std@@V?$allocator@Upmc_value_t@@@3@@2@U?$less@_J@2@V?$allocator@Upmc_value_t@@@2@@1@AB_N@Z' : identifier was truncate
+d to '255' characters in the browser information
+        C:\proj\pmc\kernel\his\hisd\stream.cpp(224) : see reference to class template instantiation 'std::pair<class std::_Tree<__int64,struct std::pair<__int64 const ,struct pmc_value_t>,struct std::map<__int64,struct pmc_value_t,struct std::less<_
+_int64>,class std::allocator<struct pmc_value_t> >::_Kfn,struct std::less<__int64>,class std::allocator<struct pmc_value_t> >::iterator,bool>' being compiled
+C:\proj\pmc\kernel\his\hisd\stream.cpp(249) : warning C4305: '=' : truncation from 'const double' to 'float'
+Linking...
+
+hisd.exe - 0 error(s), 13 warning(s)
+--------------------Configuration: hisq - Win32 Release--------------------
+Compiling resources...
+Compiling...
+buffer.cpp
+ChildView.cpp
+C:\proj\pmc\kernel\his\hisq\ChildView.cpp(232) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\proj\pmc\kernel\his\hisq\ChildView.cpp(238) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\proj\pmc\kernel\his\hisq\ChildView.cpp(248) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\proj\pmc\kernel\his\hisq\ChildView.cpp(254) : warning C4305: '=' : truncation from 'const double' to 'float'
+DlgCount.cpp
+DlgFmtCurve.cpp
+DlgFormat.cpp
+DlgQuery.cpp
+DlgServerIP.cpp
+HisList.cpp
+hisq.cpp
+MainFrm.cpp
+StdAfx.cpp
+Linking...
+
+hisq.exe - 0 error(s), 4 warning(s)
+--------------------Configuration: libhisproxy - Win32 Release--------------------
+Compiling...
+archiveCache.cpp
+common.cpp
+hisproxy.cpp
+precomp.cpp
+wrappers.cpp
+Linking...
+   Creating library \proj\target\bin/libhisproxy.lib and object \proj\target\bin/libhisproxy.exp
+
+libhisproxy.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libconfigman - Win32 Release--------------------
+Compiling...
+configman.cpp
+Linking...
+   Creating library \proj\target\bin/libconfigman.lib and object \proj\target\bin/libconfigman.exp
+
+libconfigman.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libinsmod - Win32 Release--------------------
+Compiling...
+loadsys.cpp
+Linking...
+   Creating library \proj\target\bin/libinsmod.lib and object \proj\target\bin/libinsmod.exp
+
+libinsmod.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libioss - Win32 Release--------------------
+Compiling...
+dbrefresher.cpp
+devices.cpp
+drivers.cpp
+exception.cpp
+ioss.cpp
+C:\proj\pmc\kernel\lib\libioss\ioss.cpp(67) : warning C4305: '=' : truncation from 'const double' to 'float'
+pnp.cpp
+precomp.cpp
+tagman.cpp
+Linking...
+   Creating library \proj\target\bin/libioss.lib and object \proj\target\bin/libioss.exp
+
+libioss.dll - 0 error(s), 1 warning(s)
+--------------------Configuration: libntservice - Win32 Release--------------------
+Compiling...
+ntservice.cpp
+Linking...
+   Creating library \proj\target\bin/libntservice.lib and object \proj\target\bin/libntservice.exp
+
+libntservice.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libpmckey - Win32 Release--------------------
+Compiling...
+d3des.c
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(168) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(169) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(170) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(171) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(172) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(173) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(174) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(175) : warning C4244: '=' : conversion from 'unsigned long ' to 'unsigned char ', possible loss of data
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(407) : warning C4090: 'function' : different 'const' qualifiers
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(407) : warning C4024: 'deskey' : different types for formal and actual parameter 1
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(409) : warning C4090: 'function' : different 'const' qualifiers
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(409) : warning C4024: 'deskey' : different types for formal and actual parameter 1
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(420) : warning C4090: 'function' : different 'const' qualifiers
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(420) : warning C4024: 'scrunch' : different types for formal and actual parameter 1
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(437) : warning C4090: 'function' : different 'const' qualifiers
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(437) : warning C4024: 'scrunch' : different types for formal and actual parameter 1
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(438) : warning C4090: 'function' : different 'const' qualifiers
+C:\proj\pmc\kernel\lib\libpmckey\d3des.c(438) : warning C4024: 'scrunch' : different types for formal and actual parameter 1
+hdid.cpp
+pmc_license.cpp
+pmckey.cpp
+Linking...
+   Creating library \proj\target\bin/libpmckey.lib and object \proj\target\bin/libpmckey.exp
+
+libpmckey.dll - 0 error(s), 18 warning(s)
+--------------------Configuration: libpowermgr - Win32 Release--------------------
+Compiling...
+powermgr.cpp
+Linking...
+   Creating library \proj\target\bin/libpowermgr.lib and object \proj\target\bin/libpowermgr.exp
+
+libpowermgr.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: librtdb - Win32 Release--------------------
+Compiling...
+arithmetic.cpp
+cursor.cpp
+dbutils.cpp
+events.cpp
+librtdb.cpp
+precomp.cpp
+rtdblock.cpp
+typecast.cpp
+Linking...
+   Creating library \proj\target\bin/librtdb.lib and object \proj\target\bin/librtdb.exp
+
+librtdb.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: librtk - Win32 Release--------------------
+Compiling...
+callstk.cpp
+compat.cpp
+errno.cpp
+event.cpp
+guid.cpp
+librtk.cpp
+libs.cpp
+lock.cpp
+log.cpp
+mutex.cpp
+object.cpp
+precomp.cpp
+profile.cpp
+rthread.cpp
+rwlock.cpp
+search.cpp
+semaphore.cpp
+shrmem.cpp
+thread.cpp
+threadPool.cpp
+treenode.cpp
+C:\proj\pmc\kernel\lib\librtk\treenode.cpp(253) : warning C4541: 'dynamic_cast' used on polymorphic type 'class CTreeNode' with /GR-; unpredictable behavior may result
+waitable.cpp
+Linking...
+   Creating library \proj\target\bin/librtk.lib and object \proj\target\bin/librtk.exp
+
+librtk.dll - 0 error(s), 1 warning(s)
+--------------------Configuration: librtkgui - Win32 Release--------------------
+Compiling resources...
+Compiling...
+aboutDlg.cpp
+dllVersion.cpp
+hyperLink.cpp
+msgBox.cpp
+pmc_about.cpp
+precomp.cpp
+rtkgui.cpp
+showDib.cpp
+utils.cpp
+waitDlg.cpp
+Linking...
+   Creating library \proj\target\bin/librtkgui.lib and object \proj\target\bin/librtkgui.exp
+
+librtkgui.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: librtknet - Win32 Release--------------------
+Compiling...
+debug.cpp
+intrfc.cpp
+libs.cpp
+mcudp.cpp
+packman.cpp
+precomp.cpp
+rtknet.cpp
+rtksocket.cpp
+transaction.cpp
+vbus.cpp
+Linking...
+   Creating library \proj\target\bin/librtknet.lib and object \proj\target\bin/librtknet.exp
+
+librtknet.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: librtkproxy - Win32 Release--------------------
+Compiling...
+add_edit_groups.cpp
+add_edit_tags.cpp
+busprocs.cpp
+devices.cpp
+discover.cpp
+dispatch.cpp
+drop_groups.cpp
+drop_tags.cpp
+ftp.cpp
+precomp.cpp
+read_tags.cpp
+reload_tags.cpp
+rtkproxy.cpp
+worker.cpp
+write_tags.cpp
+Linking...
+   Creating library \proj\target\bin/librtkproxy.lib and object \proj\target\bin/librtkproxy.exp
+
+librtkproxy.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: librtkshell - Win32 Release--------------------
+Compiling...
+rtk_shell.cpp
+Linking...
+   Creating library \proj\target\bin/librtkshell.lib and object \proj\target\bin/librtkshell.exp
+
+librtkshell.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libutils - Win32 Release--------------------
+Compiling...
+appname.c
+array.c
+cargsex.cpp
+cargsexW.cpp
+crc.c
+dbgtrace.c
+delete_registry_key.cpp
+dllmain.c
+exception.c
+files.c
+filesW.c
+nt.c
+pattern.c
+patternW.c
+precomp.c
+procdump.c
+registry.c
+runonce.c
+strutils.c
+sys_ini.c
+util_arg.c
+util_argW.c
+utils.c
+win98.c
+Linking...
+   Creating library \proj\target\bin/libutils.lib and object \proj\target\bin/libutils.exp
+
+libutils.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libvbus - Win32 Release--------------------
+Compiling...
+debug.cpp
+intrfc.cpp
+mcudp.cpp
+packman.cpp
+precomp.cpp
+rtknet.cpp
+rtksocket.cpp
+transaction.cpp
+vbus.cpp
+Linking...
+   Creating library \proj\target\bin/libvbus.lib and object \proj\target\bin/libvbus.exp
+
+libvbus.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: libzlib_shared - Win32 Release--------------------
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infback.c
+inffast.c
+inflate.c
+inftrees.c
+minigzip.c
+trees.c
+uncompr.c
+zutil.c
+Linking...
+   Creating library \proj\target\bin/libzlib_shared.lib and object \proj\target\bin/libzlib_shared.exp
+
+libzlib_shared.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: netd - Win32 Release--------------------
+Compiling...
+netd.cpp
+netService.cpp
+NTService.cpp
+Linking...
+
+netd.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: pmcd - Win32 Release--------------------
+Compiling...
+alarm.cpp
+backup.cpp
+busprocs.cpp
+config.cpp
+debug.cpp
+log.cpp
+operation.cpp
+pmcd.cpp
+precomp.cpp
+profile.cpp
+rtdata.cpp
+rtkserver.cpp
+shell_procs.cpp
+start_exit.cpp
+system.cpp
+Linking...
+
+pmcd.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: libspac - Win32 Release--------------------
+Compiling...
+libspac.cpp
+precomp.cpp
+spacshm.cpp
+Linking...
+   Creating library \proj\target\bin/libspac.lib and object \proj\target\bin/libspac.exp
+
+libspac.dll - 0 error(s), 0 warning(s)
+--------------------Configuration: spacd - Win32 Release--------------------
+Compiling...
+comm.cpp
+fh.cpp
+spacd.cpp
+Linking...
+
+spacd.exe - 0 error(s), 0 warning(s)

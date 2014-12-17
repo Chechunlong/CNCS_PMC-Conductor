@@ -1,0 +1,1 @@
+ata=1,0(0,0)host:/ata1a/vxWorks e=192.168.1.25:ff000000 h=192.168.1.8 g=192.168.1.1 u=anonymous pw=some@ tn=f8 o=rtl0 

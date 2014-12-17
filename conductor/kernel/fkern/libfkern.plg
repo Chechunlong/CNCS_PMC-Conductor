@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libfkern - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP128.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "NDEBUG" /D "HAVE_STDIO" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBFKERN_EXPORTS" /Fp"\proj\temp/libfkern.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\proj\conductor\kernel\fkern\agent.c"
+"C:\proj\conductor\kernel\fkern\config.c"
+"C:\proj\conductor\kernel\fkern\dbg.c"
+"C:\proj\conductor\kernel\fkern\ex.c"
+"C:\proj\conductor\kernel\fkern\fbd_os.c"
+"C:\proj\conductor\kernel\fkern\hash.c"
+"C:\proj\conductor\kernel\fkern\iec61499.c"
+"C:\proj\conductor\kernel\fkern\win32\io.c"
+"C:\proj\conductor\kernel\fkern\irprocs.c"
+"C:\proj\conductor\kernel\fkern\kern.c"
+"C:\proj\conductor\kernel\fkern\ki.c"
+"C:\proj\conductor\kernel\fkern\lalist.c"
+"C:\proj\conductor\kernel\fkern\ld_os.c"
+"C:\proj\conductor\kernel\fkern\win32\lock.c"
+"C:\proj\conductor\kernel\fkern\win32\main.c"
+"C:\proj\conductor\kernel\fkern\peer.c"
+"C:\proj\conductor\kernel\fkern\precomp.c"
+"C:\proj\conductor\kernel\fkern\sfc_os.c"
+"C:\proj\conductor\kernel\fkern\standby.c"
+"C:\proj\conductor\kernel\fkern\standby_socket.c"
+"C:\proj\conductor\kernel\fkern\vartable.c"
+"C:\proj\conductor\kernel\fkern\version.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP128.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP129.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libfkern.pdb" /machine:I386 /out:"\proj\target\bin/libfkern.dll" /implib:"\proj\target\bin/libfkern.lib" /libpath:"\proj\imp_all" 
+\proj\temp\agent.obj
+\proj\temp\config.obj
+\proj\temp\dbg.obj
+\proj\temp\ex.obj
+\proj\temp\fbd_os.obj
+\proj\temp\hash.obj
+\proj\temp\iec61499.obj
+\proj\temp\io.obj
+\proj\temp\irprocs.obj
+\proj\temp\kern.obj
+\proj\temp\ki.obj
+\proj\temp\lalist.obj
+\proj\temp\ld_os.obj
+\proj\temp\lock.obj
+\proj\temp\main.obj
+\proj\temp\peer.obj
+\proj\temp\precomp.obj
+\proj\temp\sfc_os.obj
+\proj\temp\standby.obj
+\proj\temp\standby_socket.obj
+\proj\temp\vartable.obj
+\proj\temp\version.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP129.tmp"
+<h3>Output Window</h3>
+Compiling...
+agent.c
+config.c
+dbg.c
+ex.c
+fbd_os.c
+C:\proj\conductor\kernel\fkern\ex.c(169) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\proj\conductor\kernel\fkern\ex.c(170) : warning C4761: integral size mismatch in argument; conversion supplied
+hash.c
+iec61499.c
+io.c
+irprocs.c
+kern.c
+ki.c
+C:\proj\conductor\kernel\fkern\kern.c(216) : warning C4761: integral size mismatch in argument; conversion supplied
+C:\proj\conductor\kernel\fkern\ki.c(448) : warning C4101: 'i' : unreferenced local variable
+lalist.c
+ld_os.c
+lock.c
+main.c
+peer.c
+precomp.c
+sfc_os.c
+standby.c
+standby_socket.c
+vartable.c
+version.c
+Linking...
+   Creating library \proj\target\bin/libfkern.lib and object \proj\target\bin/libfkern.exp
+
+
+
+<h3>Results</h3>
+libfkern.dll - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

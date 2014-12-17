@@ -1,0 +1,22 @@
+LIBRARY LIBVBUS
+EXPORTS
+	alloc_vbus_port
+	broadcast_rtk_data
+	broadcast_rtk_data_with_guid
+	connect_vbus
+	default_client_filter
+	default_server_filter
+	disconnect_vbus
+	get_interface_list
+	get_vbus_data
+	get_vbus_port
+	send_rtk_data
+	send_rtk_data_with_guid
+	send_rtk_data_with_guid_ex
+	send_rtk_packet
+	set_personality
+	set_vbus_port
+	g_ThisNode
+	init_vbus
+	uninit_vbus
+	

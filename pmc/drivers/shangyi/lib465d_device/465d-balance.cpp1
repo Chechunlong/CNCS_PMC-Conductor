@@ -1,0 +1,390 @@
+/********************************************************************
+	PC-Based monitoring & controlling system source
+	prodoct version : 3.5
+	author:	Jackie Pan, jhunter@tsinghua.org.cn
+	
+	purpose : 465d elec-balance data acquisition
+	history:
+	created : by J.Hunter, Feb, 2005
+*********************************************************************/
+#include <pmc.h>
+#include <object.h>
+#include <rtksocket.h>
+#include <rtk_list_entry.h>
+#include <libspac.h>
+
+#define _465d_plus
+#define _465D_CHANNELS 9
+
+#pragma comment(lib, "libutils.lib")
+#pragma comment(lib, "librtk.lib")
+#pragma comment(lib, "librtdb.lib")
+#pragma comment(lib, "libspac.lib")
+
+struct _465DChannel{
+	__bool configured;
+	__bool dataValid;
+	__uint failCount;
+	__r4 data[4];
+	// __u16 range;
+};
+
+class C465DDevice : 
+	public CRtkThread
+{
+public:
+	;
+	__uint channelDelay;
+	__uint readTimeout;
+	__uint nChannels;
+	__uint port;
+	__uint maxFail;
+	__bool debug;
+	_465DChannel channels[_465D_CHANNELS];
+	C465DDevice()
+	{
+		ZeroMemory(channels, sizeof(channels));
+		channelDelay = 500;
+		readTimeout = 500;
+		nChannels = 0;
+		port = 1;
+		maxFail = 3;
+		debug = 0;
+	}
+	__bool loadConfig(const char * addr, const char * param);
+	virtual __uint run();
+};
+
+__bool C465DDevice::loadConfig(const char * addr, const char * param)
+{
+	int i;
+	char * configuredChannels = "";
+	char * rangeSetting = "";
+	BEGIN_ARGS
+		ARG("timeout=", readTimeout, "unsigned int", "read data timeout in milliseconds")
+		ARG("delay=", channelDelay, "unsigned int", "channel delay in milliseconds")
+		ARG("ids=", configuredChannels, "char *", "configured channel IDs")
+		ARG("ranges=", rangeSetting, "char *", "range setting")
+		ARG("MaxFail=", maxFail, "unsigned int", "allowable comm failure for a channel")
+		ARG("debug", debug, "tbool", "debug mode")
+	END_ARGS
+	CArgs args;
+	
+	if(strnicmp(addr, "com", 3)){
+		utils_error(
+			"C465D on %s-- invalid port.\n",
+			addr
+			);
+		return __false;
+	}
+	port = atoi(addr + 3);
+	if(port > 16){
+		utils_error(
+			"C465D on %s-- invalid port.\n",
+			addr
+			);
+		return __false;
+	}
+	parse_arg_ex(param, &args, " ");
+	if(process_args_ex(args.argc, args.argv, __CmdLineArgValues, 0, 0) < 0){
+		print_usage_1();
+		return __false;
+	}
+	if(!configuredChannels[0]){
+		// all channels were configured
+		for(i=0; i<_465D_CHANNELS; i++){
+			channels[i].configured = __true;
+		}
+		nChannels = 9;
+	}else{
+		CArgs args;
+		// CArgs argRanges;
+		parse_arg_ex(configuredChannels, &args, ";/-");
+		if(args.argc > _465D_CHANNELS){
+			utils_error(
+				"C465D -- Warning : too many channels configured on %s",
+				addr
+				);
+			args.argc = _465D_CHANNELS;
+		}
+		nChannels = args.argc;
+#if 0
+		if(rangeSetting[0]){
+			parse_arg_ex(rangeSetting, &argRanges, "-*/");
+			if(args.argc != nChannels){
+				utils_error(
+					"C465D on %s-- range/channel setting mismatch.\n", 
+					addr
+					);
+				return __false;
+			}
+		}
+#endif
+		for(i=0; i<args.argc; i++){
+			__uint c;
+			c = atoi(args.argv[i]);
+			c--;
+			if(c < _465D_CHANNELS){
+				channels[c].configured = __true;
+			}else{
+				utils_error(
+					"C465D -- error : %s is not a valid channel ID.\n", 
+					args.argv[i]
+					);
+				return __false;
+			}
+#if 0			
+			__u16 r = atoi(argRanges.argv[i]);
+			if(r < 4){
+				channels[c].range = r;
+			}else{
+				utils_error(
+					"C465D on %s : Invalid range setting %s for channel %d.\n", 
+					addr,
+					argRanges.argv[i],
+					i
+					);
+				return __false;
+			}
+#endif
+		}
+	}
+	if(!nChannels){
+		utils_error("C465D -- no channel configured.\n");
+		return __false;
+	}
+
+	utils_trace(
+		"C465D device configured ok : COM%d, timeout=%d, delay=%d, "
+		"ids=`%s', maxFail=%d, debug=%d\n",
+		port,
+		readTimeout,
+		channelDelay,
+		configuredChannels,
+		maxFail,
+		debug
+		);
+	
+	return __true;
+}
+
+static __r4 splitFloat(const char * str, int s, int e)
+{
+	char buf[128];
+	strncpy(buf, str + s - 1, e - s + 1);
+	buf[e - s + 1] = 0;
+	return atof(buf);
+}
+
+static void extractData(const char * str, _465DChannel * ch)
+{	
+#ifdef _465d_plus
+	// 累计量
+	ch->data[0] = splitFloat(str, 2, 11);
+	// 瞬时皮带速度
+	ch->data[1] = splitFloat(str, 13, 18);
+	// 瞬时皮带重量
+	ch->data[2] = splitFloat(str, 20, 25);
+	// 瞬时皮带流量
+	ch->data[3] = splitFloat(str, 27, 32);
+#else
+	char range;
+	// 累计量
+	ch->data[0] = splitFloat(str, 3, 12);
+	// 瞬时皮带速度
+	ch->data[1] = splitFloat(str, 13, 16) / 10;
+	// 瞬时皮带重量
+	ch->data[2] = splitFloat(str, 17, 20) / 10;
+	// 瞬时皮带流量
+	ch->data[3] = splitFloat(str, 21, 24);
+	range = str[1] - '0';
+	switch(range){
+	case 0:
+		ch->data[0] /= 100;
+		break;
+	case 1:
+		ch->data[0] /= 1000;
+		ch->data[3] /= 10;
+		break;
+	case 2:
+		ch->data[0] /= 10000;
+		ch->data[3] /= 100;
+		break;
+	case 3:
+		ch->data[0] /= 100000;
+		ch->data[3] /= 1000;
+		break;
+	default:
+		// assert(__false);
+		;
+	}
+#endif
+}
+
+__uint C465DDevice::run()
+{
+	int currentChannelId = 0;
+	struct _465DChannel * currCh;
+	int count;
+	char buf[256];
+	
+	while(!m_bStopRequestPending){
+		if(!lock_port(port, 100)){
+			continue;
+		}
+		while(!channels[currentChannelId].configured){
+			currentChannelId++;
+			if(currentChannelId == _465D_CHANNELS){
+				currentChannelId = 0;
+			}
+		}
+		currCh = channels + currentChannelId;
+		char query;
+		query = 'a' + currentChannelId;
+		if(debug){
+			utils_debug(
+				"C465D/COM%d- Query channel %d.\n", 
+				port,
+				currentChannelId + 1
+				);
+		}
+		write_port(port, &query, 1, 500);
+		count = sizeof(buf);
+		memset(buf, 0, sizeof(buf));
+		rtk_sleep(1);
+		read_port(port, buf, &count, readTimeout);
+		if(debug){
+			utils_debug(
+				"C465D/COM%d - %d bytes got from channel %d.\n",
+				port,
+				count,
+				currentChannelId + 1
+				);
+			if(count){
+				buf[sizeof(buf) - 1] = 0;
+				utils_debug(
+					"Contents : %s\n",
+					buf
+					);
+			}
+		}
+		buf[sizeof(buf) - 1] = 0;
+		char * p = strchr(buf, 'T');
+		if(p && strlen(p) >= 34){
+			currCh->dataValid = __true;
+			extractData(p, currCh);
+			if(debug){
+				utils_debug(
+					"got data : %g %g %g %g\n",
+					currCh->data[0],
+					currCh->data[1],
+					currCh->data[2],
+					currCh->data[3]
+					);
+			}
+			currCh->failCount = 0;
+		}else{
+			currCh->failCount++;
+			if(currCh->failCount >= maxFail){
+				currCh->dataValid = __false;
+				currCh->failCount = maxFail;
+			}
+		}
+		unlock_port(port);
+		stop_event()->Wait(channelDelay);
+		currentChannelId++;
+		if(currentChannelId == _465D_CHANNELS){
+			currentChannelId = 0;
+		}
+	}
+
+	return 0;
+}
+
+IOSS_DLL_EXPORT void update_tag(
+	PCRTK_TAG tte, 
+	pmc_value_t * pt, 
+	PCRTK_TIME
+	)
+{
+	C465DDevice * d;
+	__u8 * a, c, id;
+
+	d = (C465DDevice*)tte->d.DeviceObj->OwnerField;
+	if(!d){
+		return;
+	}
+	a = (__u8*)tte->d.BinaryAddress;
+	c = a[0];
+	id = a[1];
+	if(!d->channels[c].configured || !d->channels[c].dataValid){
+		return;
+	}
+	pt->Value.flt = d->channels[c].data[id];
+	pt->Flags |= TF_Valid;
+}
+
+/*
+	allowable address format
+	1.3
+	2-4
+	3*5
+	...
+*/
+IOSS_DLL_EXPORT __bool address_translate(PRTK_TAG tte)
+{
+	__u8   * bi;
+	__uint a, b;
+	
+	if(get_value_type(tte->s.Flags) != dt_real4){
+		return __false;
+	}
+	
+	bi = (__u8*)tte->d.BinaryAddress;
+
+	sscanf(tte->s.Address, "%d%*c%d", &a, &b);
+	a--;
+	if(a > _465D_CHANNELS && b >= 5){
+		return __false;
+	}
+	bi[0] = a;
+	bi[1] = b;
+	return __true;
+}
+
+IOSS_DLL_EXPORT __bool start_device(PDEVICE_INFO handle)
+{
+	C465DDevice * d;
+	/**/
+	
+	d = new C465DDevice;
+	if(!d){
+		return __false;
+	}
+
+	if(!d->loadConfig(handle->address, handle->parameter)){
+		delete d;
+		return __false;
+	}
+	if(!d->start()){
+		delete d;
+		return __false;
+	}
+
+	handle->OwnerField = d;
+
+	return __true;
+}
+
+IOSS_DLL_EXPORT __bool stop_device(PDEVICE_INFO handle)
+{
+	C465DDevice * d;
+
+	d = (C465DDevice*)handle->OwnerField;
+	if(d){
+		d->stop(INFINITE);
+		delete d;
+	}
+
+	return __true;
+}

@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libcobj - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC1.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /I "\proj\inc_all" /D "NDEBUG" /D "HAVE_STDIO" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIBCOBJ_EXPORTS" /Fp"\proj\temp/libcobj.pch" /YX /Fo"\proj\temp/" /Fd"\proj\temp/" /FD /c 
+"C:\PROJ\CONDUCTOR\LIB\libcobj\bstr.c"
+"C:\PROJ\CONDUCTOR\LIB\libcobj\cobj.c"
+"C:\PROJ\CONDUCTOR\LIB\libcobj\fstream.c"
+"C:\PROJ\CONDUCTOR\LIB\libcobj\mstream.c"
+"C:\PROJ\CONDUCTOR\LIB\libcobj\precomp.c"
+"C:\PROJ\CONDUCTOR\LIB\libcobj\stream.c"
+"C:\PROJ\CONDUCTOR\LIB\libcobj\streamable.c"
+"C:\PROJ\CONDUCTOR\LIB\libcobj\tcpstream.c"
+"C:\PROJ\CONDUCTOR\LIB\libcobj\treelist.c"
+"C:\PROJ\CONDUCTOR\LIB\libcobj\tstream.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC1.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC2.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"\proj\target\bin/libcobj.pdb" /machine:I386 /def:".\cobj.def" /out:"\proj\target\bin/libcobj.dll" /implib:"\proj\target\bin/libcobj.lib" /libpath:"\proj\imp_all" 
+\proj\temp\bstr.obj
+\proj\temp\cobj.obj
+\proj\temp\fstream.obj
+\proj\temp\mstream.obj
+\proj\temp\precomp.obj
+\proj\temp\stream.obj
+\proj\temp\streamable.obj
+\proj\temp\tcpstream.obj
+\proj\temp\treelist.obj
+\proj\temp\tstream.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC2.tmp"
+<h3>Output Window</h3>
+Compiling...
+bstr.c
+C:\PROJ\CONDUCTOR\LIB\libcobj\bstr.c(33) : warning C4018: '!=' : signed/unsigned mismatch
+cobj.c
+fstream.c
+mstream.c
+precomp.c
+stream.c
+streamable.c
+tcpstream.c
+treelist.c
+tstream.c
+Linking...
+   Creating library \proj\target\bin/libcobj.lib and object \proj\target\bin/libcobj.exp
+
+
+
+<h3>Results</h3>
+libcobj.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

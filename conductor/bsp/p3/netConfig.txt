@@ -1,0 +1,2 @@
+rtl 0 192.168.1.201 f8 0xffffff00
+rtl 1 192.168.2.201 f8 0xffffff00
